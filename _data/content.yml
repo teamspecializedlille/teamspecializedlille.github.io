@@ -7,10 +7,10 @@
 hero:
   image: "assets/img/profile2.png"
   image_alt: "Zoé Miller"
-  title: "<b>Zoé</b> Miller"
-  before_title: "Hello, <b>my name is</b>"
-  after_title: "I am <strong>Web Developer</strong>"
-  description: "From France, Paris. I have rich experience in web design, also I am good at wordpress. I love to talk with you about our unique."
+  title: "Team <b>Specialized</b> Lille"
+  before_title: ""
+  after_title: "<strong>Route</strong>, <strong>CX</strong> & <strong>VTT</strong>"
+  description: ""
   button1:
     label: "Download CV"
     link: "https://drive.google.com/"
@@ -19,11 +19,10 @@ hero:
     link: "#skills-section"
   bg_title: "Web Developer"
   info:
-    - num: "12 <strong>+</strong>"
-      value: "Years of <strong>Experience</strong>"
-
-    - num: "330"
-      value: "Completed <strong>Projects</strong>"
+    - num: "4"
+      value: "Ans de bonne <strong>humeur</strong>"
+    - num: "23"
+      value: "Coureurs"
 
 ### Services [ services ]
 services:
