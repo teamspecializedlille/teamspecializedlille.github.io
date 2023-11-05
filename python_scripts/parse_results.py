@@ -55,8 +55,22 @@ class ParseResults:
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
         #print("Catégorie : " + self.race_cat)
+        hash_race = self.get_hash_race()
+        if (hash_race not in self.results):
+            self.results[hash_race] = race_results.RaceResults(hash_race)
         for line in range(sheet.nrows):
-            
+            #print(sheet.cell(line, column_team).value)
+            if (str(sheet.cell(line, column_team).value) != ""):
+                if (self.race_cat == "1ère"):
+                    self.results[hash_race].one_riders += 1
+                elif (self.race_cat == "2ème"):
+                    self.results[hash_race].two_riders += 1
+                elif (self.race_cat == "3ème"):
+                    self.results[hash_race].three_riders += 1
+                elif (self.race_cat == "Cadets"):
+                    self.results[hash_race].cadet_riders += 1
+                elif (self.race_cat == "Féminines"):
+                   self.results[hash_race].fem_riders += 1
             if ("TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value)):
                 member = sheet.cell(line, column_name).value
                 if (member not in self.team):
@@ -70,9 +84,7 @@ class ParseResults:
                 elif (self.race_type == "Route"):
                     self.team[member].road[hash_individual] = self.return_result(sheet,line)
 
-                hash_race = self.get_hash_race()
-                if (hash_race not in self.results):
-                    self.results[hash_race] = race_results.RaceResults(hash_race)
+                
                 if (self.race_cat == "1ère"):
                     self.results[hash_race].one[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "2ème"):
@@ -152,46 +164,46 @@ class ParseResults:
             outfile.write("tags: " + self.race_type + "\n")
             outfile.write("---\n")
            
-            result_to_display =  self.results[ self.get_hash_race()].one
+            result_to_display =  self.results[hash].one
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### 1ère Catégorie\n")
+                outfile.write( str(self.results[hash].one_riders )+ " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
 
             
-            result_to_display =  self.results[ self.get_hash_race()].two
+            result_to_display =  self.results[ hash].two
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### 2ère Catégorie\n")
+                outfile.write( str(self.results[hash].two_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
 
             
-            result_to_display =  self.results[ self.get_hash_race()].three
+            result_to_display =  self.results[ hash].three
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### 3ère Catégorie\n")
+                outfile.write( str(self.results[hash].three_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
 
-            result_to_display =  self.results[ self.get_hash_race()].fem
+            result_to_display =  self.results[ hash].fem
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### Féminines\n")
+                outfile.write( str(self.results[hash].fem_riders) + " participantes\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
 
            
-            result_to_display =  self.results[ self.get_hash_race()].cadet
+            result_to_display =  self.results[ hash].cadet
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### Cadets\n")
+                outfile.write( str(self.results[hash].fem_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
             self.results = {}
             
 
-#self.one = {}
-#self.two = {}
-#self.three = {}
-#self.cadet = {}
-#self.fem = {}
 
 
     def parse_race_payload(self, res):

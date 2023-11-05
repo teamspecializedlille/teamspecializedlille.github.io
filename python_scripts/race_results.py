@@ -6,9 +6,14 @@ class RaceResults:
         self.race_year = ""
 
         self.one = {}
+        self.one_riders = 0;
         self.two = {}
+        self.two_riders = 0;
         self.three = {}
+        self.three_riders = 0;
         self.cadet = {}
+        self.cadet_riders = 0;
         self.fem = {}
+        self.fem_riders = 0;
        
         
