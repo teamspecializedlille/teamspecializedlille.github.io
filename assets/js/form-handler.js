@@ -1,4 +1,4 @@
-var form = document.getElementById("cform");
+/*var form = document.getElementById("cform");
 
 async function handleSubmit(event) {
   event.preventDefault();
@@ -32,3 +32,4 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit);
+*/
