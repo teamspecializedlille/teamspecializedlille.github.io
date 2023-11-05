@@ -10,7 +10,7 @@ image: assets/img/team/FELIXMOULIN_large.jpeg
 # full details
 live_preview: https://bslthemes.com
 #1920 / 1020
-full_image: assets/img/team/FELIXMOULIN_large.jpeg
+#full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
     value: 08/09/1994
@@ -18,8 +18,8 @@ info:
     value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/FELIXMOULIN_large.jpeg
+  - assets/img/team/FELIXMOULIN_large.jpeg
+  - assets/img/team/FELIXMOULIN_large.jpeg
 
 ---
