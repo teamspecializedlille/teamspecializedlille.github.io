@@ -92,6 +92,18 @@ layout: default
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 				<div class="post-content">
+					<h5>Route</h5>
+					<ul>
+					{% for team in site.data.team.team_members %}
+						{%- if team.name == page.name -%}
+							{% for res in team.road %}
+								<li>{{ res.key }}</li>
+							{% endfor %}
+				  		{%- endif -%}
+					{% endfor %}
+					</ul>
+					<h5>CX</h5>
+					<h5>VTT</h5>
 					{{ page.description1.text }}
 				</div>
 

@@ -2,6 +2,7 @@
 # preview details
 layout: works-single
 title: Félix Moulin
+name: MOULIN FELIX
 category: CX Route
 category_slug: cx road
 image: assets/img/works/work4.jpeg
