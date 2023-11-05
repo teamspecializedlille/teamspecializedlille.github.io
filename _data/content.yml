@@ -11,12 +11,12 @@ hero:
   before_title: ""
   after_title: "<strong>Route</strong>, <strong>CX</strong> & <strong>VTT</strong>"
   description: ""
-  button1:
-    label: "Download CV"
-    link: "https://drive.google.com/"
-  button2:
-    label: "My Skills"
-    link: "#skills-section"
+#  button1:
+ #   label: "Download CV"
+  #  link: "https://drive.google.com/"
+  #button2:
+  #  label: "My Skills"
+  #  link: "#skills-section"
   bg_title: "Team"
   info:
     - num: "4"
