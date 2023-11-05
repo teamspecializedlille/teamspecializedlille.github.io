@@ -58,25 +58,25 @@ class ParseResults:
                 self.team[member].course += 1
                 hash_individual = self.get_hash_individual_race()
                 if (self.race_type == "Cyclo Cross"):
-                    self.team[member].cx[hash_individual] = sheet.cell(line, column_result).value
+                    self.team[member].cx[hash_individual] = int(sheet.cell(line, column_result).value)
                 elif (self.race_type == "VTT"):
-                    self.team[member].vtt[hash_individual] = sheet.cell(line, column_result).value
+                    self.team[member].vtt[hash_individual] = int(sheet.cell(line, column_result).value)
                 elif (self.race_type == "Route"):
-                    self.team[member].road[hash_individual] = sheet.cell(line, column_result).value
+                    self.team[member].road[hash_individual] = int(sheet.cell(line, column_result).value)
 
                 hash_race = self.get_hash_race()
                 if (hash_race not in self.results):
                     self.results[hash_race] = race_results.RaceResults(hash_race)
                 if (self.race_cat == "1ère"):
-                    self.results[hash_race].one[member] = sheet.cell(line, column_result).value
+                    self.results[hash_race].one[member] = int(sheet.cell(line, column_result).value)
                 elif (self.race_cat == "2ème"):
-                    self.results[hash_race].two[member] = sheet.cell(line, column_result).value
+                    self.results[hash_race].two[member] = int(sheet.cell(line, column_result).value)
                 elif (self.race_cat == "3ème"):
-                    self.results[hash_race].three[member] = sheet.cell(line, column_result).value
+                    self.results[hash_race].three[member] = int(sheet.cell(line, column_result).value)
                 elif (self.race_cat == "Cadets"):
-                    self.results[hash_race].cadet[member] = sheet.cell(line, column_result).value
+                    self.results[hash_race].cadet[member] = int(sheet.cell(line, column_result).value)
                 elif (self.race_cat == "Féminines"):
-                    self.results[hash_race].fem[member] = sheet.cell(line, column_result).value
+                    self.results[hash_race].fem[member] = int(sheet.cell(line, column_result).value)
 
        
 
@@ -143,15 +143,38 @@ class ParseResults:
             outfile.write("tags: " + self.race_type + "\n")
             outfile.write("---\n")
 
-            outfile.write("### 1ère Catégorie\n")
-            self.results[self.get_hash_race()].two["toto"] = 2
-            print("test")
-            result_to_display =  self.results[ self.get_hash_race()].two
-            print(type(result_to_display))
-            print(result_to_display)
+            result_to_display =  self.results[ self.get_hash_race()].one
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### 1ère Catégorie\n")
             for line in result_to_display.keys():
-                print(line)
-                print(result_to_display[line])
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            
+            result_to_display =  self.results[ self.get_hash_race()].two
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### 2ère Catégorie\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            
+            result_to_display =  self.results[ self.get_hash_race()].three
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### 3ère Catégorie\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            result_to_display =  self.results[ self.get_hash_race()].fem
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### Féminines\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+           
+            result_to_display =  self.results[ self.get_hash_race()].cadet
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### Cadets\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
             
 
 #self.one = {}
