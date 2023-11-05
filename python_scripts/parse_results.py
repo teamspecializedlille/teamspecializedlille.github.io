@@ -164,6 +164,12 @@ class ParseResults:
             outfile.write("date: " + self.race_date.replace("/", "-") + "\n")
             outfile.write("category: " + self.race_type + "\n")
             outfile.write("tags: " + self.race_type + "\n")
+            if (self.race_type == "Cyclo Cross"):
+                outfile.write("image: assets/img/blog/cx.jpeg\n")
+            elif (self.race_type == "VTT"):
+                outfile.write("image: assets/img/blog/vtt.jpeg\n")
+            elif (self.race_type == "Route"):
+                outfile.write("image: assets/img/blog/road.jpeg\n")
             outfile.write("---\n")
            
             result_to_display =  self.results[hash].one
