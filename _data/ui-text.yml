@@ -4,8 +4,8 @@
 
 ui_text:
   home:                 "Home"
-  blog:                 "Blog"
-  blog_subtitle:        "All the most current news and events of my life"
+  blog:                 "Résultats"
+  blog_subtitle:        "Les résultats des dernières courses"
   archive:              "Archive"
   blog_post:            "Blog Post"
   by:                   "by"
@@ -31,7 +31,7 @@ ui_text:
   new:                  "new"
   search:               "Search ..."
   recent_posts:         "Recent Posts"
-  latest_posts:         "Latest Posts"
+  latest_posts:         "Dernières Courses"
   categories:           "Categories"
   follow_me:            "Follow Me"
   works_subtitle:       "my <b>Cases</b>"
