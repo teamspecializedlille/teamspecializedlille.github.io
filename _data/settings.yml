@@ -15,7 +15,7 @@ preloader:
 ### Header
 header:
   logo:
-    image: "assets/img/lo.png"
+    image: "assets/img/profil.png"
     alt: "Team <strong>Specialized Lille"
 
 ### Social
