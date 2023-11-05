@@ -15,8 +15,8 @@ preloader:
 ### Header
 header:
   logo:
-    image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+    image: "assets/img/lo.png"
+    alt: "Team <strong>Specialized Lille"
 
 ### Social
 social:
