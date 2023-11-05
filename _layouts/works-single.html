@@ -98,33 +98,24 @@ layout: default
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 				<div class="post-content">
-					{{ team_people.name }}
 					<h5>Route</h5>
 					<ul>
-					{% for team in site.data.team.team_members %}
-						<li>{{ team.name }}</li>
-						{%- if team.name == page.name -%}
-							<li>dzedzedzeez</li>
-							{% for res in team.road %}
-								<li>res1</li>
-								<li>{{ res.key }}</li>
-							{% endfor %}
-				  		{%- endif -%}
-					{% endfor %}
+						{% for res in team_people.road %}
+							<li>{{ res.[0] }} - res.[1]</li>
+						{% endfor %}
 					</ul>
 					<h5>CX</h5>
 					<ul>
-					{% for team in site.data.team.team_members %}
-						{%- if team.name == page.name -%}
-							{% for res in team.cx %}
-								<li>res1</li>
-								<li>{{ res.[0] }}</li>
-							{% endfor %}
-				  		{%- endif -%}
-					{% endfor %}
+						{% for res in team_people.cx %}
+							<li>{{ res.[0] }} - res.[1]</li>
+						{% endfor %}
 					</ul>
 					<h5>VTT</h5>
-					{{ page.description1.text }}
+					<ul>
+						{% for res in team_people.cx %}
+							<li>{{ res.[0] }} - res.[1]</li>
+						{% endfor %}
+					</ul>
 				</div>
 
 			</div>
