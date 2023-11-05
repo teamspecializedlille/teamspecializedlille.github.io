@@ -108,7 +108,7 @@ layout: default
 					{%- if team_people.cx.size > 0 -%}
 					<h5>CX</h5>
 					<ul>
-						{% assign test = team_people.cx | sort | reversed %}
+						{% assign test = team_people.cx  | reverse %}
 						DEBUG : {{  team_people.cx | inspect }}
 						DEBUG : {{  test | inspect }}
 						DEBUG : {{  test | reverse | inspect }}

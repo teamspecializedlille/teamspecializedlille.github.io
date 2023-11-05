@@ -45,6 +45,12 @@ class ParseResults:
         #year / race / cate /  => pos 
         return self.race_date + "|" + self.race_name + "|" + self.race_cat
 
+    def return_result(self, sheet, line):
+        val = sheet.cell(line, column_result).value
+        if (val == "Ab"):
+            return val
+        return int(val)
+
     def parse_results_race_sheet(self, workbook, sheet):
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
@@ -58,25 +64,25 @@ class ParseResults:
                 self.team[member].course += 1
                 hash_individual = self.get_hash_individual_race()
                 if (self.race_type == "Cyclo Cross"):
-                    self.team[member].cx[hash_individual] = int(sheet.cell(line, column_result).value)
+                    self.team[member].cx[hash_individual] = self.return_result(sheet,line)
                 elif (self.race_type == "VTT"):
-                    self.team[member].vtt[hash_individual] = int(sheet.cell(line, column_result).value)
+                    self.team[member].vtt[hash_individual] = self.return_result(sheet,line)
                 elif (self.race_type == "Route"):
-                    self.team[member].road[hash_individual] = int(sheet.cell(line, column_result).value)
+                    self.team[member].road[hash_individual] = self.return_result(sheet,line)
 
                 hash_race = self.get_hash_race()
                 if (hash_race not in self.results):
                     self.results[hash_race] = race_results.RaceResults(hash_race)
                 if (self.race_cat == "1ère"):
-                    self.results[hash_race].one[member] = int(sheet.cell(line, column_result).value)
+                    self.results[hash_race].one[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "2ème"):
-                    self.results[hash_race].two[member] = int(sheet.cell(line, column_result).value)
+                    self.results[hash_race].two[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "3ème"):
-                    self.results[hash_race].three[member] = int(sheet.cell(line, column_result).value)
+                    self.results[hash_race].three[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "Cadets"):
-                    self.results[hash_race].cadet[member] = int(sheet.cell(line, column_result).value)
+                    self.results[hash_race].cadet[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "Féminines"):
-                    self.results[hash_race].fem[member] = int(sheet.cell(line, column_result).value)
+                    self.results[hash_race].fem[member] = self.return_result(sheet,line)
 
        
 
@@ -132,6 +138,9 @@ class ParseResults:
             outfile.write(json_object)
     
     def create_post_race(self):
+        hash =  self.get_hash_race()
+        if (len(self.results) == 0 and len(self.results[ hash].one.keys()) ==0 and len(self.results[ hash].two.keys())==0 and len(self.results[ hash].three.keys()) ==0  and len(self.results[ hash].fem.keys()) == 0  and len(self.results[ hash].cadet.keys())==0):
+            return
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(" ", "-") + ".md"
         print(file_name)
         with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
@@ -142,7 +151,7 @@ class ParseResults:
             outfile.write("category: " + self.race_type + "\n")
             outfile.write("tags: " + self.race_type + "\n")
             outfile.write("---\n")
-
+           
             result_to_display =  self.results[ self.get_hash_race()].one
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### 1ère Catégorie\n")
@@ -201,7 +210,6 @@ class ParseResults:
                         self.display_race_infos()
                         print(self.results)
                         self.create_post_race()
-                        exit(0)
 
 
     def generate_results(self):
