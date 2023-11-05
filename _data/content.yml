@@ -243,7 +243,7 @@ blog:
   subtitle: "my <b>Articles and Advice</b>"
   bg_title: "Blog"
   button:
-    label: "View Blog"
+    label: "Plus de résultats"
     link: "blog/"
 
 
