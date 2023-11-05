@@ -5,8 +5,8 @@
 
 ### Hero [ hero-image ]
 hero:
-  image: "assets/img/profile.png"
-  image_alt: "Zoé Miller"
+  image: "assets/img/profil.png"
+  image_alt: "Team Specialized Lille"
   title: "Team <b>Specialized</b> Lille"
   before_title: ""
   after_title: "<strong>Route</strong>, <strong>CX</strong> & <strong>VTT</strong>"
