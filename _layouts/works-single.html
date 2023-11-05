@@ -96,20 +96,7 @@ layout: default
 
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<table>
-					<tr>
-					  <th>Mois</th>
-					  <th>Data</th>
-					</tr>
-					<tr>
-					  <td>Janvier</td>
-					  <td>10.01.2014</td>
-					</tr>
-					<tr>
-					  <td>Février</td>
-					  <td>10.01.2014</td>
-					</tr>
-				  </table>
+
 				<div class="post-content">
 					<h5>Route</h5>
 					<ul>
@@ -118,6 +105,7 @@ layout: default
 						{% endfor %}
 					</ul>
 					<h5>CX</h5>
+					{{ team_people.cx.size }}
 					<ul>
 						{% for res in team_people.cx %}
 						<li>{{ res.[0] }} - {{ res.[1] }}</li>
