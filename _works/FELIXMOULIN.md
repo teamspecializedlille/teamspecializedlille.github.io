@@ -17,9 +17,9 @@ info:
   - label: Catégorie 
     value: 3ème
 
-#gallery:
-#  - assets/img/works/work5.jpeg
-#  - assets/img/blog/blog8.jpg
-#  - assets/img/blog/blog6.jpg
+gallery:
+  - assets/img/works/work5.jpeg
+  - assets/img/blog/blog8.jpg
+  - assets/img/blog/blog6.jpg
 
 ---

@@ -287,7 +287,7 @@ class ParseResults:
 
         myobj = {'saison': '2024'}
         #cross
-       # r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
+        # r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
         #self.parse_race_payload(r)
         #vtt
         r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
