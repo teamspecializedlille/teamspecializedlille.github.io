@@ -129,7 +129,6 @@ layout: default
 
 	</div>
 </section>
-{% endif %}
 
 <!-- Section - Gallery -->
 <div class="section section-inner">
@@ -157,38 +156,6 @@ layout: default
 	</div>
 </div>
 
-{% if page.description2.title != nil or page.description2.text1 != nil or page.description2.text2 != nil %}
-<!-- Section - Description -->
-<section class="section section-inner">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-				<div class="post-content">
-					<h4>{{ page.description2.title }}</h4>
-				</div>
-
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-				<div class="post-content">
-					{{ page.description2.text1 }}
-				</div>
-
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-				<div class="post-content">
-					{{ page.description2.text2 }}
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-</section>
-{% endif %}
 
 {% if page.video.id != nil %}
 <!-- Section - Video -->
