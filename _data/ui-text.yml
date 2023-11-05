@@ -16,7 +16,7 @@ ui_text:
   next:                 "Suivant"
   prev_project:         "Team Précédentt"
   next_project:         "Team Suivant"
-  comments:             "Comments"
+  comments:             "Commentaires"
   full_name:            "Full Name"
   your_full_name:       "Your Full Name"
   email_address:        "Email Address"
