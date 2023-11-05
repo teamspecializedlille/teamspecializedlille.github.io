@@ -8,21 +8,15 @@
 
     <!-- begin content -->
     <main class="content" aria-label="Content">
+      
       {{ content }}
+      <ul>
       {% for team in site.data.team.team_members %}
           dhkjzehkjdzehk
-      {{ team.name }}
+      <li>{{ team.name }} - {{ team.course }} </li> 
       
     {% endfor %}
-    <ul>
-      {% for member in site.data.members %}
-        <li>
-          <a href="https://github.com/{{ member.github }}">
-            {{ member.name }}
-          </a>
-        </li>
-      {% endfor %}
-      </ul>
+  </ul>
     </main> 
     <!-- end content -->
     
