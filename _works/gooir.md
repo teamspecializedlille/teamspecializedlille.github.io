@@ -1,11 +1,11 @@
 ---
 # preview details
 layout: works-single
-title: Gooir
+title: Félix Moulin
 category: UI UX Design
-category_slug: ui-ux-design
+category_slug: cx road
 image: assets/img/works/work4.jpeg
-short_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+short_description: felix desc
 
 # full details
 live_preview: https://bslthemes.com
@@ -20,7 +20,7 @@ info:
 description1:
   show: yes
   title: Project Goal
-  text: "<p>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi.</p>
+  text: "<p>Aldzdzedzedzedzedezdzedezdzedzeleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi.</p>
   <p>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</p>"
 
 gallery:
@@ -30,8 +30,7 @@ gallery:
 
 description2:
   title: Project Result
-  text: "<p>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi.</p>
-  <p>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</p>"
+  text: "<p>Aliquam a sapien diamdzedezdzeddezmus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</p>"
 
 video:
   poster: assets/img/blog/blog9.jpg
