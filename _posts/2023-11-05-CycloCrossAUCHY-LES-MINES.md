@@ -4,6 +4,8 @@ title: Cyclo Cross - AUCHY LES MINES
 date: 2023-11-05
 category: Cyclo Cross
 tags: Cyclo Cross
+image: assets/img/blog/blog-4-scaled-1.jpg
+
 ---
 
 ### 2ère Catégorie
