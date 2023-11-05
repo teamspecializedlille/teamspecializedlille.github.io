@@ -1,0 +1,12 @@
+---
+layout: post
+title: Route - ROUSIES
+date: 2022-05-27
+category: Route
+tags: Route
+image: assets/img/blog/road.jpeg
+---
+
+### 1ère Catégorie
+30 participants
+- DEFOSSE HERVE : Ab
