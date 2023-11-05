@@ -41,14 +41,11 @@ footer:
 portfolio:
   layout: "list" # select works layout options: "Grid" or "List"
   filters:
-    - name: "UI UX Design"
-      slug: "ui-ux-design"
+    - name: "Route"
+      slug: "route"
 
-    - name: "Photography"
-      slug: "photography"
+    - name: "Cyclo cross"
+      slug: "cs"
 
-    - name: "Development"
-      slug: "development"
-
-    - name: "Branding"
-      slug: "branding"
+    - name: "VTT"
+      slug: "vtt"
