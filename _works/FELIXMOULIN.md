@@ -5,11 +5,12 @@ title: Félix Moulin
 name: MOULIN FELIX
 category: CX Route
 category_slug: cx road
-image: assets/img/works/work4.jpeg
+image: assets/img/team/FELIXMOULIN_large.jpeg
 
 # full details
 live_preview: https://bslthemes.com
-full_image: assets/img/works/single1.jpg
+#1920 / 1020
+full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
     value: 08/09/1994
