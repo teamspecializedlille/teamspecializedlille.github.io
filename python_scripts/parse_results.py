@@ -151,7 +151,9 @@ class ParseResults:
     
     def create_post_race(self):
         hash =  self.get_hash_race()
-        if (len(self.results) == 0 and len(self.results[ hash].one.keys()) ==0 and len(self.results[ hash].two.keys())==0 and len(self.results[ hash].three.keys()) ==0  and len(self.results[ hash].fem.keys()) == 0  and len(self.results[ hash].cadet.keys())==0):
+        print(hash)
+        print(len(self.results))
+        if (len(self.results) == 0 or (len(self.results[ hash].one.keys()) == 0 and len(self.results[ hash].two.keys())==0 and len(self.results[ hash].three.keys()) ==0  and len(self.results[ hash].fem.keys()) == 0  and len(self.results[ hash].cadet.keys())==0)):
             return
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(" ", "-") + ".md"
         print(file_name)
