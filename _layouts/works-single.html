@@ -111,7 +111,7 @@ layout: default
 						{% assign test = team_people.cx  | sort  %}
 						DEBUG : {{  team_people.cx | inspect }}
 						DEBUG : {{  test | inspect }}
-						DEBUG : {{  test | reverse | inspect }}
+						DEBUG : {{  test | reversed | inspect }}
 						
 
 						{% for res in test %}
