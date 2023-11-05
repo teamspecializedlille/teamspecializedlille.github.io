@@ -109,12 +109,9 @@ layout: default
 					<h5>CX</h5>
 					<ul>
 						{% assign test = team_people.cx  | sort  %}
-						DEBUG : {{  team_people.cx | inspect }}
-						DEBUG : {{  test | inspect }}
-						DEBUG : {{  test | reversed | inspect }}
-						
+						{% assign test2 = test2 | reverse  %}			
 
-						{% for res in test.reverse %}
+						{% for res in test %}
 						<li>{{ res.[0] }} - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
