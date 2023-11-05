@@ -7,11 +7,11 @@ tags: Cyclo Cross
 image: assets/img/blog/cx.jpeg
 ---
 
-### 2ère Catégorie
+### 2ème Catégorie
 21 participants
 - LECOLIER STEPHANE : 3
 
-### 3ère Catégorie
+### 3ème Catégorie
 36 participants
 - DERASSE DAVID : 15
 - MOULIN FELIX : 18

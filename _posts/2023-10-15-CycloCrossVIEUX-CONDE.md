@@ -7,12 +7,12 @@ tags: Cyclo Cross
 image: assets/img/blog/cx.jpeg
 ---
 
-### 2ère Catégorie
+### 2ème Catégorie
 33 participants
 - MATTIOLI RONALD : 3
 - LECOLIER STEPHANE : Ab
 
-### 3ère Catégorie
+### 3ème Catégorie
 62 participants
 - DERASSE DAVID : 17
 - LECOLIER LOUIS : 24

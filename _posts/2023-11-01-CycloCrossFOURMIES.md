@@ -7,10 +7,10 @@ tags: Cyclo Cross
 image: assets/img/blog/cx.jpeg
 ---
 
-### 2ère Catégorie
+### 2ème Catégorie
 22 participants
 - MATTIOLI RONALD : 10
 
-### 3ère Catégorie
+### 3ème Catégorie
 25 participants
 - DERASSE DAVID : 6

@@ -7,6 +7,6 @@ tags: Cyclo Cross
 image: assets/img/blog/cx.jpeg
 ---
 
-### 3ère Catégorie
+### 3ème Catégorie
 48 participants
 - DERASSE DAVID : 21

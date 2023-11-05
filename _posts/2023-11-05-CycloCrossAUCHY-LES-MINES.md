@@ -7,11 +7,11 @@ tags: Cyclo Cross
 image: assets/img/blog/cx.jpeg
 ---
 
-### 2ère Catégorie
+### 2ème Catégorie
 19 participants
 - LECOLIER STEPHANE : 1
 
-### 3ère Catégorie
+### 3ème Catégorie
 52 participants
 - DERASSE DAVID : 10
 - LECOLIER LOUIS : 11

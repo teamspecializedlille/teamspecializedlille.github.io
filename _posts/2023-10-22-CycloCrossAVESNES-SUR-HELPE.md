@@ -7,6 +7,6 @@ tags: Cyclo Cross
 image: assets/img/blog/cx.jpeg
 ---
 
-### 2ère Catégorie
+### 2ème Catégorie
 16 participants
 - MATTIOLI RONALD : 6

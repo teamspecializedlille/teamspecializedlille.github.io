@@ -47,7 +47,7 @@ class ParseResults:
 
     def return_result(self, sheet, line):
         val = sheet.cell(line, column_result).value
-        if (val == "Ab"):
+        if (val == "Ab" or val == "AB" or val == ""):
             return val
         return int(val)
 
@@ -285,17 +285,27 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        myobj = {'saison': '2024'}
-        #cross
-        # r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
-        #self.parse_race_payload(r)
-        #vtt
-        r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
-        self.parse_race_payload(r)
-        #road
-        r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
-        self.parse_race_payload(r)
+        x = range(2021, 2025)
 
-        self.save_races_parsed(self.races_parsed)
+        for n in x:
+            myobj = {'saison': str(n)}
+            
+
+      
         
+            #myobj = {'saison': str(2024)}
+
+            #cross
+            r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
+            self.parse_race_payload(r)
+            #vtt
+            r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
+            self.parse_race_payload(r)
+            #road
+            r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
+            
+            self.parse_race_payload(r)
+            self.save_races_parsed(self.races_parsed)
+        
+
         return self.team
