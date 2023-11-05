@@ -115,7 +115,7 @@ class ParseResults:
     
     def load_races_parsed(self):
         races_parsed = []
-        races_parsed_file = open("_data/races_parsed.json", 'r')
+        races_parsed_file = open("../_data/races_parsed.json", 'r')
         data = json.load(races_parsed_file)
         if (len(data['races_parsed']) > 0):
             for race in data['races_parsed']:
@@ -128,9 +128,39 @@ class ParseResults:
         data = {}
         data["races_parsed"] = races_parsed
         json_object = json.dumps(data,ensure_ascii=False)
-        with open("data/races_parsed.json", "w", encoding='utf8') as outfile:
+        with open("../_data/races_parsed.json", "w", encoding='utf8') as outfile:
             outfile.write(json_object)
     
+    def create_post_race(self):
+        file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(" ", "-") + ".md"
+        print(file_name)
+        with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
+            outfile.write("---\n")
+            outfile.write("layout: post\n")
+            outfile.write("title: " + self.race_type + " - " + self.race_name + "\n")
+            outfile.write("date: " + self.race_date.replace("/", "-") + "\n")
+            outfile.write("category: " + self.race_type + "\n")
+            outfile.write("tags: " + self.race_type + "\n")
+            outfile.write("---\n")
+
+            outfile.write("### 1ère Catégorie\n")
+            self.results[self.get_hash_race()].two["toto"] = 2
+            print("test")
+            result_to_display =  self.results[ self.get_hash_race()].two
+            print(type(result_to_display))
+            print(result_to_display)
+            for line in result_to_display.keys():
+                print(line)
+                print(result_to_display[line])
+            
+
+#self.one = {}
+#self.two = {}
+#self.three = {}
+#self.cadet = {}
+#self.fem = {}
+
+
     def parse_race_payload(self, res):
         for line in res:
             
@@ -145,6 +175,9 @@ class ParseResults:
                     if (self.parse_results_race(url)):
                         self.races_parsed.append(file)
                         self.display_race_infos()
+                        print(self.results)
+                        self.create_post_race()
+                        exit(0)
 
 
     def generate_results(self):
@@ -162,4 +195,5 @@ class ParseResults:
         self.parse_race_payload(r)
 
         self.save_races_parsed(self.races_parsed)
+        
         return self.team
