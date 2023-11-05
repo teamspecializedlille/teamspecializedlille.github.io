@@ -20,17 +20,11 @@ header:
 
 ### Social
 social:
-  - title: "Twitter"
-    icon: "fab fa-twitter"
-    url: "http://twitter.com"
+  - title: "Facebook"
+    icon: "fab fa-facebook"
+    url: "https://www.facebook.com/cycleslecolier"
 
-  - title: "Dribbble"
-    icon: "fab fa-dribbble"
-    url: "http://dribbble.com"
 
-  - title: "Behance"
-    icon: "fab fa-behance"
-    url: "http://behance.com"
 
 ### Footer
 footer:
