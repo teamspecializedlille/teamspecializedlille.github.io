@@ -4,3 +4,10 @@
 
 layout: home
 ---
+<div>
+  {% for team in site.data.team.team_members %}
+        dhkjzehkjdzehk
+      {{ team.name }}
+   
+  {% endfor %}
+</div>

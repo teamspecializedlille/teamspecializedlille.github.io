@@ -1,7 +1,7 @@
 import json
 import team_members
 
-team_path_file = 'data/team.json'
+team_path_file = '_data/team.json'
 
 class TeamMember:
     def __init__(self,name):

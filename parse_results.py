@@ -115,7 +115,7 @@ class ParseResults:
     
     def load_races_parsed(self):
         races_parsed = []
-        races_parsed_file = open("data/races_parsed.json", 'r')
+        races_parsed_file = open("_data/races_parsed.json", 'r')
         data = json.load(races_parsed_file)
         if (len(data['races_parsed']) > 0):
             for race in data['races_parsed']:
