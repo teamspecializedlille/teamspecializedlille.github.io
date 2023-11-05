@@ -51,6 +51,16 @@ class ParseResults:
             return val
         return int(val)
 
+    def is_team_member(self, sheet, line):
+        if ("TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value)):
+            return True
+        if (sheet.cell(line, column_result).value.lower() == "Ab".lower()):
+            member = sheet.cell(line, column_name).value
+            for (m in self.team):
+                if m["name"] == member:
+                    return True
+        return False
+
     def parse_results_race_sheet(self, workbook, sheet):
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
@@ -81,8 +91,8 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransB_riders += 1
                 elif (self.race_cat == "Vétérans C"):
                     self.results[hash_race].VTTVeteransC_riders += 1
-            if ("TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value)):
-
+            #if ("TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value)):
+            if (is_team_member(sheet, line)):
                 member = sheet.cell(line, column_name).value
                 if (member not in self.team):
                     self.team[member] = team_members.TeamMember(member)
@@ -285,7 +295,7 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2021, 2025)
+        x = range(2023, 2025)
 
         for n in x:
             myobj = {'saison': str(n)}
@@ -296,11 +306,11 @@ class ParseResults:
             #myobj = {'saison': str(2024)}
 
             #cross
-            r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
-            self.parse_race_payload(r)
+           # r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
+            #self.parse_race_payload(r)
             #vtt
-            r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
-            self.parse_race_payload(r)
+            #r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
+            #self.parse_race_payload(r)
             #road
             r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
             
