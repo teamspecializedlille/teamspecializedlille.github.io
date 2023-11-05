@@ -11,11 +11,11 @@ short_description:
 live_preview: https://bslthemes.com
 full_image: assets/img/works/single1.jpg
 info:
-  - label: Year
-    value: 2022
+  - label: Date de naissance
+    value: 08/09/1994
 
-  - label: Technology
-    value: Figma, UI
+  - label: Catégorie 
+    value: 3ème
 
 description1:
   show: yes
