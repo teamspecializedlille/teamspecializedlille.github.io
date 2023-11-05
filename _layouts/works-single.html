@@ -95,6 +95,7 @@ layout: default
 					<h5>Route</h5>
 					<ul>
 					{% for team in site.data.team.team_members %}
+						<li>{{ team.name }}</li>
 						{%- if team.name == page.name -%}
 							{% for res in team.road %}
 								<li>{{ res.key }}</li>
