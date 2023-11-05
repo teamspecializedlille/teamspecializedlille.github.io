@@ -106,6 +106,19 @@ layout: default
 					{% endfor %}
 					</ul>
 					<h5>CX</h5>
+					<h5>Route</h5>
+					<ul>
+					{% for team in site.data.team.team_members %}
+						<li>{{ team.name }}</li>
+						{%- if team.name == page.name -%}
+							<li>dzedzedzeez</li>
+							{% for res in team.cx %}
+								<li>res1</li>
+								<li>{{ res.key }}</li>
+							{% endfor %}
+				  		{%- endif -%}
+					{% endfor %}
+					</ul>
 					<h5>VTT</h5>
 					{{ page.description1.text }}
 				</div>
