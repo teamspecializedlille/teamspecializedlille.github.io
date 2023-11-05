@@ -76,6 +76,12 @@ layout: default
 </div>
 {% endif %}
 
+{% for team in site.data.team.team_members %}
+	{%- if team.name == page.name -%}
+		{% assign team_people = team %}
+	{%- endif -%}
+{% endfor %}
+
 {% if page.description1.title != nil or page.description1.text1 != nil or page.description1.text2 != nil %}
 <!-- Section - Description -->
 <section class="section section-inner">
@@ -92,6 +98,7 @@ layout: default
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 				<div class="post-content">
+					{{ team.name }}
 					<h5>Route</h5>
 					<ul>
 					{% for team in site.data.team.team_members %}
@@ -109,9 +116,7 @@ layout: default
 					<h5>Route</h5>
 					<ul>
 					{% for team in site.data.team.team_members %}
-						<li>{{ team.name }}</li>
 						{%- if team.name == page.name -%}
-							<li>dzedzedzeez</li>
 							{% for res in team.cx %}
 								<li>res1</li>
 								<li>{{ res.[0] }}</li>
