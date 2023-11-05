@@ -97,7 +97,7 @@ layout: default
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 				<div class="post-content">
-					{%- if tteam_people.road.size > 0 -%}
+					{%- if team_people.road.size > 0 -%}
 					<h5>Route</h5>
 					<ul>
 						{% for res in team_people.road %}
@@ -105,7 +105,7 @@ layout: default
 						{% endfor %}
 					</ul>
 					{%- endif -%}
-					{%- if tteam_people.cx.size > 0 -%}
+					{%- if team_people.cx.size > 0 -%}
 					<h5>CX</h5>
 					<ul>
 						{% for res in team_people.cx %}
@@ -113,7 +113,7 @@ layout: default
 						{% endfor %}
 					</ul>
 					{%- endif -%}
-					{%- if tteam_people.vtt.size > 0 -%}
+					{%- if team_people.vtt.size > 0 -%}
 					<h5>VTT</h5>
 					<ul>
 						{% for res in team_people.vtt %}
