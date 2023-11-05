@@ -1,7 +1,7 @@
 import json
 import team_members
 
-team_path_file = 'data/sample.json'
+team_path_file = 'data/team.json'
 
 class TeamMember:
     def __init__(self,name):
@@ -44,6 +44,6 @@ def update_team_file(team):
         array.append(m.to_dict())
     data["team_members"] = array
     json_object = json.dumps(data,ensure_ascii=False)
-    with open("data/sample.json", "w", encoding='utf8') as outfile:
+    with open(team_path_file, "w", encoding='utf8') as outfile:
         outfile.write(json_object)
    
