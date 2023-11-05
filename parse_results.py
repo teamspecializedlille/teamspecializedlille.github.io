@@ -98,9 +98,11 @@ class ParseResults:
             return False
 
     def set_race_date(self,line):
+
         date = re.search(r"(.*)(\d\d\/\d\d\/\d\d\d\d)(.*)", line)
         if (date):
-            self.race_date = date.group(2)
+            date = re.search(r"(\d\d)\/(\d\d)\/(\d\d\d\d)", date.group(2))
+            self.race_date = date.group(3) + "/" + date.group(2) + "/" + date.group(1)
 
     def set_race_infos(self, line):
         
@@ -131,6 +133,7 @@ class ParseResults:
     
     def parse_race_payload(self, res):
         for line in res:
+            
             if "/" in line:
                 self.set_race_date(line)
             if "Classements.xls" in line:
@@ -155,7 +158,7 @@ class ParseResults:
         r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
         self.parse_race_payload(r)
         #road
-        r = requests.post('https://cyclismeufolep5962.fr/calResRoad.php',verify=False,data=myobj ).text.splitlines()
+        r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
         self.parse_race_payload(r)
 
         self.save_races_parsed(self.races_parsed)
