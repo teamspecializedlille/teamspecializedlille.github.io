@@ -19,7 +19,7 @@ info:
 
 description1:
   show: yes
-  title: Project Goal
+  title: Résultats
   text: "<p>Aldzdzedzedzedzedezdzedezdzedzeleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi.</p>
   <p>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</p>"
 
@@ -28,9 +28,6 @@ description1:
 #  - assets/img/blog/blog8.jpg
 #  - assets/img/blog/blog6.jpg
 
-description2:
-  title: Project Result
-  text: "<p>Aliquam a sapien diamdzedezdzeddezmus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</p>"
 
 
 ---
