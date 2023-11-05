@@ -109,6 +109,8 @@ layout: default
 					<h5>CX</h5>
 					<ul>
 						{% assign test = team_people.cx | sort %}
+						DEBUG : {{  team_people.cx | inspect }}
+						
 
 						{% for res in test %}
 						<li>{{ res.[0] }} - {{ res.[1] }}</li>
