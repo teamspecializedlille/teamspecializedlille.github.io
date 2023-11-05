@@ -114,7 +114,7 @@ layout: default
 						DEBUG : {{  test | reversed | inspect }}
 						
 
-						{% for res in test %}
+						{% for res in test.reversed %}
 						<li>{{ res.[0] }} - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
