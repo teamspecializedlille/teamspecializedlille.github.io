@@ -175,6 +175,7 @@ class ParseResults:
                 outfile.write("\n### Cadets\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+            self.results = {}
             
 
 #self.one = {}
