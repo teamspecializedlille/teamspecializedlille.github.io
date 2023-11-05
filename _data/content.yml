@@ -17,7 +17,7 @@ hero:
   button2:
     label: "My Skills"
     link: "#skills-section"
-  bg_title: "Web Developer"
+  bg_title: "Team"
   info:
     - num: "4"
       value: "Ans de bonne <strong>humeur</strong>"
@@ -273,8 +273,8 @@ contacts:
 ### Portfolio [ portfolio ]
 #items generates from dir /_works/*
 portfolio:
-  title: "Portfolio"
-  subtitle: "my <b>Cases</b>"
+  title: "Team"
+  subtitle: ""
   bg_title: "Portfolio"
   button:
     link: "works/"
