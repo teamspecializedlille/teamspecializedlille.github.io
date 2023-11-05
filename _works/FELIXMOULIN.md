@@ -2,10 +2,10 @@
 # preview details
 layout: works-single
 title: Félix Moulin
-category: UI UX Design
+category: CX Route
 category_slug: cx road
 image: assets/img/works/work4.jpeg
-short_description: felix desc
+short_description: 
 
 # full details
 live_preview: https://bslthemes.com

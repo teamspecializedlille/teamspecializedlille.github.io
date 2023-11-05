@@ -27,7 +27,7 @@ ui_text:
   send_message:         "Send Message"
   accept_terms:         "* Accept the terms and conditions."
   thanks_message:       "Thanks, your message is sent successfully."
-  see_project:          "View Project"
+  see_project:          "Plus d'infos"
   new:                  "new"
   search:               "Search ..."
   recent_posts:         "Recent Posts"
