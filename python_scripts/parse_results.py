@@ -54,7 +54,7 @@ class ParseResults:
     def parse_results_race_sheet(self, workbook, sheet):
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
-        #print("Catégorie : " + self.race_cat)
+        print("Catégorie :" + self.race_cat+"|")
         hash_race = self.get_hash_race()
         if (hash_race not in self.results):
             self.results[hash_race] = race_results.RaceResults(hash_race)
@@ -71,7 +71,18 @@ class ParseResults:
                     self.results[hash_race].cadet_riders += 1
                 elif (self.race_cat == "Féminines"):
                    self.results[hash_race].fem_riders += 1
+                elif (self.race_cat == "Séniors A"):
+                    self.results[hash_race].VTTSeniorsA_riders += 1
+                elif (self.race_cat == "Seniors B"):
+                    self.results[hash_race].VTTSeniorsB_riders += 1
+                elif (self.race_cat == "Vétérans A"):
+                    self.results[hash_race].VTTVeteransA_riders += 1
+                elif (self.race_cat == "Vétérans B"):
+                    self.results[hash_race].VTTVeteransB_riders += 1
+                elif (self.race_cat == "Vétérans C"):
+                    self.results[hash_race].VTTVeteransC_riders += 1
             if ("TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value)):
+
                 member = sheet.cell(line, column_name).value
                 if (member not in self.team):
                     self.team[member] = team_members.TeamMember(member)
@@ -83,8 +94,6 @@ class ParseResults:
                     self.team[member].vtt[hash_individual] = self.return_result(sheet,line)
                 elif (self.race_type == "Route"):
                     self.team[member].road[hash_individual] = self.return_result(sheet,line)
-
-                
                 if (self.race_cat == "1ère"):
                     self.results[hash_race].one[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "2ème"):
@@ -95,11 +104,19 @@ class ParseResults:
                     self.results[hash_race].cadet[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "Féminines"):
                     self.results[hash_race].fem[member] = self.return_result(sheet,line)
+                elif (self.race_cat == "Seniors A"):
+                    self.results[hash_race].VTTSeniorsA[member] = self.return_result(sheet,line)
+                elif (self.race_cat == "Seniors B"):
+                    self.results[hash_race].VTTSeniorsB[member] = self.return_result(sheet,line)
+                elif (self.race_cat == "Vétérans A"):
+                    self.results[hash_race].VTTVeteransA[member] = self.return_result(sheet,line)
+                elif (self.race_cat == "Vétérans B"):
+                    self.results[hash_race].VTTVeteransB[member] = self.return_result(sheet,line)
+                elif (self.race_cat == "Vétérans C"):
+                    self.results[hash_race].VTTVeteransC[member] = self.return_result(sheet,line)
 
-       
 
     def parse_results_race(self, file_url):
-        #print(file_url)
         r = requests.get(file_url, verify=False)
         if (r.status_code == 200):
             output = open('test.xls', 'wb')
@@ -151,12 +168,13 @@ class ParseResults:
     
     def create_post_race(self):
         hash =  self.get_hash_race()
-        print(hash)
-        print(len(self.results))
-        if (len(self.results) == 0 or (len(self.results[ hash].one.keys()) == 0 and len(self.results[ hash].two.keys())==0 and len(self.results[ hash].three.keys()) ==0  and len(self.results[ hash].fem.keys()) == 0  and len(self.results[ hash].cadet.keys())==0)):
+        if (len(self.results) == 0 ):
+            return
+        if (len(self.results[ hash].one.keys()) == 0 and len(self.results[ hash].two.keys())==0 and len(self.results[ hash].three.keys()) ==0  and len(self.results[ hash].fem.keys()) == 0  
+            and len(self.results[ hash].cadet.keys())==0  and len(self.results[ hash].VTTSeniorsA.keys())==0  and len(self.results[ hash].VTTSeniorsB.keys())==0  and len(self.results[ hash].VTTVeteransA.keys())==0  
+            and len(self.results[ hash].VTTVeteransB.keys())==0 and len(self.results[ hash].VTTVeteransC.keys())==0  ):
             return
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(" ", "-") + ".md"
-        print(file_name)
         with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
             outfile.write("---\n")
             outfile.write("layout: post\n")
@@ -182,7 +200,7 @@ class ParseResults:
             
             result_to_display =  self.results[ hash].two
             if (len(result_to_display.keys()) > 0):
-                outfile.write("\n### 2ère Catégorie\n")
+                outfile.write("\n### 2ème Catégorie\n")
                 outfile.write( str(self.results[hash].two_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
@@ -190,7 +208,7 @@ class ParseResults:
             
             result_to_display =  self.results[ hash].three
             if (len(result_to_display.keys()) > 0):
-                outfile.write("\n### 3ère Catégorie\n")
+                outfile.write("\n### 3ème Catégorie\n")
                 outfile.write( str(self.results[hash].three_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
@@ -206,13 +224,45 @@ class ParseResults:
             result_to_display =  self.results[ hash].cadet
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### Cadets\n")
-                outfile.write( str(self.results[hash].fem_riders) + " participants\n")
+                outfile.write( str(self.results[hash].cadet_riders) + " participants\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            result_to_display =  self.results[ hash].VTTSeniorsA
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### VTT Sénior A\n")
+                outfile.write( str(self.results[hash].VTTSeniorsA_riders) + " participants\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            result_to_display =  self.results[ hash].VTTSeniorsB
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### VTT Sénior B\n")
+                outfile.write( str(self.results[hash].VTTSeniorsB_riders) + " participants\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            result_to_display =  self.results[ hash].VTTVeteransA
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### VTT Vétérans A\n")
+                outfile.write( str(self.results[hash].VTTVeteransA_riders) + " participants\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            result_to_display =  self.results[ hash].VTTVeteransB
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### VTT Vétérans B\n")
+                outfile.write( str(self.results[hash].VTTVeteransB_riders) + " participants\n")
+            for line in result_to_display.keys():
+                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            result_to_display =  self.results[ hash].VTTVeteransC
+            if (len(result_to_display.keys()) > 0):
+                outfile.write("\n### VTT Vétérans C\n")
+                outfile.write( str(self.results[hash].VTTVeteransC_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
             self.results = {}
-            
-
-
 
     def parse_race_payload(self, res):
         for line in res:
@@ -223,7 +273,7 @@ class ParseResults:
                 file = re.search(r"(.*)='(.*)'(.*)", line).group(2)
                 self.set_race_infos(file)
                 
-                if (file not in  self.races_parsed):
+                if (file not in  self.races_parsed or True):
                     url = base + file
                     if (self.parse_results_race(url)):
                         self.races_parsed.append(file)
@@ -237,8 +287,8 @@ class ParseResults:
 
         myobj = {'saison': '2024'}
         #cross
-        r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
-        self.parse_race_payload(r)
+       # r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
+        #self.parse_race_payload(r)
         #vtt
         r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
         self.parse_race_payload(r)

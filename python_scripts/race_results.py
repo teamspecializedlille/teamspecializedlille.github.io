@@ -16,4 +16,14 @@ class RaceResults:
         self.fem = {}
         self.fem_riders = 0;
        
-        
+        self.VTTSeniorsA_riders = 0;
+        self.VTTSeniorsB_riders = 0;
+        self.VTTVeteransA_riders = 0;
+        self.VTTVeteransB_riders = 0;
+        self.VTTVeteransC_riders = 0;
+
+        self.VTTSeniorsA= {}
+        self.VTTSeniorsB= {}
+        self.VTTVeteransA= {}
+        self.VTTVeteransB= {}
+        self.VTTVeteransC= {}
