@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - RAISMES
+title: Cyclo Cross - RAISMES - 2024
 date: 2023-10-08
 category: Cyclo Cross
 tags: Cyclo Cross

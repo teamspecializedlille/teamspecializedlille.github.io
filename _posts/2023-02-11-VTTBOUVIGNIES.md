@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - BOUVIGNIES
+title: VTT - BOUVIGNIES - 2023
 date: 2023-02-11
 category: VTT
 tags: VTT

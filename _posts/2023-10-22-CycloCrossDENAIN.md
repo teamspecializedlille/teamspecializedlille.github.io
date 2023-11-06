@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - DENAIN
+title: Cyclo Cross - DENAIN - 2024
 date: 2023-10-22
 category: Cyclo Cross
 tags: Cyclo Cross

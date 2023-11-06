@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - HALLUIN
+title: VTT - HALLUIN - 2024
 date: 2023-10-29
 category: VTT
 tags: VTT

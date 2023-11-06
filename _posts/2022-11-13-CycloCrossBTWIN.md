@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - BTWIN
+title: Cyclo Cross - BTWIN - 2023
 date: 2022-11-13
 category: Cyclo Cross
 tags: Cyclo Cross

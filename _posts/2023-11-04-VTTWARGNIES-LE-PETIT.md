@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - WARGNIES LE PETIT
+title: VTT - WARGNIES LE PETIT - 2024
 date: 2023-11-04
 category: VTT
 tags: VTT

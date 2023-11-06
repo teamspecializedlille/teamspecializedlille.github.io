@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - BTWIN VILLAGE LILLE
+title: VTT - BTWIN VILLAGE LILLE - 2020
 date: 2019-11-03
 category: VTT
 tags: VTT

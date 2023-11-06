@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - BTWIN VILLAGE LILLE
+title: VTT - BTWIN VILLAGE LILLE - 2023
 date: 2022-11-13
 category: VTT
 tags: VTT

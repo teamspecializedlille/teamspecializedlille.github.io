@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - BAILLEUL
+title: Cyclo Cross - BAILLEUL - 2023
 date: 2022-10-09
 category: Cyclo Cross
 tags: Cyclo Cross

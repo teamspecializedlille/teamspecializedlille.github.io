@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - HALLUIN
+title: Cyclo Cross - HALLUIN - 2024
 date: 2023-10-29
 category: Cyclo Cross
 tags: Cyclo Cross

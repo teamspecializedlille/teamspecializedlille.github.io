@@ -191,7 +191,7 @@ class ParseResults:
         with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
             outfile.write("---\n")
             outfile.write("layout: post\n")
-            outfile.write("title: " + self.race_type + " - " + self.race_name + "\n")
+            outfile.write("title: " + self.race_type + " - " + self.race_name + " - " + self.race_year + "\n")
             outfile.write("date: " + self.race_date.replace("/", "-") + "\n")
             outfile.write("category: " + self.race_type + "\n")
             outfile.write("tags: " + self.race_type + "\n")
@@ -298,7 +298,7 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2019, 2020)
+        x = range(2026, 2026)
 
         for n in x:
             myobj = {'saison': str(n)}

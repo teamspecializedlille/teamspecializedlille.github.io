@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - AUCHY LES MINES
+title: VTT - AUCHY LES MINES - 2024
 date: 2023-11-05
 category: VTT
 tags: VTT

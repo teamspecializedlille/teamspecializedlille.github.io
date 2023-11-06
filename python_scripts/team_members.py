@@ -16,9 +16,9 @@ class TeamMember:
         res = {}
         res["name"] = self.name
         res["course"] = self.course
-        res["cx"] = self.cx
-        res["vtt"] = self.vtt
-        res["road"] = self.road
+        res["cx"] =  dict(sorted(self.cx.items(), reverse=True))
+        res["vtt"] = dict(sorted(self.vtt.items(), reverse=True))
+        res["road"] = dict(sorted(self.road.items(), reverse=True))
         return res
 
 def load_team_from_file(team: dict[str, TeamMember]) -> dict[str, TeamMember]:

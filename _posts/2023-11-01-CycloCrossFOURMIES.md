@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - FOURMIES
+title: Cyclo Cross - FOURMIES - 2024
 date: 2023-11-01
 category: Cyclo Cross
 tags: Cyclo Cross

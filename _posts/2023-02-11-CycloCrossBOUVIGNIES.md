@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - BOUVIGNIES
+title: Cyclo Cross - BOUVIGNIES - 2023
 date: 2023-02-11
 category: Cyclo Cross
 tags: Cyclo Cross

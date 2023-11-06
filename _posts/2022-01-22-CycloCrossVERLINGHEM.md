@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyclo Cross - VERLINGHEM
+title: Cyclo Cross - VERLINGHEM - 2022
 date: 2022-01-22
 category: Cyclo Cross
 tags: Cyclo Cross

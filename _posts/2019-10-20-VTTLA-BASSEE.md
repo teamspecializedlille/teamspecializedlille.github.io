@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VTT - LA BASSEE
+title: VTT - LA BASSEE - 2020
 date: 2019-10-20
 category: VTT
 tags: VTT
