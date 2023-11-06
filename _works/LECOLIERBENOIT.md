@@ -5,7 +5,7 @@ title: LECOLIER BENOIT
 name: LECOLIER BENOIT
 category: VTT Route
 category_slug: vtt road
-image: assets/img/works/work5.jpeg
+image: assets/img/team/LECOLIERBENOIT_1.JPG
 
 # full details
 live_preview: https://bslthemes.com
@@ -13,14 +13,14 @@ live_preview: https://bslthemes.com
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 00/00/2000
+    value: 15/09/1978
  #- label: Catégorie 
  #   value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/LECOLIERBENOIT_1.JPG
+  - assets/img/team/LECOLIERBENOIT_2.JPG
+  - assets/img/team/LECOLIERBENOIT_3.JPG
 
 
 ---

@@ -8,7 +8,6 @@ image: assets/img/blog/vtt.jpeg
 ---
 
 ### VTT Sénior A
-0 participants
 - DE GRAAL ROBIN : 2
 
 ### VTT Vétérans A

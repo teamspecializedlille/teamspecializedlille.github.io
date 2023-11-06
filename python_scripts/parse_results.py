@@ -69,11 +69,8 @@ class ParseResults:
 
     def scratch_enable(self, sheet):
         r = str(sheet.row(1))
-        print(str(r))
         if ("Tours"in r and  "Temps" in r):
-            print("ok")
             return True
-        print("ko")
         return False
     
     def parse_results_race_sheet(self, workbook, sheet):
@@ -139,27 +136,31 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransC[member] = self.return_result(sheet,line)
             member = sheet.cell(line, column_name).value
             if (member != "" and line > 1 and scratch_enable and str(type(member))== "<class 'str'>" ):
-                print("scratch")
                 if (sheet.cell(line, column_time).value == ""):
                     test = (40, 0, 0, 0, 38, 53)
                 else:
-                    test = xlrd.xldate.xldate_as_tuple(sheet.cell(line, column_time).value, sheet.book.datemode)
+                   
+
+                    print(member)
+                    print(hash_race)
+                    print(sheet.row(line))
+                 
+                    raw_time = sheet.cell(line, column_time).value
+                    print(raw_time)
+                    if (raw_time > 1):
+                        test = xlrd.xldate.xldate_as_tuple(raw_time, sheet.book.datemode)
+                    else:
+                        test = (40, 0, 0, 0, 38, 53)
+             
+                    
                 lap =  sheet.cell_value(line, column_lap)
-                if (lap == ""):
+                if (lap == "" or lap == "Déclassé"):
                     lap = 0
                 self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)), "lap": int(lap), "time" : test, "cat": self.race_cat}
 
     def sorted_algo(self, item):
-        print("sordted algo ")
-        print(item)
-        print(item[1])
         time = item[1].get("time", 0)[3]*60*60+item[1].get("time", 0)[4]*60+item[1].get("time", 0)[5]
-
         res=  (item[1].get("lap", 0)*-1 ,  time)
-        print(res)
-        print(type(res))
-        print(type(time))
-        print(type(item[1].get("lap", 0)*-1))
         return res
 
     def parse_results_race(self, file_url):
@@ -177,9 +178,6 @@ class ParseResults:
             hash_race = self.get_hash_race()
 
             if (len(self.results[hash_race].scratch)> 0 ):
-
-                print(self.results[hash_race].scratch)
-
                 self.results[hash_race].scratch = sorted(self.results[hash_race].scratch.items(), key=self.sorted_algo, reverse=False)
                 for res in self.results[hash_race].scratch:
                     print(res[1])
@@ -359,7 +357,7 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2023, 2024)
+        x = range(2020, 2025)
 
         for n in x:
             myobj = {'saison': str(n)}

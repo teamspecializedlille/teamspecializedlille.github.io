@@ -4,5 +4,6 @@ _site
 .jekyll-metadata
 vendor
 __pycache__/
+python_scripts/__pycache__/
 test.xls
 Gemfile.lock
