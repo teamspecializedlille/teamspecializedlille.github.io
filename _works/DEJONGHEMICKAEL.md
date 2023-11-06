@@ -5,7 +5,7 @@ title: DEJONGHE MICKAEL
 name: DEJONGHE MICKAEL
 category:  Route
 category_slug:  road
-#image: assets/img/works/work5.jpeg
+image: assets/img/team/DEJONGHEMICKAEL_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
