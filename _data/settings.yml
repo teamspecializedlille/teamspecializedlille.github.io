@@ -36,10 +36,10 @@ portfolio:
   layout: "list" # select works layout options: "Grid" or "List"
   filters:
     - name: "Route"
-      slug: "route"
+      slug: "road"
 
     - name: "Cyclo cross"
-      slug: "cs"
+      slug: "cx"
 
     - name: "VTT"
       slug: "vtt"
