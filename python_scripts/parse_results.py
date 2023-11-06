@@ -8,9 +8,11 @@ import json
 
 
 base = "https://cyclismeufolep5962.fr/"
+column_result = 0
 column_name = 1
 column_team = 2
-column_result = 0
+column_lap = 3
+column_time = 4
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
@@ -32,6 +34,7 @@ class ParseResults:
         self.race_type = ""
         self.race_year = ""
         self.races_parsed = []
+        self.scratch = {}
 
     def display_race_infos(self):
         print("__________________________________________________________________________")
@@ -69,10 +72,10 @@ class ParseResults:
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
         hash_race = self.get_hash_race()
+        print(hash_race)
         if (hash_race not in self.results):
             self.results[hash_race] = race_results.RaceResults(hash_race)
         for line in range(sheet.nrows):
-            #print(sheet.cell(line, column_team).value)
             if (str(sheet.cell(line, column_team).value) != ""):
                 if (self.race_cat == "1ère"):
                     self.results[hash_race].one_riders += 1
@@ -94,7 +97,6 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransB_riders += 1
                 elif (self.race_cat == "Vétérans C"):
                     self.results[hash_race].VTTVeteransC_riders += 1
-            #if ("TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value)):
             if (self.is_team_member(sheet, line)):
                 member = sheet.cell(line, column_name).value
                 if (member not in self.team):
@@ -127,20 +129,60 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransB[member] = self.return_result(sheet,line)
                 elif (self.race_cat == "Vétérans C"):
                     self.results[hash_race].VTTVeteransC[member] = self.return_result(sheet,line)
+            member = sheet.cell(line, column_name).value
+            if (member != "" and line > 1):
+                print("|"+str(sheet.cell(line, column_time).value)+"|")
+                if (sheet.cell(line, column_time).value == ""):
+                    test = (40, 0, 0, 0, 38, 53)
+                else:
+                    test = xlrd.xldate.xldate_as_tuple(sheet.cell(line, column_time).value, sheet.book.datemode)
+                lap =  sheet.cell_value(line, column_lap)
+                if (lap == ""):
+                    lap = 0
+                self.scratch[member] = {"team": sheet.cell_value(line, column_team), "lap": lap, "time" : test, "cat": self.race_cat}
+
+    def get_relevant_skills(self, item):
+        """Get the sum of Python and JavaScript skill"""
+        print("jhdkjezhdjzhe")
+        print(item)
+        time = item[1].get("time", 0)[3]*60*60+item[1].get("time", 0)[4]*60+item[1].get("time", 0)[5]
+        res =  item[1].get("lap", 0) + time
+        print(res)
+        return (item[1].get("lap", 0)*-1 ,  time)
+        return res
+        # Return default value that is equivalent to no skill
+        return skills.get("python", 0) + skills.get("js", 0)
 
 
     def parse_results_race(self, file_url):
         r = requests.get(file_url, verify=False)
         if (r.status_code == 200):
             output = open('test.xls', 'wb')
-            output.write(r.content)
-
+            output.write(r.content)            
+            
+            self.scratch = {}
             workbook = xlrd.open_workbook('test.xls')
             self.parse_results_race_sheet( workbook, 0)
             self.parse_results_race_sheet( workbook, 1)
             self.parse_results_race_sheet( workbook, 2)
             self.parse_results_race_sheet( workbook, 3)
             self.parse_results_race_sheet( workbook, 4)
+            print(self.scratch)
+
+            sorted_list = sorted(self.scratch.items(), key=self.get_relevant_skills, reverse=False)
+            print("prepare")
+            for res in sorted_list:
+                print(res[1])
+                print(res[1].get("time"))
+                res[1]["time"] = (str(res[1]["time"][3]) +":"+str(res[1]["time"][4])+":" +str(res[1]["time"][5]) )
+
+            data = {}
+            data["scratch"] = sorted_list
+            json_object = json.dumps(data,ensure_ascii=False)
+            with open("../_data/test.json", "w", encoding='utf8') as outfile:
+                outfile.write(json_object)
+
+            exit(0)
             return True
         else:
             return False
@@ -298,7 +340,7 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2026, 2026)
+        x = range(2023, 2024)
 
         for n in x:
             myobj = {'saison': str(n)}

@@ -27,3 +27,6 @@ class RaceResults:
         self.VTTVeteransA= {}
         self.VTTVeteransB= {}
         self.VTTVeteransC= {}
+
+        self.scratch = {}
+
