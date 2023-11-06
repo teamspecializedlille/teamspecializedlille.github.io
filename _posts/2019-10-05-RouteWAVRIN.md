@@ -15,3 +15,6 @@ image: assets/img/blog/road.jpeg
 ### 3ème Catégorie
 45 participants
 - THEIL MICKAEL : 6
+
+### Scratch
+0 participants

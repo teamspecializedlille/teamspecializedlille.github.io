@@ -18,3 +18,6 @@ image: assets/img/blog/road.jpeg
 ### 3ème Catégorie
 64 participants
 - VERHULST ERIC : 45
+
+### Scratch
+0 participants

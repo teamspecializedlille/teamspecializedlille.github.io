@@ -14,3 +14,6 @@ image: assets/img/blog/road.jpeg
 ### 3ème Catégorie
 38 participants
 - LECLERCQ CLEMENT : AB
+
+### Scratch
+0 participants

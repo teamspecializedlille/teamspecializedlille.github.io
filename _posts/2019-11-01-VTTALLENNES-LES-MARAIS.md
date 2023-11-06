@@ -10,3 +10,6 @@ image: assets/img/blog/vtt.jpeg
 ### VTT Vétérans B
 12 participants
 - BOONE ERIC : 11
+
+### Scratch
+0 participants

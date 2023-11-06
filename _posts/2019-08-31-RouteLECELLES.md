@@ -10,3 +10,6 @@ image: assets/img/blog/road.jpeg
 ### 1ère Catégorie
 33 participants
 - DEFOSSE HERVE : AB
+
+### Scratch
+0 participants

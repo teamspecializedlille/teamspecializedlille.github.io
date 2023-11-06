@@ -14,3 +14,6 @@ image: assets/img/blog/road.jpeg
 ### 2ème Catégorie
 25 participants
 - BOONE NICOLAS : 3
+
+### Scratch
+0 participants

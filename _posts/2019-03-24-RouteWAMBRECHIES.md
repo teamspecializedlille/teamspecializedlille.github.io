@@ -22,3 +22,6 @@ image: assets/img/blog/road.jpeg
 ### 3ème Catégorie
 66 participants
 - MOLKA MICHAEL : 27
+
+### Scratch
+0 participants

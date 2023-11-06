@@ -12,3 +12,6 @@ image: assets/img/blog/road.jpeg
 - LECOLIER STEPHANE : 7
 - DUFOUR JULIEN : 13
 - DEFOSSE HERVE : AB
+
+### Scratch
+0 participants

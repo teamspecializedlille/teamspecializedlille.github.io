@@ -14,3 +14,6 @@ image: assets/img/blog/road.jpeg
 ### 2ème Catégorie
 50 participants
 - DARQUE JEAN FRANCOIS : 24
+
+### Scratch
+0 participants

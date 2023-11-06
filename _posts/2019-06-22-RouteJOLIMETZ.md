@@ -10,3 +10,6 @@ image: assets/img/blog/road.jpeg
 ### 1ère Catégorie
 24 participants
 - DUFOUR JULIEN : 11
+
+### Scratch
+0 participants

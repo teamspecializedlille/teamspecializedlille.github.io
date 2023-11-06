@@ -34,7 +34,6 @@ class ParseResults:
         self.race_type = ""
         self.race_year = ""
         self.races_parsed = []
-        self.scratch = {}
 
     def display_race_infos(self):
         print("__________________________________________________________________________")
@@ -68,11 +67,20 @@ class ParseResults:
                     return True
         return False
 
+    def scratch_enable(self, sheet):
+        r = str(sheet.row(1))
+        print(str(r))
+        if ("Tours"in r and  "Temps" in r):
+            print("ok")
+            return True
+        print("ko")
+        return False
+    
     def parse_results_race_sheet(self, workbook, sheet):
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
         hash_race = self.get_hash_race()
-        print(hash_race)
+        scratch_enable = self.scratch_enable(sheet)
         if (hash_race not in self.results):
             self.results[hash_race] = race_results.RaceResults(hash_race)
         for line in range(sheet.nrows):
@@ -130,8 +138,8 @@ class ParseResults:
                 elif (self.race_cat == "Vétérans C"):
                     self.results[hash_race].VTTVeteransC[member] = self.return_result(sheet,line)
             member = sheet.cell(line, column_name).value
-            if (member != "" and line > 1):
-                print("|"+str(sheet.cell(line, column_time).value)+"|")
+            if (member != "" and line > 1 and scratch_enable and str(type(member))== "<class 'str'>" ):
+                print("scratch")
                 if (sheet.cell(line, column_time).value == ""):
                     test = (40, 0, 0, 0, 38, 53)
                 else:
@@ -139,20 +147,20 @@ class ParseResults:
                 lap =  sheet.cell_value(line, column_lap)
                 if (lap == ""):
                     lap = 0
-                self.scratch[member] = {"team": sheet.cell_value(line, column_team), "lap": lap, "time" : test, "cat": self.race_cat}
+                self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)), "lap": int(lap), "time" : test, "cat": self.race_cat}
 
-    def get_relevant_skills(self, item):
-        """Get the sum of Python and JavaScript skill"""
-        print("jhdkjezhdjzhe")
+    def sorted_algo(self, item):
+        print("sordted algo ")
         print(item)
+        print(item[1])
         time = item[1].get("time", 0)[3]*60*60+item[1].get("time", 0)[4]*60+item[1].get("time", 0)[5]
-        res =  item[1].get("lap", 0) + time
-        print(res)
-        return (item[1].get("lap", 0)*-1 ,  time)
-        return res
-        # Return default value that is equivalent to no skill
-        return skills.get("python", 0) + skills.get("js", 0)
 
+        res=  (item[1].get("lap", 0)*-1 ,  time)
+        print(res)
+        print(type(res))
+        print(type(time))
+        print(type(item[1].get("lap", 0)*-1))
+        return res
 
     def parse_results_race(self, file_url):
         r = requests.get(file_url, verify=False)
@@ -160,29 +168,26 @@ class ParseResults:
             output = open('test.xls', 'wb')
             output.write(r.content)            
             
-            self.scratch = {}
             workbook = xlrd.open_workbook('test.xls')
             self.parse_results_race_sheet( workbook, 0)
             self.parse_results_race_sheet( workbook, 1)
             self.parse_results_race_sheet( workbook, 2)
             self.parse_results_race_sheet( workbook, 3)
             self.parse_results_race_sheet( workbook, 4)
-            print(self.scratch)
+            hash_race = self.get_hash_race()
 
-            sorted_list = sorted(self.scratch.items(), key=self.get_relevant_skills, reverse=False)
-            print("prepare")
-            for res in sorted_list:
-                print(res[1])
-                print(res[1].get("time"))
-                res[1]["time"] = (str(res[1]["time"][3]) +":"+str(res[1]["time"][4])+":" +str(res[1]["time"][5]) )
+            if (len(self.results[hash_race].scratch)> 0 ):
 
-            data = {}
-            data["scratch"] = sorted_list
-            json_object = json.dumps(data,ensure_ascii=False)
-            with open("../_data/test.json", "w", encoding='utf8') as outfile:
-                outfile.write(json_object)
+                print(self.results[hash_race].scratch)
 
-            exit(0)
+                self.results[hash_race].scratch = sorted(self.results[hash_race].scratch.items(), key=self.sorted_algo, reverse=False)
+                for res in self.results[hash_race].scratch:
+                    print(res[1])
+                    print(res[1].get("time"))
+                    res[1]["time"] = (str(res[1]["time"][3]) +":"+str(res[1]["time"][4])+":" +str(res[1]["time"][5]) )
+
+    
+
             return True
         else:
             return False
@@ -317,6 +322,21 @@ class ParseResults:
                 outfile.write( str(self.results[hash].VTTVeteransC_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+
+            nb_line = 1
+            if (len(self.results[ hash].VTTVeteransC.keys()) > 0 or  len(self.results[ hash].VTTVeteransB.keys()) > 0 or  len(self.results[ hash].VTTVeteransA.keys()) > 0 or  len(self.results[ hash].VTTSeniorsB.keys()) > 0 or  
+                len(self.results[ hash].VTTSeniorsA.keys()) > 0 or  len(self.results[ hash].one.keys()) > 0 or  len(self.results[ hash].two.keys()) > 0 or  len(self.results[ hash].three.keys()) > 0 or  len(self.results[ hash].cadet.keys()) > 0 or  
+                len(self.results[ hash].fem.keys()) > 0 and self.results[ hash].scratch.keys() > 0):
+                outfile.write("\n### Scratch\n")
+                outfile.write( str(len(self.results[hash].scratch))+ " participants\n")
+                for line in self.results[ hash].scratch:
+                    print(line)
+                    if (line[1]["team"] == "TEAM SPECIALIZED LILLE"):
+                        outfile.write(str(nb_line)+". **" + line[0] + " - " + line[1]["team"] + " - " + str(line[1]["lap"])  + " - " + line[1]["time"] + " - " + line[1]["cat"]+"**\n")
+                    else:
+                        outfile.write(str(nb_line)+". " + line[0] + " - " + line[1]["team"] + " - " + str(line[1]["lap"])  + " - " + line[1]["time"] + " - " + line[1]["cat"]+"\n")
+
+                    nb_line += 1
             self.results = {}
 
     def parse_race_payload(self, res):
@@ -333,7 +353,6 @@ class ParseResults:
                     if (self.parse_results_race(url)):
                         self.races_parsed.append(file)
                         self.display_race_infos()
-                        print(self.results)
                         self.create_post_race()
 
 
