@@ -275,7 +275,7 @@ contacts:
 portfolio:
   title: "Team"
   subtitle: ""
-  bg_title: "Portfolio"
+  bg_title: "Team"
   button:
     link: "works/"
     label: "View More"
