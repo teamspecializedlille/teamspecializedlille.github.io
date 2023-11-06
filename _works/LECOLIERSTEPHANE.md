@@ -5,7 +5,7 @@ title: LECOLIER STEPHANE
 name: LECOLIER STEPHANE
 category: CX Route
 category_slug: cx road
-image: assets/img/works/work5.jpeg
+image: assets/img/team/LECOLIERSTEPHANE_1.jpg
 
 # full details
 live_preview: https://bslthemes.com
@@ -13,14 +13,13 @@ live_preview: https://bslthemes.com
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 00/00/2000
+    value: 10/10/1974
  #- label: Catégorie 
  #   value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
-
+  - assets/img/team/LECOLIERSTEPHANE_1.jpg
+  - assets/img/team/LECOLIERSTEPHANE_2.jpg
+  - assets/img/team/LECOLIERSTEPHANE_3.jpg
 
 ---
