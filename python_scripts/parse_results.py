@@ -136,7 +136,7 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransC[member] = self.return_result(sheet,line)
             member = sheet.cell(line, column_name).value
             if (member != "" and line > 1 and scratch_enable and str(type(member))== "<class 'str'>" ):
-                if (sheet.cell(line, column_time).value == ""):
+                if (sheet.cell(line, column_time).value == "" or ):
                     test = (40, 0, 0, 0, 38, 53)
                 else:
                    
@@ -148,7 +148,10 @@ class ParseResults:
                     raw_time = sheet.cell(line, column_time).value
                     print(raw_time)
                     if (raw_time > 1):
-                        test = xlrd.xldate.xldate_as_tuple(raw_time, sheet.book.datemode)
+                        try:
+                            test = xlrd.xldate.xldate_as_tuple(raw_time, sheet.book.datemode)
+                        except Exception:
+                            test = (40, 0, 0, 0, 38, 53)
                     else:
                         test = (40, 0, 0, 0, 38, 53)
              
