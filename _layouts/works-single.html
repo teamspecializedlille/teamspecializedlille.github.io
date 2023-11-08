@@ -110,10 +110,8 @@ layout: default
 					<h5>CX</h5>
 					<ul>
 						{% for res in team_people.cx  %}
-						<li>{{ res.[0] }} - {{ res.[1] }}</li>
-						{% endfor %}
-						{% for res in test2 %}
-						<li>{{ res.[0] }} - {{ res.[1] }}</li>
+							{% assign split_race = res.[0] | split: "|" %}
+							<li><a href="/cyclo%20cross/{{ split_race[0] | append: '/CycloCross' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
 					{%- endif -%}
@@ -121,7 +119,8 @@ layout: default
 					<h5>VTT</h5>
 					<ul>
 						{% for res in team_people.vtt %}
-						<li>{{ res.[0] }} - {{ res.[1] }}</li>
+							{% assign split_race = res.[0] | split: "|" %}
+							<li><a href="/vtt/{{ split_race[0] | append: '/VTT' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
 					{%- endif -%}
