@@ -328,6 +328,11 @@ class ParseResults:
         outfile.write("| Place | Nom | Team | Tours | Catégorie | Temps |\n")
         outfile.write("|---|---|---|---|---|---|\n")
 
+    def print_line_table(self, outfile, bold, *arg):
+        outfile.write("| ")
+        for item in arg:
+            outfile.write(item + " | ")
+
     def print_scratch_results(self,outfile, hash):
         nb_line = 1
         if (len(self.results[ hash].VTTVeteransC.keys()) > 0 or  len(self.results[ hash].VTTVeteransB.keys()) > 0 or  len(self.results[ hash].VTTVeteransA.keys()) > 0 or  len(self.results[ hash].VTTSeniorsB.keys()) > 0 or  
@@ -339,10 +344,11 @@ class ParseResults:
 
 
             for line in self.results[ hash].scratch:
-                #if (line[1]["team"] == "TEAM SPECIALIZED LILLE"):
-                #    outfile.write(str(nb_line)+". **" + line[0] + " - " + line[1]["team"] + " - " + str(line[1]["lap"])  + " - " + line[1]["time"] + " - " + line[1]["cat"]+"**\n")
-                #else:
-                outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
+                if (line[1]["team"] == "TEAM SPECIALIZED LILLE"):
+                    outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
+                else:
+                    self.print_line_table(outfile, False, str(nb_line), line[0], line[1]["team"], line[1]["lap"],line[1]["cat"],line[1]["time"])
+                    #outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
 
                 nb_line += 1
 
