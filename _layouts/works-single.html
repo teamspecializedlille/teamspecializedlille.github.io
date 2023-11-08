@@ -102,7 +102,7 @@ layout: default
 					<ul>
 						{% for res in team_people.road %}
 							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/route/{{ split_race[0] | append: 'route' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+							<li><a href="/route/{{ split_race[0] | append: '/route' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
 					{%- endif -%}
