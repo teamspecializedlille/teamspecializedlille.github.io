@@ -13,3 +13,6 @@ image: assets/img/blog/vtt.jpeg
 
 ### Scratch
 0 participants
+
+| Place | Nom | Team | Tours | Catégorie | Temps |
+|---|---|---|---|---|---|
