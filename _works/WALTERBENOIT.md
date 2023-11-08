@@ -13,7 +13,7 @@ live_preview: https://bslthemes.com
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 12/05/1999
+    value: 12/05/1979
  #- label: Catégorie 
  #   value: 3ème
 

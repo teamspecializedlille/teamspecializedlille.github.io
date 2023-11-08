@@ -136,7 +136,7 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransC[member] = self.return_result(sheet,line)
             member = sheet.cell(line, column_name).value
             if (member != "" and line > 1 and scratch_enable and str(type(member))== "<class 'str'>" ):
-                if (sheet.cell(line, column_time).value == "" or ):
+                if (sheet.cell(line, column_time).value == ""  ):
                     test = (40, 0, 0, 0, 38, 53)
                 else:
                    
@@ -147,18 +147,27 @@ class ParseResults:
                  
                     raw_time = sheet.cell(line, column_time).value
                     print(raw_time)
-                    if (raw_time > 1):
+                    if (isinstance(raw_time, str)):
+                        split_time = raw_time.split(":")
+                        test = (0, 0, 0, int(split_time[0]), int(split_time[1]), int(split_time[2]))
+                    else:
                         try:
                             test = xlrd.xldate.xldate_as_tuple(raw_time, sheet.book.datemode)
                         except Exception:
                             test = (40, 0, 0, 0, 38, 53)
-                    else:
-                        test = (40, 0, 0, 0, 38, 53)
-             
                     
-                lap =  sheet.cell_value(line, column_lap)
-                if (lap == "" or lap == "Déclassé"):
+                try:
+                    lap = int(sheet.cell_value(line, column_lap))
+                except Exception:
                     lap = 0
+                print("save")
+                print(str(sheet.cell_value(line, column_team)))
+                print(int(lap))
+                print(test)
+                print(self.race_cat)
+                print("------")
+                print(hash_race)
+                print(member)
                 self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)), "lap": int(lap), "time" : test, "cat": self.race_cat}
 
     def sorted_algo(self, item):
