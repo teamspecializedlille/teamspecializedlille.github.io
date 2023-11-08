@@ -5,7 +5,7 @@ title: MATTIOLI RONALD
 name: MATTIOLI RONALD
 category: CX Route VTT
 category_slug: cx road vtt
-image: assets/img/works/work5.jpeg
+image: assets/img/team/MATTIOLIRONALD_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -13,14 +13,13 @@ live_preview: https://bslthemes.com
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 00/00/2000
+    value: 28/12/1973
   #- label: Catégorie 
   #  value: 1ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
-
+  - assets/img/team/MATTIOLIRONALD_1.jpeg
+  - assets/img/team/MATTIOLIRONALD_2.jpeg
+  - assets/img/team/MATTIOLIRONALD_3.jpeg
 
 ---

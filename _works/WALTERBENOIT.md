@@ -5,7 +5,7 @@ title: WALTER BENOIT
 name: WALTER BENOIT
 category: VTT Route
 category_slug: vtt road
-image: assets/img/works/work5.jpeg
+image: assets/img/team/WALTERBENOIT_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -18,9 +18,9 @@ info:
  #   value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/WALTERBENOIT_1.jpeg
+  - assets/img/team/WALTERBENOIT_2.jpeg
+  - assets/img/team/WALTERBENOIT_3.jpeg
 
 
 ---

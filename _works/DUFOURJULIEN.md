@@ -5,7 +5,7 @@ title: DUFOUR JULIEN
 name: DUFOUR JULIEN
 category:  Route
 category_slug:  road
-image: assets/img/works/work5.jpeg
+image: assets/img/team/DUFOURJULIEN_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -13,14 +13,14 @@ live_preview: https://bslthemes.com
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 00/00/2000
+    value: 09/08/1988
  #- label: Catégorie 
  #   value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/DUFOURJULIEN_1.jpeg
+  - assets/img/team/DUFOURJULIEN_2.jpeg
+  - assets/img/team/DUFOURJULIEN_3.jpeg
 
 
 ---
