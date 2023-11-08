@@ -15,4 +15,3 @@ parser = parse_results.ParseResults(team, results)
 team = parser.generate_results()
 print(team)
 team_members.update_team_file(team)
-

@@ -266,8 +266,6 @@ class ParseResults:
                 outfile.write( str(self.results[hash].one_riders )+ " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
-
-            
             result_to_display =  self.results[ hash].two
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### 2ème Catégorie\n")
@@ -364,7 +362,6 @@ class ParseResults:
                     self.print_line_table(outfile, True, str(nb_line), line[0], line[1]["team"], line[1]["lap"],line[1]["cat"],line[1]["time"])
                 else:
                     self.print_line_table(outfile, False, str(nb_line), line[0], line[1]["team"], line[1]["lap"],line[1]["cat"],line[1]["time"])
-                    #outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
 
                 nb_line += 1
 
