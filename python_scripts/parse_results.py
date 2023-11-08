@@ -321,21 +321,31 @@ class ParseResults:
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
 
-            nb_line = 1
-            if (len(self.results[ hash].VTTVeteransC.keys()) > 0 or  len(self.results[ hash].VTTVeteransB.keys()) > 0 or  len(self.results[ hash].VTTVeteransA.keys()) > 0 or  len(self.results[ hash].VTTSeniorsB.keys()) > 0 or  
-                len(self.results[ hash].VTTSeniorsA.keys()) > 0 or  len(self.results[ hash].one.keys()) > 0 or  len(self.results[ hash].two.keys()) > 0 or  len(self.results[ hash].three.keys()) > 0 or  len(self.results[ hash].cadet.keys()) > 0 or  
-                len(self.results[ hash].fem.keys()) > 0 and self.results[ hash].scratch.keys() > 0):
-                outfile.write("\n### Scratch\n")
-                outfile.write( str(len(self.results[hash].scratch))+ " participants\n")
-                for line in self.results[ hash].scratch:
-                    print(line)
-                    if (line[1]["team"] == "TEAM SPECIALIZED LILLE"):
-                        outfile.write(str(nb_line)+". **" + line[0] + " - " + line[1]["team"] + " - " + str(line[1]["lap"])  + " - " + line[1]["time"] + " - " + line[1]["cat"]+"**\n")
-                    else:
-                        outfile.write(str(nb_line)+". " + line[0] + " - " + line[1]["team"] + " - " + str(line[1]["lap"])  + " - " + line[1]["time"] + " - " + line[1]["cat"]+"\n")
-
-                    nb_line += 1
+            self.print_scratch_results(outfile, hash)
             self.results = {}
+
+    def print_scratch_results_header(self, outfile):
+        outfile.write("| Place | Nom | Team | Tours | Catégorie | Temps |\n")
+        outfile.write("|---|---|---|---|---|---|\n")
+
+    def print_scratch_results(self,outfile, hash):
+        nb_line = 1
+        if (len(self.results[ hash].VTTVeteransC.keys()) > 0 or  len(self.results[ hash].VTTVeteransB.keys()) > 0 or  len(self.results[ hash].VTTVeteransA.keys()) > 0 or  len(self.results[ hash].VTTSeniorsB.keys()) > 0 or  
+            len(self.results[ hash].VTTSeniorsA.keys()) > 0 or  len(self.results[ hash].one.keys()) > 0 or  len(self.results[ hash].two.keys()) > 0 or  len(self.results[ hash].three.keys()) > 0 or  len(self.results[ hash].cadet.keys()) > 0 or  
+            len(self.results[ hash].fem.keys()) > 0 and self.results[ hash].scratch.keys() > 0):
+            outfile.write("\n### Scratch\n")
+            outfile.write( str(len(self.results[hash].scratch))+ " participants\n\n")
+            self.print_scratch_results_header(outfile)
+
+
+            for line in self.results[ hash].scratch:
+                #if (line[1]["team"] == "TEAM SPECIALIZED LILLE"):
+                #    outfile.write(str(nb_line)+". **" + line[0] + " - " + line[1]["team"] + " - " + str(line[1]["lap"])  + " - " + line[1]["time"] + " - " + line[1]["cat"]+"**\n")
+                #else:
+                outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
+
+                nb_line += 1
+
 
     def parse_race_payload(self, res):
         for line in res:
@@ -357,7 +367,7 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2020, 2025)
+        x = range(2024, 2025)
 
         for n in x:
             myobj = {'saison': str(n)}
@@ -368,15 +378,15 @@ class ParseResults:
             #myobj = {'saison': str(2024)}
 
             #cross
-            r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
-            self.parse_race_payload(r)
+            #r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
+            #self.parse_race_payload(r)
             #vtt
             r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
             self.parse_race_payload(r)
             #road
-            r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
+            #r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
             
-            self.parse_race_payload(r)
+            #self.parse_race_payload(r)
             self.save_races_parsed(self.races_parsed)
         
 
