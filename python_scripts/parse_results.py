@@ -331,10 +331,10 @@ class ParseResults:
     def print_line_table(self, outfile, bold, *arg):
         outfile.write("| ")
         for item in arg:
-            if (bold)
-                outfile.write("**" + str(item) + "** |")
-            else
-                outfile.write(str(item) + " |")
+            if (bold):
+                outfile.write("**" + str(item) + "** | ")
+            else:
+                outfile.write(str(item) + " | ")
         outfile.write("\n")
 
     def print_scratch_results(self,outfile, hash):
