@@ -331,7 +331,8 @@ class ParseResults:
     def print_line_table(self, outfile, bold, *arg):
         outfile.write("| ")
         for item in arg:
-            outfile.write(item + " | ")
+            print(item)
+            outfile.write(str(item) + " | ")
 
     def print_scratch_results(self,outfile, hash):
         nb_line = 1
