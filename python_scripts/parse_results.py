@@ -331,8 +331,10 @@ class ParseResults:
     def print_line_table(self, outfile, bold, *arg):
         outfile.write("| ")
         for item in arg:
-            print(item)
-            outfile.write(str(item) + " | ")
+            if (bold)
+                outfile.write("**" + str(item) + "** | ")
+            else
+                outfile.write(str(item) + " | ")
 
     def print_scratch_results(self,outfile, hash):
         nb_line = 1
@@ -346,7 +348,7 @@ class ParseResults:
 
             for line in self.results[ hash].scratch:
                 if (line[1]["team"] == "TEAM SPECIALIZED LILLE"):
-                    outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
+                    self.print_line_table(outfile, True, str(nb_line), line[0], line[1]["team"], line[1]["lap"],line[1]["cat"],line[1]["time"])
                 else:
                     self.print_line_table(outfile, False, str(nb_line), line[0], line[1]["team"], line[1]["lap"],line[1]["cat"],line[1]["time"])
                     #outfile.write("| "+ str(nb_line)+" | " + line[0] + " | " + line[1]["team"] + " | " + str(line[1]["lap"])  + " | " + line[1]["cat"] + " | " +  line[1]["time"] +" |\n")
