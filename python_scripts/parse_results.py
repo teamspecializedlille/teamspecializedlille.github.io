@@ -335,7 +335,7 @@ class ParseResults:
                 outfile.write("**" + str(item) + "** | ")
             else
                 outfile.write(str(item) + " | ")
-
+        outfile.write("\n")
     def print_scratch_results(self,outfile, hash):
         nb_line = 1
         if (len(self.results[ hash].VTTVeteransC.keys()) > 0 or  len(self.results[ hash].VTTVeteransB.keys()) > 0 or  len(self.results[ hash].VTTVeteransA.keys()) > 0 or  len(self.results[ hash].VTTSeniorsB.keys()) > 0 or  
