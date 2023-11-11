@@ -54,8 +54,11 @@ jobs:
         run: |
           cd python_scripts
           python main.py
-
-
+      - name: Save change in git
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Save change by CI
+          
           
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
