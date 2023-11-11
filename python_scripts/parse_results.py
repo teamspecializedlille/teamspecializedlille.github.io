@@ -373,7 +373,7 @@ class ParseResults:
                 file = re.search(r"(.*)='(.*)'(.*)", line).group(2)
                 self.set_race_infos(file)
                 
-                if (file not in  self.races_parsed or True):
+                if (file not in  self.races_parsed):
                     url = base + file
                     if (self.parse_results_race(url)):
                         self.races_parsed.append(file)
