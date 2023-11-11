@@ -42,6 +42,18 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+      - name: Install package
+        run: |
+          python3 -m pip install requests
+          python3 -m pip install xlrd
+          python3 -m pip install urllib3
+      - name: Run update of website
+        run: |
+          cd python_scripts
+          python main.py
+
+
+          
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
