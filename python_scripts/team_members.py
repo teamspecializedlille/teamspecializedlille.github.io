@@ -40,7 +40,15 @@ def load_team_from_file(team: dict[str, TeamMember]) -> dict[str, TeamMember]:
 def update_team_file(team):
     data = {}
     array = []
+    team.pop("BOONE ERIC")
+    team.pop("BRADEFER GERY")
+    team.pop("DEBUY SEBASTIEN")
+    team.pop("DARQUE JEAN FRANCOIS")
+    team.pop("DUFOUR JONATHAN")
+    team.pop("VERHULST ERIC")
+
     for m in team.values():
+        print(m)
         array.append(m.to_dict())
     data["team_members"] = array
     json_object = json.dumps(data,ensure_ascii=False)

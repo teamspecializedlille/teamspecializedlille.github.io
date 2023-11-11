@@ -272,8 +272,6 @@ class ParseResults:
                 outfile.write( str(self.results[hash].two_riders) + " participants\n")
             for line in result_to_display.keys():
                 outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
-
-            
             result_to_display =  self.results[ hash].three
             if (len(result_to_display.keys()) > 0):
                 outfile.write("\n### 3ème Catégorie\n")
@@ -386,7 +384,7 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2020, 2025)
+        x = range(2025, 2026)
 
         for n in x:
             myobj = {'saison': str(n)}
