@@ -32,6 +32,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -58,7 +60,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Save change by CI
-          
+
           
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
