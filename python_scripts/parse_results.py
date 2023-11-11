@@ -384,27 +384,22 @@ class ParseResults:
     def generate_results(self):
         self.races_parsed = self.load_races_parsed()
 
-        x = range(2025, 2026)
+        #x = range(2024, 2025)
 
-        for n in x:
-            myobj = {'saison': str(n)}
-            
-
-      
+#        for n in x:
+        myobj = {'saison': '2024'}
         
-            #myobj = {'saison': str(2024)}
-
-            #cross
-            r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
-            self.parse_race_payload(r)
-            #vtt
-            r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
-            self.parse_race_payload(r)
-            #road
-            r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
-            
-            self.parse_race_payload(r)
-            self.save_races_parsed(self.races_parsed)
+        #cross
+        r = requests.post('https://cyclismeufolep5962.fr/calResCross.php',verify=False,data=myobj ).text.splitlines()
+        self.parse_race_payload(r)
+        #vtt
+        r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php',verify=False,data=myobj ).text.splitlines()
+        self.parse_race_payload(r)
+        #road
+        r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php',verify=False,data=myobj ).text.splitlines()
+        
+        self.parse_race_payload(r)
+        self.save_races_parsed(self.races_parsed)
         
 
         return self.team
