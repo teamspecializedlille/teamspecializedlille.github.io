@@ -37,18 +37,25 @@ def load_team_from_file(team: dict[str, TeamMember]) -> dict[str, TeamMember]:
     team_file.close()
     return team
 
+def remove_old_team(team):
+    if ("BOONE ERIC" in team):
+        team.pop("BOONE ERIC")
+    if ("BRADEFER GERY" in team):
+        team.pop("BRADEFER GERY")
+    if ("DEBUY SEBASTIEN" in team):
+        team.pop("DEBUY SEBASTIEN")
+    if ("DARQUE JEAN FRANCOIS" in team):
+        team.pop("DARQUE JEAN FRANCOIS")
+    if ("DUFOUR JONATHAN" in team):
+        team.pop("DUFOUR JONATHAN")
+    if ("VERHULST ERIC" in team):
+        team.pop("VERHULST ERIC")
+
 def update_team_file(team):
     data = {}
     array = []
-    team.pop("BOONE ERIC")
-    team.pop("BRADEFER GERY")
-    team.pop("DEBUY SEBASTIEN")
-    team.pop("DARQUE JEAN FRANCOIS")
-    team.pop("DUFOUR JONATHAN")
-    team.pop("VERHULST ERIC")
-
+    remove_old_team(team)
     for m in team.values():
-        print(m)
         array.append(m.to_dict())
     data["team_members"] = array
     json_object = json.dumps(data,ensure_ascii=False)
