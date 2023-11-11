@@ -102,7 +102,7 @@ layout: default
 					<ul>
 						{% for res in team_people.road %}
 							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+							<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | remove: ' ' }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
 					{%- endif -%}
@@ -111,7 +111,7 @@ layout: default
 					<ul>
 						{% for res in team_people.cx  %}
 							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/cyclo%20cross/{{ split_race[0] | append: '/CycloCross' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+							<li><a href="/cyclo%20cross/{{ split_race[0] | append: '/CycloCross' | append: split_race[1]  | remove: ' '  }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
 					{%- endif -%}
@@ -120,7 +120,7 @@ layout: default
 					<ul>
 						{% for res in team_people.vtt %}
 							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/vtt/{{ split_race[0] | append: '/VTT' | append: split_race[1] }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+							<li><a href="/vtt/{{ split_race[0] | append: '/VTT' | append: split_race[1]  | remove: ' '  }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 						{% endfor %}
 					</ul>
 					{%- endif -%}
