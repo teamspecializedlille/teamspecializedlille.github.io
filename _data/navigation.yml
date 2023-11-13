@@ -12,7 +12,7 @@ main:
     parent: 0
 
   # Works
-  - title: "Works"
+  - title: "Team"
     url: "#works-section"
     parent: 0
 
@@ -21,18 +21,18 @@ main:
     url: "#blog-section"
     parent: 0
 
-  # Contact
-  - title: "Contact"
-    url: "#contact-section"
-    parent: 0
-
-  # Additional Pages
-  - title: "Pages"
-    url: ""
-    parent: 1
-    childs:
-        - title: "Works"
-          url: "works/"
-
-        - title: "Blog"
-          url: "blog/"
+#  # Contact
+#  - title: "Contact"
+#    url: "#contact-section"
+#    parent: 0
+#
+#  # Additional Pages
+#  - title: "Pages"
+#    url: ""
+#    parent: 1
+#    childs:
+#        - title: "Works"
+#          url: "works/"
+#
+#        - title: "Blog"
+#          url: "blog/"
