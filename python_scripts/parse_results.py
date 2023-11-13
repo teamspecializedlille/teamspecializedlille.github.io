@@ -381,7 +381,7 @@ class ParseResults:
                 file = re.search(r"(.*)='(.*)'(.*)", line).group(2)
                 self.set_race_infos(file)
 
-                if file not in self.races_parsed:
+                if file not in self.races_parsed or file == "Cyclo Cross/2023/FOURMIES/Classements.xls":
                     url = base + file
                     if self.parse_results_race(url):
                         self.races_parsed.append(file)
