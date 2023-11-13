@@ -9,16 +9,16 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 29 participants
-- SCHERNU CHRISTOPHE : 15
+- [SCHERNU CHRISTOPHE](https://teamspecializedlille.github.io/works/schernuchristophe) : 15
 
 ### 2ème Catégorie
 51 participants
-- LECLERCQ FRANCK : 5
-- LECOLIER BENOIT : 28
+- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/works/leclercqfranck) : 5
+- [LECOLIER BENOIT](https://teamspecializedlille.github.io/works/lecolierbenoit) : 28
 
 ### 3ème Catégorie
 57 participants
-- MOULIN FELIX : 41
+- [MOULIN FELIX](https://teamspecializedlille.github.io/works/moulinfelix) : 41
 
 ### Scratch
 168 participants

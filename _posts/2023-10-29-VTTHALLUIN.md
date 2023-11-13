@@ -9,11 +9,11 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Sénior A
 0 participants
-- DE GRAAL ROBIN : 2
+- [DE GRAAL ROBIN](https://teamspecializedlille.github.io/works/degraalrobin) : 2
 
 ### VTT Vétérans A
 13 participants
-- WALTER BENOIT : 9
+- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 9
 
 ### Scratch
 32 participants

@@ -9,16 +9,16 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 43 participants
-- DUFOUR JULIEN : 31
-- SCHERNU CHRISTOPHE : 32
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 31
+- [SCHERNU CHRISTOPHE](https://teamspecializedlille.github.io/works/schernuchristophe) : 32
 
 ### 2ème Catégorie
 43 participants
-- HUBAUT CHRISTOPHE : 17
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 17
 
 ### 3ème Catégorie
 65 participants
-- DEJONGHE MICKAEL : 42
+- [DEJONGHE MICKAEL](https://teamspecializedlille.github.io/works/dejonghemickael) : 42
 
 ### Scratch
 182 participants

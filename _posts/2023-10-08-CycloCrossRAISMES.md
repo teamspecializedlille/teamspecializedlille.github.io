@@ -9,4 +9,4 @@ image: assets/img/blog/cx.jpeg
 
 ### 3ème Catégorie
 56 participants
-- DERASSE DAVID : 26
+- [DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid) : 26

@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 30 participants
-- LECOLIER STEPHANE : 5
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 5
 
 ### 3ème Catégorie
 66 participants
-- VERHULST ERIC : 54
+- [VERHULST ERIC](https://teamspecializedlille.github.io/works/verhulsteric) : 54
 
 ### Scratch
 172 participants

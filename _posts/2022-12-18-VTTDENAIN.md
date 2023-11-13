@@ -9,7 +9,7 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Vétérans B
 6 participants
-- MATTIOLI RONALD : 1
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 1
 
 ### Scratch
 17 participants

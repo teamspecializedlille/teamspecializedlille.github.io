@@ -9,15 +9,15 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 21 participants
-- SCHERNU CHRISTOPHE : 15
+- [SCHERNU CHRISTOPHE](https://teamspecializedlille.github.io/works/schernuchristophe) : 15
 
 ### 2ème Catégorie
 25 participants
-- HUBAUT CHRISTOPHE : 13
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 13
 
 ### 3ème Catégorie
 34 participants
-- DEFER OLIVIER : 20
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 20
 
 ### Scratch
 95 participants

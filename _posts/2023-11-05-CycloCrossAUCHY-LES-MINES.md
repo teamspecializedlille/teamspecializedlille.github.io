@@ -9,9 +9,9 @@ image: assets/img/blog/cx.jpeg
 
 ### 2ème Catégorie
 19 participants
-- LECOLIER STEPHANE : 1
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 1
 
 ### 3ème Catégorie
 52 participants
-- DERASSE DAVID : 10
-- LECOLIER LOUIS : 11
+- [DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid) : 10
+- [LECOLIER LOUIS](https://teamspecializedlille.github.io/works/lecolierlouis) : 11

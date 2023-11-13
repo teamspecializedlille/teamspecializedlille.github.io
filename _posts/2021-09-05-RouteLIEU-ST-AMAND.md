@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 23 participants
-- LECOLIER STEPHANE : 17
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 17
 
 ### Scratch
 131 participants

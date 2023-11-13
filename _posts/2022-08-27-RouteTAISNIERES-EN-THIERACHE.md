@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 34 participants
-- MATTIOLI RONALD : 3
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 3
 
 ### 3ème Catégorie
 47 participants
-- HUBAUT CHRISTOPHE : 2
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 2

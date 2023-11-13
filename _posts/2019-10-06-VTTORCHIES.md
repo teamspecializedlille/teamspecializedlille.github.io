@@ -9,7 +9,7 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Sénior A
 0 participants
-- BOONE NICOLAS : Ab
+- [BOONE NICOLAS](https://teamspecializedlille.github.io/works/boonenicolas) : Ab
 
 ### Scratch
 0 participants

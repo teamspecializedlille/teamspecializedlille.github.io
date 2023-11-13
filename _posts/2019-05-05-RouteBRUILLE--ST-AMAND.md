@@ -9,14 +9,14 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 58 participants
-- DUFOUR JULIEN : 43
-- DEFOSSE HERVE : 53
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 43
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 53
 
 ### 3ème Catégorie
 85 participants
-- THEIL MICKAEL : 12
-- VERHULST ERIC : 36
-- LECLERCQ CLEMENT : 65
+- [THEIL MICKAEL](https://teamspecializedlille.github.io/works/theilmickael) : 12
+- [VERHULST ERIC](https://teamspecializedlille.github.io/works/verhulsteric) : 36
+- [LECLERCQ CLEMENT](https://teamspecializedlille.github.io/works/leclercqclement) : 65
 
 ### Scratch
 0 participants

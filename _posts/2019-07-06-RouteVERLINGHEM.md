@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 31 participants
-- DEFOSSE HERVE : 14
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 14
 
 ### 3ème Catégorie
 63 participants
-- LECLERCQ CLEMENT : 50
+- [LECLERCQ CLEMENT](https://teamspecializedlille.github.io/works/leclercqclement) : 50
 
 ### Scratch
 0 participants

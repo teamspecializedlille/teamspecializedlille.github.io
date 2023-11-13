@@ -9,12 +9,12 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 33 participants
-- DUFOUR JULIEN : 25
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 25
 
 ### 3ème Catégorie
 62 participants
-- DEFER OLIVIER : 32
-- MOULIN FELIX : 34
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 32
+- [MOULIN FELIX](https://teamspecializedlille.github.io/works/moulinfelix) : 34
 
 ### Scratch
 193 participants

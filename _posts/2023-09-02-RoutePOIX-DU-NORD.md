@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 2ème Catégorie
 41 participants
-- HUBAUT CHRISTOPHE : 8
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 8
 
 ### Scratch
 156 participants

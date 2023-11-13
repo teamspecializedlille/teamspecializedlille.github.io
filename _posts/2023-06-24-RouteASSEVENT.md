@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 37 participants
-- MATTIOLI RONALD : 9
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 9
 
 ### Scratch
 136 participants

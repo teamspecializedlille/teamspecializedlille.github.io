@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 23 participants
-- DEFOSSE HERVE : 11
-- DUFOUR JULIEN : Ab
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 11
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : Ab
 
 ### Scratch
 116 participants

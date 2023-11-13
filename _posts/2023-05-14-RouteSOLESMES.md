@@ -9,20 +9,20 @@ image: assets/img/blog/road.jpeg
 
 ### VTT Sénior B
 48 participants
-- DUFOUR JONATHAN : 12
-- DEFER OLIVIER : 36
-- DEJONGHE MICKAEL : 37
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 12
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 36
+- [DEJONGHE MICKAEL](https://teamspecializedlille.github.io/works/dejonghemickael) : 37
 
 ### VTT Vétérans A
 73 participants
-- LECOLIER STEPHANE : 8
-- HUBAUT CHRISTOPHE : 12
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 8
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 12
 
 ### VTT Vétérans B
 67 participants
-- MATTIOLI RONALD : 1
-- SCHERNU CHRISTOPHE : 9
-- DEFOSSE HERVE : 13
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 1
+- [SCHERNU CHRISTOPHE](https://teamspecializedlille.github.io/works/schernuchristophe) : 9
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 13
 
 ### Scratch
 231 participants

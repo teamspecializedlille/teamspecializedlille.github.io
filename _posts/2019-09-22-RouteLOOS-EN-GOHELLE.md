@@ -9,17 +9,17 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 10 participants
-- LECOLIER STEPHANE : 2
-- LECOLIER BENOIT : 5
-- DUFOUR JULIEN : AB
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 2
+- [LECOLIER BENOIT](https://teamspecializedlille.github.io/works/lecolierbenoit) : 5
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : AB
 
 ### 2ème Catégorie
 12 participants
-- GINET LIONEL : 5
+- [GINET LIONEL](https://teamspecializedlille.github.io/works/ginetlionel) : 5
 
 ### 3ème Catégorie
 24 participants
-- THEIL MICKAEL : 9
+- [THEIL MICKAEL](https://teamspecializedlille.github.io/works/theilmickael) : 9
 
 ### Scratch
 0 participants

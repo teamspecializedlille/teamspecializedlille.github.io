@@ -9,16 +9,16 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 42 participants
-- DEFOSSE HERVE : 37
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 37
 
 ### 2ème Catégorie
 57 participants
-- LECOLIER STEPHANE : 25
-- DENDIEVEL CYRIL : 35
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 25
+- [DENDIEVEL CYRIL](https://teamspecializedlille.github.io/works/dendievelcyril) : 35
 
 ### 3ème Catégorie
 73 participants
-- DEFER OLIVIER : Ab
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : Ab
 
 ### Scratch
 217 participants

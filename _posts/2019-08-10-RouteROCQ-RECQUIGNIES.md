@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 28 participants
-- LECOLIER BENOIT : 14
+- [LECOLIER BENOIT](https://teamspecializedlille.github.io/works/lecolierbenoit) : 14
 
 ### Scratch
 0 participants

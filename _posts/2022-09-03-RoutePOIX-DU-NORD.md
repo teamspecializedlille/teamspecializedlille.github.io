@@ -9,12 +9,12 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 30 participants
-- DEFOSSE HERVE : 28
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 28
 
 ### 2ème Catégorie
 31 participants
-- DUFOUR JONATHAN : 1
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 1
 
 ### 3ème Catégorie
 57 participants
-- HUBAUT CHRISTOPHE : 1
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 1

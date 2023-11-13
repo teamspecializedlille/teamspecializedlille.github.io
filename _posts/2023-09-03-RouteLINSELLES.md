@@ -9,16 +9,16 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 19 participants
-- LECOLIER STEPHANE : 4
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 4
 
 ### 2ème Catégorie
 36 participants
-- BOONE NICOLAS : Ab
+- [BOONE NICOLAS](https://teamspecializedlille.github.io/works/boonenicolas) : Ab
 
 ### 3ème Catégorie
 50 participants
-- DEFER OLIVIER : 26
-- WALTER BENOIT : 39
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 26
+- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 39
 
 ### Scratch
 124 participants

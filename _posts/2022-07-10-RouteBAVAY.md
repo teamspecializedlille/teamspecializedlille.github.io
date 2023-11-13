@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 36 participants
-- DUFOUR JULIEN : Ab
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : Ab
 
 ### 2ème Catégorie
 42 participants
-- LECLERCQ FRANCK : 7
+- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/works/leclercqfranck) : 7

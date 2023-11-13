@@ -9,10 +9,10 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 43 participants
-- DUFOUR JULIEN : 24
-- DEFOSSE HERVE : 28
-- DARQUE JEAN FRANCOIS : 34
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 24
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 28
+- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/works/darquejeanfrancois) : 34
 
 ### 2ème Catégorie
 39 participants
-- LECLERCQ FRANCK : 6
+- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/works/leclercqfranck) : 6

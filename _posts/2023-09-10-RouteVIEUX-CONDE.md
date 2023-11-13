@@ -9,13 +9,13 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 30 participants
-- DEFOSSE HERVE : 17
-- DUFOUR JULIEN : 23
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 17
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 23
 
 ### 3ème Catégorie
 49 participants
-- DEFER OLIVIER : 12
-- WALTER BENOIT : 38
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 12
+- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 38
 
 ### Scratch
 163 participants

@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 2ème Catégorie
 45 participants
-- HUBAUT CHRISTOPHE : 11
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 11
 
 ### 3ème Catégorie
 69 participants
-- DEJONGHE MICKAEL : 34
+- [DEJONGHE MICKAEL](https://teamspecializedlille.github.io/works/dejonghemickael) : 34
 
 ### Scratch
 218 participants

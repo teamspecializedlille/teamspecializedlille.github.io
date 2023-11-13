@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 18 participants
-- LECOLIER STEPHANE : 6
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 6
 
 ### 2ème Catégorie
 25 participants
-- BOONE NICOLAS : 3
+- [BOONE NICOLAS](https://teamspecializedlille.github.io/works/boonenicolas) : 3
 
 ### Scratch
 0 participants

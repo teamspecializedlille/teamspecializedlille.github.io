@@ -9,12 +9,12 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 37 participants
-- DUFOUR JULIEN : 22
-- DEFOSSE HERVE : AB
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 22
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : AB
 
 ### 2ème Catégorie
 47 participants
-- DARQUE JEAN FRANCOIS : 25
+- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/works/darquejeanfrancois) : 25
 
 ### Scratch
 0 participants

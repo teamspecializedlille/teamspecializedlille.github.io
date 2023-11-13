@@ -9,4 +9,4 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 26 participants
-- DUFOUR JULIEN : 9
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 9

@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 39 participants
-- MATTIOLI RONALD : 5
-- DUFOUR JULIEN : Ab
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 5
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : Ab
 
 ### Scratch
 190 participants

@@ -9,12 +9,12 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 37 participants
-- LECOLIER STEPHANE : 9
-- DUFOUR JULIEN : Ab
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 9
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : Ab
 
 ### 3ème Catégorie
 45 participants
-- DEFER OLIVIER : 7
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 7
 
 ### Scratch
 160 participants

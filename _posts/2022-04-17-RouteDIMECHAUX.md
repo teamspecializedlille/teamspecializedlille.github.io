@@ -9,4 +9,4 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 21 participants
-- DARQUE JEAN FRANCOIS : 11
+- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/works/darquejeanfrancois) : 11

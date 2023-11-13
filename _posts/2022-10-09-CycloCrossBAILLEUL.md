@@ -9,11 +9,11 @@ image: assets/img/blog/cx.jpeg
 
 ### 3ème Catégorie
 35 participants
-- MOULIN FELIX : 24
+- [MOULIN FELIX](https://teamspecializedlille.github.io/works/moulinfelix) : 24
 
 ### Cadets
 3 participants
-- LECOLIER LOUIS : 1
+- [LECOLIER LOUIS](https://teamspecializedlille.github.io/works/lecolierlouis) : 1
 
 ### Scratch
 52 participants

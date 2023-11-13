@@ -9,5 +9,5 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 26 participants
-- DARQUE JEAN FRANCOIS : 9
-- DUFOUR JULIEN : Ab
+- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/works/darquejeanfrancois) : 9
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : Ab

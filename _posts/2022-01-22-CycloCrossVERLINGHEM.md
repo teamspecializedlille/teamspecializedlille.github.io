@@ -9,7 +9,7 @@ image: assets/img/blog/cx.jpeg
 
 ### 3ème Catégorie
 43 participants
-- MOULIN FELIX : 26
+- [MOULIN FELIX](https://teamspecializedlille.github.io/works/moulinfelix) : 26
 
 ### Scratch
 73 participants

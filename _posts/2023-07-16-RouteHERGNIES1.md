@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 3ème Catégorie
 74 participants
-- DEJONGHE MICKAEL : 24
+- [DEJONGHE MICKAEL](https://teamspecializedlille.github.io/works/dejonghemickael) : 24
 
 ### Scratch
 196 participants

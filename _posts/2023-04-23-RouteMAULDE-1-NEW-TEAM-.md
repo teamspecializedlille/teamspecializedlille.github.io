@@ -9,17 +9,17 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 48 participants
-- DUFOUR JULIEN : 46
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 46
 
 ### 2ème Catégorie
 57 participants
-- DUFOUR JONATHAN : 5
-- HUBAUT CHRISTOPHE : 16
-- LECOLIER STEPHANE : 30
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 5
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 16
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 30
 
 ### 3ème Catégorie
 78 participants
-- DEFER OLIVIER : 46
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 46
 
 ### Scratch
 229 participants

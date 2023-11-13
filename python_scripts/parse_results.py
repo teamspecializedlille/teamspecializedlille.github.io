@@ -15,6 +15,13 @@ column_time = 4
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
+def display_member_with_link(outfile, team_member, position):
+    link = "https://teamspecializedlille.github.io/works/"
+    res = "[" + team_member + "](" + link + team_member.replace(" ", "").lower() + ")"
+    outfile.write("- " + res + " : " + str(position) + "\n")
+
+
+
 def print_scratch_results_header(outfile):
     outfile.write("| Place | Nom | Team | Tours | Catégorie | Temps |\n")
     outfile.write("|---|---|---|---|---|---|\n")
@@ -287,77 +294,80 @@ class ParseResults:
                 outfile.write("\n### 1ère Catégorie\n")
                 outfile.write(str(self.results[hash_race].one_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
             result_to_display = self.results[hash_race].two
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### 2ème Catégorie\n")
                 outfile.write(str(self.results[hash_race].two_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
             result_to_display = self.results[hash_race].three
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### 3ème Catégorie\n")
                 outfile.write(str(self.results[hash_race].three_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].fem
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### Féminines\n")
                 outfile.write(str(self.results[hash_race].fem_riders) + " participantes\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].cadet
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### Cadets\n")
                 outfile.write(str(self.results[hash_race].cadet_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].VTTSeniorsA
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### VTT Sénior A\n")
                 outfile.write(str(self.results[hash_race].VTTSeniorsA_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].VTTSeniorsB
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### VTT Sénior B\n")
                 outfile.write(str(self.results[hash_race].VTTSeniorsB_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].VTTVeteransA
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### VTT Vétérans A\n")
                 outfile.write(str(self.results[hash_race].VTTVeteransA_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].VTTVeteransB
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### VTT Vétérans B\n")
                 outfile.write(str(self.results[hash_race].VTTVeteransB_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             result_to_display = self.results[hash_race].VTTVeteransC
             if len(result_to_display.keys()) > 0:
                 outfile.write("\n### VTT Vétérans C\n")
                 outfile.write(str(self.results[hash_race].VTTVeteransC_riders) + " participants\n")
             for line in result_to_display.keys():
-                outfile.write("- " + line + " : " + str(result_to_display[line]) + "\n")
+                display_member_with_link(outfile, line, result_to_display[line])
 
             self.print_scratch_results(outfile, hash_race)
             self.results = {}
 
     def print_scratch_results(self, outfile, hash_race):
         nb_line = 1
-        if (len(self.results[hash_race].VTTVeteransC.keys()) > 0 or len(self.results[hash_race].VTTVeteransB.keys()) > 0 or len(
-                self.results[hash_race].VTTVeteransA.keys()) > 0 or len(self.results[hash_race].VTTSeniorsB.keys()) > 0 or
-                len(self.results[hash_race].VTTSeniorsA.keys()) > 0 or len(self.results[hash_race].one.keys()) > 0 or len(
+        if (len(self.results[hash_race].VTTVeteransC.keys()) > 0 or len(
+                self.results[hash_race].VTTVeteransB.keys()) > 0 or len(
+                self.results[hash_race].VTTVeteransA.keys()) > 0 or len(
+            self.results[hash_race].VTTSeniorsB.keys()) > 0 or
+                len(self.results[hash_race].VTTSeniorsA.keys()) > 0 or len(
+                    self.results[hash_race].one.keys()) > 0 or len(
                     self.results[hash_race].two.keys()) > 0 or len(self.results[hash_race].three.keys()) > 0 or len(
                     self.results[hash_race].cadet.keys()) > 0 or
                 len(self.results[hash_race].fem.keys()) > 0 and self.results[hash_race].scratch.keys() > 0):

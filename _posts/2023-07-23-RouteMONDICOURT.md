@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 3ème Catégorie
 25 participants
-- DEFER OLIVIER : 15
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 15
 
 ### Scratch
 64 participants

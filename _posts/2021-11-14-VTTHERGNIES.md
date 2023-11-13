@@ -9,7 +9,7 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Vétérans A
 17 participants
-- BRADEFER GERY : 1
+- [BRADEFER GERY](https://teamspecializedlille.github.io/works/bradefergery) : 1
 
 ### Scratch
 40 participants

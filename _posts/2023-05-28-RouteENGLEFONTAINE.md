@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 16 participants
-- DEFOSSE HERVE : Ab
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : Ab
 
 ### 3ème Catégorie
 39 participants
-- DEFER OLIVIER : 21
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 21
 
 ### Scratch
 93 participants

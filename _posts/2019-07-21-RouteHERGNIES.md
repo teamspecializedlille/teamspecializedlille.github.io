@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 3ème Catégorie
 71 participants
-- LECLERCQ CLEMENT : AB
+- [LECLERCQ CLEMENT](https://teamspecializedlille.github.io/works/leclercqclement) : AB
 
 ### Scratch
 0 participants

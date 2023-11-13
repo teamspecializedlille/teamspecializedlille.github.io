@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 31 participants
-- DUFOUR JULIEN : 15
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 15
 
 ### 3ème Catégorie
 49 participants
-- DEFER OLIVIER : 30
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 30

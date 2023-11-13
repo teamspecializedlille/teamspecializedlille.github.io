@@ -9,9 +9,9 @@ image: assets/img/blog/road.jpeg
 
 ### 2ème Catégorie
 39 participants
-- LECOLIER STEPHANE : 24
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 24
 
 ### 3ème Catégorie
 45 participants
-- HUBAUT CHRISTOPHE : 28
-- DEFER OLIVIER : 34
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 28
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 34

@@ -9,7 +9,7 @@ image: assets/img/blog/cx.jpeg
 
 ### 3ème Catégorie
 26 participants
-- DERASSE DAVID : 11
+- [DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid) : 11
 
 ### Scratch
 70 participants

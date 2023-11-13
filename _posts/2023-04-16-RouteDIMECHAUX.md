@@ -9,14 +9,14 @@ image: assets/img/blog/road.jpeg
 
 ### 2ème Catégorie
 29 participants
-- DUFOUR JONATHAN : 4
-- LECOLIER STEPHANE : 5
-- LECOLIER BENOIT : 17
-- LECLERCQ FRANCK : Ab
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 4
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 5
+- [LECOLIER BENOIT](https://teamspecializedlille.github.io/works/lecolierbenoit) : 17
+- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/works/leclercqfranck) : Ab
 
 ### 3ème Catégorie
 57 participants
-- DEJONGHE MICKAEL : Ab
+- [DEJONGHE MICKAEL](https://teamspecializedlille.github.io/works/dejonghemickael) : Ab
 
 ### Scratch
 129 participants

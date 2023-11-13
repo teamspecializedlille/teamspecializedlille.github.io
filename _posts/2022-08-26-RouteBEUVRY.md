@@ -9,5 +9,5 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 21 participants
-- DEFOSSE HERVE : 16
-- DUFOUR JULIEN : 17
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 16
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 17

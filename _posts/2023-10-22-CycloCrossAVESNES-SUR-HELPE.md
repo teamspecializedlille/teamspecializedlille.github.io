@@ -9,4 +9,4 @@ image: assets/img/blog/cx.jpeg
 
 ### 2ème Catégorie
 16 participants
-- MATTIOLI RONALD : 6
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 6

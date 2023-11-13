@@ -9,12 +9,12 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 44 participants
-- MATTIOLI RONALD : 6
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 6
 
 ### 2ème Catégorie
 38 participants
-- LECOLIER STEPHANE : 9
-- DUFOUR JONATHAN : 12
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 9
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 12
 
 ### Scratch
 164 participants

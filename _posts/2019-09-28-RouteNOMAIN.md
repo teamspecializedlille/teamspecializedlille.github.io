@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 31 participants
-- SHERNU CHRISTOPHE : 24
-- DEFOSSE HERVE : Ab
+- [SHERNU CHRISTOPHE](https://teamspecializedlille.github.io/works/shernuchristophe) : 24
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : Ab
 
 ### Scratch
 0 participants

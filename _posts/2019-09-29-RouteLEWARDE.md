@@ -9,10 +9,10 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 30 participants
-- LECOLIER STEPHANE : 5
-- DUFOUR JULIEN : 13
-- LECOLIER BENOIT : 16
-- DEFOSSE HERVE : 19
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 5
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 13
+- [LECOLIER BENOIT](https://teamspecializedlille.github.io/works/lecolierbenoit) : 16
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 19
 
 ### Scratch
 0 participants

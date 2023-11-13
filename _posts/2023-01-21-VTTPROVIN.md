@@ -9,7 +9,7 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Sénior B
 10 participants
-- DUFOUR JONATHAN : 2
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 2
 
 ### Scratch
 34 participants

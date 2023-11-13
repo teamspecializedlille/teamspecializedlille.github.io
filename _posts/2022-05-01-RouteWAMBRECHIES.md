@@ -9,13 +9,13 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 44 participants
-- DARQUE JEAN FRANCOIS : 23
-- DUFOUR JULIEN : 33
+- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/works/darquejeanfrancois) : 23
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 33
 
 ### 2ème Catégorie
 52 participants
-- BOONE NICOLAS : 32
+- [BOONE NICOLAS](https://teamspecializedlille.github.io/works/boonenicolas) : 32
 
 ### 3ème Catégorie
 82 participants
-- DEFER OLIVIER : 35
+- [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 35

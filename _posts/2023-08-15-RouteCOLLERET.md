@@ -9,7 +9,7 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 18 participants
-- DEFOSSE HERVE : 6
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 6
 
 ### Scratch
 101 participants

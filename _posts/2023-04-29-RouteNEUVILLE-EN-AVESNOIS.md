@@ -9,12 +9,12 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 53 participants
-- MATTIOLI RONALD : 7
-- DEFOSSE HERVE : 19
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 7
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 19
 
 ### 2ème Catégorie
 57 participants
-- DUFOUR JONATHAN : 2
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 2
 
 ### Scratch
 239 participants

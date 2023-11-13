@@ -9,18 +9,18 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 44 participants
-- LECOLIER STEPHANE : 6
-- DEFOSSE HERVE : 31
-- DUFOUR JULIEN : 35
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 6
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 31
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 35
 
 ### 2ème Catégorie
 50 participants
-- LECOLIER BENOIT : 11
+- [LECOLIER BENOIT](https://teamspecializedlille.github.io/works/lecolierbenoit) : 11
 
 ### 3ème Catégorie
 61 participants
-- DEJONGHE MICKAEL : 28
-- WALTER BENOIT : 34
+- [DEJONGHE MICKAEL](https://teamspecializedlille.github.io/works/dejonghemickael) : 28
+- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 34
 
 ### Scratch
 200 participants
