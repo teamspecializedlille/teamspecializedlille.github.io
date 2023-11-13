@@ -17,7 +17,7 @@ main:
     parent: 0
 
   # Blog
-  - title: "Blog"
+  - title: "Résultats"
     url: "#blog-section"
     parent: 0
 
