@@ -187,12 +187,7 @@ class ParseResults:
                     test = (40, 0, 0, 0, 38, 53)
                 else:
 
-                    print(member)
-                    print(hash_race)
-                    print(sheet.row(line))
-
                     raw_time = sheet.cell(line, column_time).value
-                    print(raw_time)
                     if isinstance(raw_time, str):
                         split_time = raw_time.split(":")
                         test = (0, 0, 0, int(split_time[0]), int(split_time[1]), int(split_time[2]))
@@ -206,14 +201,6 @@ class ParseResults:
                     lap = int(sheet.cell_value(line, column_lap))
                 except Exception:
                     lap = 0
-                print("save")
-                print(str(sheet.cell_value(line, column_team)))
-                print(int(lap))
-                print(test)
-                print(self.race_cat)
-                print("------")
-                print(hash_race)
-                print(member)
                 self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)),
                                                            "lap": int(lap), "time": test, "cat": self.race_cat}
 
@@ -235,8 +222,6 @@ class ParseResults:
                 self.results[hash_race].scratch = sorted(self.results[hash_race].scratch.items(), key=sorted_algo,
                                                          reverse=False)
                 for res in self.results[hash_race].scratch:
-                    print(res[1])
-                    print(res[1].get("time"))
                     res[1]["time"] = (
                             str(res[1]["time"][3]) + ":" + str(res[1]["time"][4]) + ":" + str(res[1]["time"][5]))
 

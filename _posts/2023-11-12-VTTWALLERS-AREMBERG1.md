@@ -9,7 +9,7 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Vétérans A
 12 participants
-- [[WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 8
+- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 8
 
 ### Scratch
 37 participants
