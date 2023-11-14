@@ -21,4 +21,6 @@ gallery:
   - assets/img/team/TRINELEMILY_1.jpeg
   - assets/img/team/TRINELEMILY_2.jpeg
   - assets/img/team/TRINELEMILY_3.jpeg
+  - assets/img/team/TRINELEMILY_4.jpeg
+
 ---

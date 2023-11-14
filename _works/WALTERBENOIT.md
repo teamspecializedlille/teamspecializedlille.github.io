@@ -21,6 +21,7 @@ gallery:
   - assets/img/team/WALTERBENOIT_1.jpeg
   - assets/img/team/WALTERBENOIT_2.jpeg
   - assets/img/team/WALTERBENOIT_3.jpeg
+  - assets/img/team/WALTERBENOIT_4.jpeg
 
 
 ---

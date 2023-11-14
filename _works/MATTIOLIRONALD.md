@@ -21,5 +21,6 @@ gallery:
   - assets/img/team/MATTIOLIRONALD_1.jpeg
   - assets/img/team/MATTIOLIRONALD_2.jpeg
   - assets/img/team/MATTIOLIRONALD_3.jpeg
+  - assets/img/team/MATTIOLIRONALD_4.jpeg
 
 ---

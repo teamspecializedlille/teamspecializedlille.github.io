@@ -21,4 +21,6 @@ gallery:
   - assets/img/team/LECOLIERBENOIT_1.JPG
   - assets/img/team/LECOLIERBENOIT_2.JPG
   - assets/img/team/LECOLIERBENOIT_3.JPG
+  - assets/img/team/LECOLIERBENOIT_4.JPG
+
 ---

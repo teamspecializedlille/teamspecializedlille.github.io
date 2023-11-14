@@ -21,6 +21,7 @@ gallery:
   - assets/img/team/DERASSEDAVID_1.JPG
   - assets/img/team/DERASSEDAVID_2.JPG
   - assets/img/team/DERASSEDAVID_3.JPG
+  - assets/img/team/DERASSEDAVID_4.JPG
 
 
 ---

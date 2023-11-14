@@ -21,6 +21,6 @@ gallery:
   - assets/img/team/DEJONGHEMICKAEL_1.jpeg
   - assets/img/team/DEJONGHEMICKAEL_2.jpeg
   - assets/img/team/DEJONGHEMICKAEL_3.jpeg
-
+  - assets/img/team/DEJONGHEMICKAEL_4.jpeg
 
 ---

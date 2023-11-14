@@ -21,6 +21,7 @@ gallery:
   - assets/img/team/MINNECIELIO_1.jpeg
   - assets/img/team/MINNECIELIO_2.jpeg
   - assets/img/team/MINNECIELIO_3.jpeg
+  - assets/img/team/MINNECIELIO_4.jpeg
 
 
 ---

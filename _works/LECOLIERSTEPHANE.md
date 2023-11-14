@@ -21,5 +21,6 @@ gallery:
   - assets/img/team/LECOLIERSTEPHANE_1.jpg
   - assets/img/team/LECOLIERSTEPHANE_2.jpg
   - assets/img/team/LECOLIERSTEPHANE_3.jpg
+  - assets/img/team/LECOLIERSTEPHANE_4.jpg
 
 ---
