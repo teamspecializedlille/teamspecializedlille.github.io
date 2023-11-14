@@ -111,6 +111,10 @@ class ParseResults:
     def is_team_member(self, sheet, line):
         if line <= 1:
             return False
+        if "DERASSE" in str(sheet.cell(line, column_name).value):
+            print("team")
+            print(line)
+            print(str(sheet.cell(line, column_team).value))
         if "TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value):
             return True
 
@@ -168,6 +172,8 @@ class ParseResults:
                 elif self.race_cat == "2ème":
                     self.results[hash_race].two[member] = return_result(sheet, line)
                 elif self.race_cat == "3ème":
+                    print("jdhezkjhdzkejhkdzeh")
+                    print(member)
                     self.results[hash_race].three[member] = return_result(sheet, line)
                 elif self.race_cat == "Cadets":
                     self.results[hash_race].cadet[member] = return_result(sheet, line)
@@ -248,6 +254,8 @@ class ParseResults:
 
     def create_post_race(self):
         hash_race = self.get_hash_race()
+        print('aaaaa')
+        print(len(self.results))
         if len(self.results) == 0:
             return
         if (len(self.results[hash_race].one.keys()) == 0 and len(self.results[hash_race].two.keys()) == 0 and len(
@@ -258,6 +266,9 @@ class ParseResults:
                     self.results[hash_race].VTTVeteransA.keys()) == 0
                 and len(self.results[hash_race].VTTVeteransB.keys()) == 0 and len(
                     self.results[hash_race].VTTVeteransC.keys()) == 0):
+            print("je degage")
+            print(self.results[hash_race].three.keys())
+            print(self.results[hash_race])
             return
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(
             " ", "-") + ".md"
@@ -349,6 +360,7 @@ class ParseResults:
 
     def print_scratch_results(self, outfile, hash_race):
         nb_line = 1
+        print("debug")
         if (len(self.results[hash_race].VTTVeteransC.keys()) > 0 or len(
                 self.results[hash_race].VTTVeteransB.keys()) > 0 or len(
             self.results[hash_race].VTTVeteransA.keys()) > 0 or len(
@@ -381,7 +393,10 @@ class ParseResults:
                 file = re.search(r"(.*)='(.*)'(.*)", line).group(2)
                 self.set_race_infos(file)
 
-                if file not in self.races_parsed or file == "Cyclo Cross/2023/FOURMIES/Classements.xls":
+                #file not in self.races_parsed
+                if  file == "Cyclo Cross/2023/FOURMIES/Classements.xls":
+                    print(file)
+                    print("jkhdjezhkjdhze")
                     url = base + file
                     if self.parse_results_race(url):
                         self.races_parsed.append(file)
@@ -390,7 +405,7 @@ class ParseResults:
 
     def generate_results(self):
         self.races_parsed = load_races_parsed()
-        myobj = {'saison': '2024'}
+        myobj = {'saison': '2023'}
 
         # cross
         r = requests.post('https://cyclismeufolep5962.fr/calResCross.php', verify=False, data=myobj).text.splitlines()
