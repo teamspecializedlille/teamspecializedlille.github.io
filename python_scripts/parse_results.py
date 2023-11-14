@@ -207,28 +207,32 @@ class ParseResults:
                                                            "lap": int(lap), "time": test, "cat": self.race_cat}
 
     def parse_results_race(self, file_url):
-        r = requests.get(file_url, verify=False)
-        if r.status_code == 200:
-            output = open('test.xls', 'wb')
-            output.write(r.content)
+        try:
+            r = requests.get(file_url, verify=False)
+            if r.status_code == 200:
+                output = open('test.xls', 'wb')
+                output.write(r.content)
 
-            workbook = xlrd.open_workbook('test.xls')
-            self.parse_results_race_sheet(workbook, 0)
-            self.parse_results_race_sheet(workbook, 1)
-            self.parse_results_race_sheet(workbook, 2)
-            self.parse_results_race_sheet(workbook, 3)
-            self.parse_results_race_sheet(workbook, 4)
-            hash_race = self.get_hash_race()
+                workbook = xlrd.open_workbook('test.xls')
+                self.parse_results_race_sheet(workbook, 0)
+                self.parse_results_race_sheet(workbook, 1)
+                self.parse_results_race_sheet(workbook, 2)
+                self.parse_results_race_sheet(workbook, 3)
+                self.parse_results_race_sheet(workbook, 4)
+                hash_race = self.get_hash_race()
 
-            if len(self.results[hash_race].scratch) > 0:
-                self.results[hash_race].scratch = sorted(self.results[hash_race].scratch.items(), key=sorted_algo,
-                                                         reverse=False)
-                for res in self.results[hash_race].scratch:
-                    res[1]["time"] = (
-                            str(res[1]["time"][3]) + ":" + str(res[1]["time"][4]) + ":" + str(res[1]["time"][5]))
+                if len(self.results[hash_race].scratch) > 0:
+                    self.results[hash_race].scratch = sorted(self.results[hash_race].scratch.items(), key=sorted_algo,
+                                                             reverse=False)
+                    for res in self.results[hash_race].scratch:
+                        res[1]["time"] = (
+                                str(res[1]["time"][3]) + ":" + str(res[1]["time"][4]) + ":" + str(res[1]["time"][5]))
 
-            return True
-        else:
+                return True
+            else:
+                return False
+        except requests.exceptions.ConnectionError:
+            print("Connection problem with " + file_url)
             return False
 
     def set_race_date(self, line):
@@ -364,7 +368,8 @@ class ParseResults:
 
             for line in self.results[hash_race].scratch:
                 if line[1]["team"] == "TEAM SPECIALIZED LILLE":
-                    print_line_table(outfile, True, str(nb_line), get_member_with_link(line[0]), line[1]["team"], line[1]["lap"],
+                    print_line_table(outfile, True, str(nb_line), get_member_with_link(line[0]), line[1]["team"],
+                                     line[1]["lap"],
                                      line[1]["cat"], line[1]["time"])
                 else:
                     print_line_table(outfile, False, str(nb_line), line[0], line[1]["team"], line[1]["lap"],
