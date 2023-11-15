@@ -5,7 +5,7 @@ title: DEFER OLIVIER
 name: DEFER OLIVIER
 category:  Route
 category_slug:  road
-image: assets/img/works/work5.jpeg
+image: assets/img/team/DEFEROLIVIER_1.jpg
 
 # full details
 live_preview: https://bslthemes.com
@@ -13,14 +13,12 @@ live_preview: https://bslthemes.com
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 00/00/2000
+    value: 21/11/1985
  #- label: Catégorie 
  #   value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/DEFEROLIVIER_1.jpg
 
 
 ---

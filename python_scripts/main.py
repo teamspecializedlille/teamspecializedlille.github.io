@@ -1,6 +1,5 @@
 import team_members
 import parse_results
-import race_results
 
 team = {}
 results = {}
