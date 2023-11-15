@@ -5,7 +5,7 @@ title: DE GRAAL ROBIN
 name: DE GRAAL ROBIN
 category: VTT
 category_slug: vtt
-image: assets/img/works/work5.jpeg
+image: assets/img/team/DEGRAALROBIN_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -18,9 +18,7 @@ info:
  #   value: 3ème
 
 gallery:
-  - assets/img/works/work5.jpeg
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/DEGRAALROBIN_1.jpeg
 
 
 ---

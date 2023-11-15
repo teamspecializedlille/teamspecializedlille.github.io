@@ -5,7 +5,7 @@ title: Félix Moulin
 name: MOULIN FELIX
 category: CX Route
 category_slug: cx road
-image: assets/img/team/FELIXMOULIN_large.jpeg
+image: assets/img/team/FELIXMOULIN_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -18,8 +18,6 @@ info:
     value: 3ème
 
 gallery:
-  - assets/img/team/FELIXMOULIN_large.jpeg
-  - assets/img/team/FELIXMOULIN_large.jpeg
   - assets/img/team/FELIXMOULIN_large.jpeg
 
 ---
