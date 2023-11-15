@@ -53,6 +53,6 @@ image: assets/img/blog/cx.jpeg
 | 35 | LEVEILL? FLORIAN | UNION SPORTIVE VALENCIENN | 6 | Cadets | 0:42:6 | 
 | 36 | STAQUET AURELIEN | SAULZOIR MONTRECOURT CYCL | 6 | 3ème | 0:54:25 | 
 | 37 | MAGNIES CLÉMENT | CYCLO CLUB ORCHIES | 0 | 1ère | 0:38:53 | 
-| **38** | **MOULIN FELIX** | **TEAM SPECIALIZED LILLE** | **0** | **3ème** | **0:38:53** | 
+| **38** | **[MOULIN FELIX](https://teamspecializedlille.github.io/works/moulinfelix)** | **TEAM SPECIALIZED LILLE** | **0** | **3ème** | **0:38:53** | 
 | 39 | BOUTONNE FRÉDÉRIC | UNION SPORTIVE SAINT ANDR | 0 | 3ème | 0:38:53 | 
 | 40 | MARTINACHE ARNAUD | AS HELLEMMES CYCLISME | 0 | 3ème | 0:38:53 | 

@@ -18,7 +18,7 @@ image: assets/img/blog/vtt.jpeg
 |---|---|---|---|---|---|
 | 1 | DEMEESTER KEVIN | WINGLES PYRAMIDES PASSION | 8 | Seniors B | 0:48:41 | 
 | 2 | CANONNE STEVEN | VELO SPRINT DE L'OSTREVEN | 8 | Seniors A | 0:48:45 | 
-| **3** | **BRADEFER GERY** | **TEAM SPECIALIZED LILLE** | **8** | **Vétérans A** | **0:48:45** | 
+| **3** | **[BRADEFER GERY](https://teamspecializedlille.github.io/works/bradefergery)** | **TEAM SPECIALIZED LILLE** | **8** | **Vétérans A** | **0:48:45** | 
 | 4 | GENIESSE REMI | ENTENTE SPORTIVE ENFANTS  | 8 | Seniors A | 0:50:18 | 
 | 5 | COASNE CLEMENT | ESEG DOUAI | 8 | Seniors A | 0:50:39 | 
 | 6 | JABLONSKI SEBASTIEN | TEAM B.B.L. HERGNIES | 8 | Vétérans A | 0:50:54 | 

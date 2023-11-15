@@ -16,7 +16,7 @@ image: assets/img/blog/vtt.jpeg
 
 | Place | Nom | Team | Tours | Catégorie | Temps |
 |---|---|---|---|---|---|
-| **1** | **BRADEFER GERY** | **TEAM SPECIALIZED LILLE** | **8** | **Vétérans A** | **0:50:3** | 
+| **1** | **[BRADEFER GERY](https://teamspecializedlille.github.io/works/bradefergery)** | **TEAM SPECIALIZED LILLE** | **8** | **Vétérans A** | **0:50:3** | 
 | 2 | DEMEESTER KEVIN | WINGLES PYRAMIDES PASSION | 8 | Seniors B | 0:51:0 | 
 | 3 | ALLART ERIC | THELUS TEAM UNIS-VERT VTT | 8 | Vétérans A | 0:53:22 | 
 | 4 | FARDOUX DANY | FLEURBAIX TEAM SHARK VTT | 8 | Vétérans A | 0:53:40 | 

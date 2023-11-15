@@ -84,4 +84,4 @@ image: assets/img/blog/cx.jpeg
 | 66 | LELEU GUILLAUME | CYCLO CLUB WAVRIN | 4 | 3ème | 0:52:11 | 
 | 67 | VANDEMEULEBROUCKE KEVIN | UNION SPORTIVE SAINT ANDR | 4 | 3ème | 0:52:14 | 
 | 68 | MALLET DAVID | UNION SPORTIVE SAINT ANDR | 4 | 3ème | 0:55:50 | 
-| **69** | **MOULIN FELIX** | **TEAM SPECIALIZED LILLE** | **0** | **3ème** | **0:38:53** | 
+| **69** | **[MOULIN FELIX](https://teamspecializedlille.github.io/works/moulinfelix)** | **TEAM SPECIALIZED LILLE** | **0** | **3ème** | **0:38:53** | 
