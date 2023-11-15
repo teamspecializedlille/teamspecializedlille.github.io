@@ -3,8 +3,8 @@
 layout: works-single
 title: BOONE NICOLAS
 name: BOONE NICOLAS
-category: 
-category_slug: 
+category: Route
+category_slug: road
 image: assets/img/works/work5.jpeg
 
 # full details
