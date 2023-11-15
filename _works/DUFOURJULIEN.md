@@ -21,6 +21,7 @@ gallery:
   - assets/img/team/DUFOURJULIEN_1.jpeg
   - assets/img/team/DUFOURJULIEN_2.jpeg
   - assets/img/team/DUFOURJULIEN_3.jpeg
+  - assets/img/team/DUFOURJULIEN_4.jpeg
 
 
 ---
