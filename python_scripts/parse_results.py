@@ -77,6 +77,14 @@ def print_line_table(outfile, bold, *arg):
     outfile.write("\n")
 
 
+def write_post_race_category(outfile, category_name, start_people, results_to_display):
+    if len(results_to_display.keys()) > 0:
+        outfile.write("\n### " + category_name + "\n")
+        outfile.write(str(start_people) + " participants\n")
+    for line in results_to_display.keys():
+        display_result_line_with_link(outfile, line, results_to_display[line])
+
+
 class ParseResults:
     race_date = ""
     race_name = ""
@@ -105,22 +113,39 @@ class ParseResults:
         return self.race_type + "/" + self.race_year + "/" + self.race_name
 
     def get_hash_individual_race(self):
-        # year / race / cate /  => pos
         return self.race_date + "|" + self.race_name + "|" + self.race_cat
 
     def is_team_member(self, sheet, line):
-        if line <= 1:
-            return False
         if "TEAM SPECIALIZED LILLE" in str(sheet.cell(line, column_team).value):
             return True
-
         elif str(sheet.cell(line, column_team).value) == "":
-
             if sheet.cell(line, column_result).value == "Ab" or sheet.cell(line, column_result).value == "AB":
                 member = sheet.cell(line, column_name).value
                 if member in self.team:
                     return True
         return False
+
+    def increase_riders_by_categories(self, hash_race):
+        if self.race_cat == "1ère":
+            self.results[hash_race].one_riders += 1
+        elif self.race_cat == "2ème":
+            self.results[hash_race].two_riders += 1
+        elif self.race_cat == "3ème":
+            self.results[hash_race].three_riders += 1
+        elif self.race_cat == "Cadets":
+            self.results[hash_race].cadet_riders += 1
+        elif self.race_cat == "Féminines":
+            self.results[hash_race].fem_riders += 1
+        elif self.race_cat == "Séniors A":
+            self.results[hash_race].VTTSeniorsA_riders += 1
+        elif self.race_cat == "Seniors B":
+            self.results[hash_race].VTTSeniorsB_riders += 1
+        elif self.race_cat == "Vétérans A":
+            self.results[hash_race].VTTVeteransA_riders += 1
+        elif self.race_cat == "Vétérans B":
+            self.results[hash_race].VTTVeteransB_riders += 1
+        elif self.race_cat == "Vétérans C":
+            self.results[hash_race].VTTVeteransC_riders += 1
 
     def parse_results_race_sheet(self, workbook, sheet):
         sheet = workbook.sheet_by_index(sheet)
@@ -130,81 +155,73 @@ class ParseResults:
         if hash_race not in self.results:
             self.results[hash_race] = race_results.RaceResults(hash_race)
         for line in range(sheet.nrows):
-            if str(sheet.cell(line, column_team).value) != "":
-                if self.race_cat == "1ère":
-                    self.results[hash_race].one_riders += 1
-                elif self.race_cat == "2ème":
-                    self.results[hash_race].two_riders += 1
-                elif self.race_cat == "3ème":
-                    self.results[hash_race].three_riders += 1
-                elif self.race_cat == "Cadets":
-                    self.results[hash_race].cadet_riders += 1
-                elif self.race_cat == "Féminines":
-                    self.results[hash_race].fem_riders += 1
-                elif self.race_cat == "Séniors A":
-                    self.results[hash_race].VTTSeniorsA_riders += 1
-                elif self.race_cat == "Seniors B":
-                    self.results[hash_race].VTTSeniorsB_riders += 1
-                elif self.race_cat == "Vétérans A":
-                    self.results[hash_race].VTTVeteransA_riders += 1
-                elif self.race_cat == "Vétérans B":
-                    self.results[hash_race].VTTVeteransB_riders += 1
-                elif self.race_cat == "Vétérans C":
-                    self.results[hash_race].VTTVeteransC_riders += 1
-            if self.is_team_member(sheet, line):
-                member = sheet.cell(line, column_name).value
-                if member not in self.team:
-                    self.team[member] = team_members.TeamMember(member)
-                self.team[member].course += 1
-                hash_individual = self.get_hash_individual_race()
-                if self.race_type == "Cyclo Cross":
-                    self.team[member].cx[hash_individual] = return_result(sheet, line)
-                elif self.race_type == "VTT":
-                    self.team[member].vtt[hash_individual] = return_result(sheet, line)
-                elif self.race_type == "Route":
-                    self.team[member].road[hash_individual] = return_result(sheet, line)
-                if self.race_cat == "1ère":
-                    self.results[hash_race].one[member] = return_result(sheet, line)
-                elif self.race_cat == "2ème":
-                    self.results[hash_race].two[member] = return_result(sheet, line)
-                elif self.race_cat == "3ème":
-                    self.results[hash_race].three[member] = return_result(sheet, line)
-                elif self.race_cat == "Cadets":
-                    self.results[hash_race].cadet[member] = return_result(sheet, line)
-                elif self.race_cat == "Féminines":
-                    self.results[hash_race].fem[member] = return_result(sheet, line)
-                elif self.race_cat == "Seniors A":
-                    self.results[hash_race].VTTSeniorsA[member] = return_result(sheet, line)
-                elif self.race_cat == "Seniors B":
-                    self.results[hash_race].VTTSeniorsB[member] = return_result(sheet, line)
-                elif self.race_cat == "Vétérans A":
-                    self.results[hash_race].VTTVeteransA[member] = return_result(sheet, line)
-                elif self.race_cat == "Vétérans B":
-                    self.results[hash_race].VTTVeteransB[member] = return_result(sheet, line)
-                elif self.race_cat == "Vétérans C":
-                    self.results[hash_race].VTTVeteransC[member] = return_result(sheet, line)
             member = sheet.cell(line, column_name).value
-            if member != "" and line > 1 and scratch_enable and str(type(member)) == "<class 'str'>":
-                if sheet.cell(line, column_time).value == "":
-                    test = (40, 0, 0, 0, 38, 53)
-                else:
-
-                    raw_time = sheet.cell(line, column_time).value
-                    if isinstance(raw_time, str):
-                        split_time = raw_time.split(":")
-                        test = (0, 0, 0, int(split_time[0]), int(split_time[1]), int(split_time[2]))
+            if str(member) != "" and line > 1:
+                self.increase_riders_by_categories(hash_race)
+                if self.is_team_member(sheet, line):
+                    self.set_results_for_member(hash_race, line, member, sheet)
+                    self.set_race_results_for_team(hash_race, line, member, sheet)
+                if  scratch_enable and isinstance(member, str):
+                    if sheet.cell(line, column_time).value == "":
+                        test = (40, 0, 0, 0, 38, 53)
                     else:
-                        try:
-                            test = xlrd.xldate.xldate_as_tuple(raw_time, sheet.book.datemode)
-                        except Exception:
-                            test = (40, 0, 0, 0, 38, 53)
+                        raw_time = sheet.cell(line, column_time).value
+                        if isinstance(raw_time, str):
+                            split_time = raw_time.split(":")
+                            test = (0, 0, 0, int(split_time[0]), int(split_time[1]), int(split_time[2]))
+                        else:
+                            try:
+                                test = xlrd.xldate.xldate_as_tuple(raw_time, sheet.book.datemode)
+                            except xlrd.xldate.XLDateNegative:
+                                test = (40, 0, 0, 0, 38, 53)
+                            except xlrd.xldate.XLDateAmbiguous:
+                                test = (40, 0, 0, 0, 38, 53)
+                            except xlrd.xldate.XLDateTooLarge:
+                                test = (40, 0, 0, 0, 38, 53)
+                            except xlrd.xldate.XLDateBadDatemode:
+                                test = (40, 0, 0, 0, 38, 53)
+                            except xlrd.xldate.XLDateError:
+                                test = (40, 0, 0, 0, 38, 53)
+                    try:
+                        lap = int(sheet.cell_value(line, column_lap))
+                    except Exception:
+                        lap = 0
+                    self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)),
+                                                               "lap": int(lap), "time": test, "cat": self.race_cat}
 
-                try:
-                    lap = int(sheet.cell_value(line, column_lap))
-                except Exception:
-                    lap = 0
-                self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)),
-                                                           "lap": int(lap), "time": test, "cat": self.race_cat}
+    def set_results_for_member(self, hash_race, line, member, sheet):
+        if member not in self.team:
+            self.team[member] = team_members.TeamMember(member)
+        self.team[member].course += 1
+        hash_individual = self.get_hash_individual_race()
+        if self.race_type == "Cyclo Cross":
+            self.team[member].cx[hash_individual] = return_result(sheet, line)
+        elif self.race_type == "VTT":
+            self.team[member].vtt[hash_individual] = return_result(sheet, line)
+        elif self.race_type == "Route":
+            self.team[member].road[hash_individual] = return_result(sheet, line)
+
+    def set_race_results_for_team(self, hash_race, line, member, sheet):
+        if self.race_cat == "1ère":
+            self.results[hash_race].one[member] = return_result(sheet, line)
+        elif self.race_cat == "2ème":
+            self.results[hash_race].two[member] = return_result(sheet, line)
+        elif self.race_cat == "3ème":
+            self.results[hash_race].three[member] = return_result(sheet, line)
+        elif self.race_cat == "Cadets":
+            self.results[hash_race].cadet[member] = return_result(sheet, line)
+        elif self.race_cat == "Féminines":
+            self.results[hash_race].fem[member] = return_result(sheet, line)
+        elif self.race_cat == "Seniors A":
+            self.results[hash_race].VTTSeniorsA[member] = return_result(sheet, line)
+        elif self.race_cat == "Seniors B":
+            self.results[hash_race].VTTSeniorsB[member] = return_result(sheet, line)
+        elif self.race_cat == "Vétérans A":
+            self.results[hash_race].VTTVeteransA[member] = return_result(sheet, line)
+        elif self.race_cat == "Vétérans B":
+            self.results[hash_race].VTTVeteransB[member] = return_result(sheet, line)
+        elif self.race_cat == "Vétérans C":
+            self.results[hash_race].VTTVeteransC[member] = return_result(sheet, line)
 
     def parse_results_race(self, file_url):
         try:
@@ -227,7 +244,6 @@ class ParseResults:
                     for res in self.results[hash_race].scratch:
                         res[1]["time"] = (
                                 str(res[1]["time"][3]) + ":" + str(res[1]["time"][4]) + ":" + str(res[1]["time"][5]))
-
                 return True
             else:
                 return False
@@ -266,90 +282,42 @@ class ParseResults:
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(
             " ", "-") + ".md"
         with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
-            outfile.write("---\n")
-            outfile.write("layout: post\n")
-            outfile.write("title: " + self.race_type + " - " + self.race_name + " - " + self.race_year + "\n")
-            outfile.write("date: " + self.race_date.replace("/", "-") + "\n")
-            outfile.write("category: " + self.race_type + "\n")
-            outfile.write("tags: " + self.race_type + "\n")
-            if self.race_type == "Cyclo Cross":
-                outfile.write("image: assets/img/blog/cx.jpeg\n")
-            elif self.race_type == "VTT":
-                outfile.write("image: assets/img/blog/vtt.jpeg\n")
-            elif self.race_type == "Route":
-                outfile.write("image: assets/img/blog/road.jpeg\n")
-            outfile.write("---\n")
+            self.write_post_race_header(outfile)
 
-            result_to_display = self.results[hash_race].one
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### 1ère Catégorie\n")
-                outfile.write(str(self.results[hash_race].one_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-            result_to_display = self.results[hash_race].two
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### 2ème Catégorie\n")
-                outfile.write(str(self.results[hash_race].two_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-            result_to_display = self.results[hash_race].three
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### 3ème Catégorie\n")
-                outfile.write(str(self.results[hash_race].three_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].fem
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### Féminines\n")
-                outfile.write(str(self.results[hash_race].fem_riders) + " participantes\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].cadet
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### Cadets\n")
-                outfile.write(str(self.results[hash_race].cadet_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].VTTSeniorsA
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### VTT Sénior A\n")
-                outfile.write(str(self.results[hash_race].VTTSeniorsA_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].VTTSeniorsB
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### VTT Sénior B\n")
-                outfile.write(str(self.results[hash_race].VTTSeniorsB_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].VTTVeteransA
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### VTT Vétérans A\n")
-                outfile.write(str(self.results[hash_race].VTTVeteransA_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].VTTVeteransB
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### VTT Vétérans B\n")
-                outfile.write(str(self.results[hash_race].VTTVeteransB_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
-            result_to_display = self.results[hash_race].VTTVeteransC
-            if len(result_to_display.keys()) > 0:
-                outfile.write("\n### VTT Vétérans C\n")
-                outfile.write(str(self.results[hash_race].VTTVeteransC_riders) + " participants\n")
-            for line in result_to_display.keys():
-                display_result_line_with_link(outfile, line, result_to_display[line])
-
+            write_post_race_category(outfile, "1ère Catégorie", self.results[hash_race].one_riders, self.results[hash_race].one)
+            write_post_race_category(outfile, "2ème Catégorie", self.results[hash_race].two_riders, self.results[hash_race].two)
+            write_post_race_category(outfile, "3ème Catégorie", self.results[hash_race].three_riders , self.results[hash_race].three)
+            write_post_race_category(outfile, "Féminines", self.results[hash_race].fem_riders,
+                                     self.results[hash_race].fem)
+            write_post_race_category(outfile, "Cadets", self.results[hash_race].cadet_riders,
+                                     self.results[hash_race].cadet)
+            write_post_race_category(outfile, "VTT Sénior A", self.results[hash_race].VTTSeniorsA_riders,
+                                     self.results[hash_race].VTTSeniorsA)
+            write_post_race_category(outfile, "VTT Sénior B", self.results[hash_race].VTTSeniorsB_riders,
+                                     self.results[hash_race].VTTSeniorsB)
+            write_post_race_category(outfile, "VTT Vétérans A", self.results[hash_race].VTTVeteransA_riders,
+                                     self.results[hash_race].VTTVeteransA)
+            write_post_race_category(outfile, "VTT Vétérans B", self.results[hash_race].VTTVeteransB_riders,
+                                     self.results[hash_race].VTTVeteransB)
+            write_post_race_category(outfile, "VTT Vétérans C", self.results[hash_race].VTTVeteransC_riders,
+                                     self.results[hash_race].VTTVeteransC)
             self.print_scratch_results(outfile, hash_race)
             self.results = {}
+
+    def write_post_race_header(self, outfile):
+        outfile.write("---\n")
+        outfile.write("layout: post\n")
+        outfile.write("title: " + self.race_type + " - " + self.race_name + " - " + self.race_year + "\n")
+        outfile.write("date: " + self.race_date.replace("/", "-") + "\n")
+        outfile.write("category: " + self.race_type + "\n")
+        outfile.write("tags: " + self.race_type + "\n")
+        if self.race_type == "Cyclo Cross":
+            outfile.write("image: assets/img/blog/cx.jpeg\n")
+        elif self.race_type == "VTT":
+            outfile.write("image: assets/img/blog/vtt.jpeg\n")
+        elif self.race_type == "Route":
+            outfile.write("image: assets/img/blog/road.jpeg\n")
+        outfile.write("---\n")
 
     def print_scratch_results(self, outfile, hash_race):
         nb_line = 1
@@ -386,7 +354,7 @@ class ParseResults:
                 file = re.search(r"(.*)='(.*)'(.*)", line).group(2)
                 self.set_race_infos(file)
 
-                if file not in self.races_parsed or True == True: #file == "Cyclo Cross/2024/FOURMIES/Classements.xls":
+                if file not in self.races_parsed:
                     url = base + file
                     if self.parse_results_race(url):
                         self.races_parsed.append(file)
@@ -395,7 +363,7 @@ class ParseResults:
 
     def generate_results(self):
         self.races_parsed = load_races_parsed()
-        myobj = {'saison': '2022'}
+        myobj = {'saison': '2024'}
 
         # cross
         r = requests.post('https://cyclismeufolep5962.fr/calResCross.php', verify=False, data=myobj).text.splitlines()
