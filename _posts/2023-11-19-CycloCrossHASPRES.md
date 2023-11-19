@@ -4,7 +4,7 @@ title: Cyclo Cross - HASPRES - 2024
 date: 2023-11-19
 category: Cyclo Cross
 tags: Cyclo Cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2023-11-19-CycloCrossHASPRES/1.jpg
 ---
 
 ### 3ème Catégorie
@@ -113,3 +113,8 @@ image: assets/img/blog/cx.jpeg
 | 95 | STAQUET AURELIEN | UNION SPORTIVE VALENCIENNES CRESPIN | 5 | 3ème | 0:55:25 | 
 | 96 | DELTOUR LUCAS | UNION VELOCIPEDIQUE FOURM | 0 | 1ère | 0:38:53 | 
 | 97 | ROULY ALEXIS | ETOILE CYCLISTE LIEU ST A | 0 | 2ème | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-CycloCrossHASPRES/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-CycloCrossHASPRES/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-CycloCrossHASPRES/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-CycloCrossHASPRES/4.jpg)

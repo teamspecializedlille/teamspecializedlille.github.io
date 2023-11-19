@@ -4,7 +4,7 @@ title: VTT - HASPRES - 2024
 date: 2023-11-19
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2023-11-19-VTTHASPRES/1.jpeg
 ---
 
 ### VTT Vétérans B
@@ -58,3 +58,7 @@ image: assets/img/blog/vtt.jpeg
 | 40 | SAVARY FABIEN | ARTOIS CYCLING TEAM | 6 | Vétérans A | 1:0:27 | 
 | 41 | MALFOY DAVY | LES MOULIN'EUX - ST VAAST EN CAMBRESIS | 6 | Vétérans B | 1:6:37 | 
 | 42 | MAERTENS DAVID | U. S. HAM | 0 | Vétérans B | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-VTTHASPRES/1.jpeg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-VTTHASPRES/2.jpeg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-19-VTTHASPRES/3.jpeg)
