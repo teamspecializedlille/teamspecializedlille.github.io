@@ -4,7 +4,7 @@ title: Cyclo Cross - BAILLEUL - 2024
 date: 2023-11-18
 category: Cyclo Cross
 tags: Cyclo Cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/1.jpeg
 ---
 
 ### 2ème Catégorie
@@ -91,3 +91,10 @@ image: assets/img/blog/cx.jpeg
 | 67 | BAUW EDOUARD | TEAM LABIERE BAILLEUL | 0 | 3ème | 0:38:53 | 
 | 68 | POUBLANG CYRILLE | CYCLO CLUB BERGUES | 0 | 3ème | 0:38:53 | 
 | 69 | ANTOGNARELLI MARINE | ESPOIR CYCLISTE WAMBRECHI | 0 | Féminines | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/1.jpeg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/2.jpeg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/3.jpeg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/4.jpeg)
+![5](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/5.jpeg)
+![6](http://teamspecializedlille.github.io/assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/6.jpeg)
