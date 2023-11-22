@@ -2787,8 +2787,6 @@ readers do not read off random characters that represent icons */
 .fa-mouse:before {
   content: "\f8cc"; }
 
-.fa-mouse-pointer:before {
-  content: "\f245"; }
 
 .fa-mug-hot:before {
   content: "\f7b6"; }
