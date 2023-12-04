@@ -4,7 +4,7 @@ title: VTT - BTWIN - LILLE - 2024
 date: 2023-12-03
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2023-12-03-VTTBTWIN---LILLE/1.jpg
 ---
 
 ### VTT Vétérans A
@@ -64,3 +64,6 @@ image: assets/img/blog/vtt.jpeg
 | 46 | DAUCHY FLORIAN | BETHUNE ROBECQ TEAM TBR | 0 | Seniors B | 0:38:53 | 
 | 47 | PRUVOST CLEMENT | AGNY ARTeam | 0 | Seniors B | 0:38:53 | 
 | 48 | FARDOUX DANY | FLEURBAIX TEAM SHARK VTT | 0 | Vétérans A | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-VTTBTWIN---LILLE/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-VTTBTWIN---LILLE/2.jpg)

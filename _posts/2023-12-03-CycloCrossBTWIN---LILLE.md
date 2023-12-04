@@ -4,7 +4,7 @@ title: Cyclo Cross - BTWIN - LILLE - 2024
 date: 2023-12-03
 category: Cyclo Cross
 tags: Cyclo Cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/1.jpg
 ---
 
 ### 2ème Catégorie
@@ -105,3 +105,9 @@ image: assets/img/blog/cx.jpeg
 | 81 | PONCET ALEXIS | TEAM ENFER DU NORD WALLER | 0 | 2ème | 0:38:53 | 
 | 82 | BOULOGNE JEROME | LINSELLES CYCLISME | 0 | 3ème | 0:38:53 | 
 | 83 | MUI PHILIPPE HOO TONG | ESPOIR CYCLISTE WAMBRECHI | 0 | 3ème | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/4.jpg)
+![5](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/5.jpg)
