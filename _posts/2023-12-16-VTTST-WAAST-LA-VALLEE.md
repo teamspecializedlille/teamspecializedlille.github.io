@@ -4,7 +4,7 @@ title: VTT - ST WAAST LA VALLEE - 2024
 date: 2023-12-16
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2023-12-16-VTTST-WAAST-LA-VALLEE/1.jpg
 ---
 
 ### VTT Vétérans B
@@ -71,3 +71,6 @@ image: assets/img/blog/vtt.jpeg
 | 53 | MALFOY DAVY | LES MOULIN'EUX - ST VAAST EN CAMBRESIS | 5 | Vétérans B | 1:7:22 | 
 | 54 | RAMETTE SAMUEL | VTT  CLUB PONT SUR SAMBRE | 0 | Vétérans B | 0:38:53 | 
 | 55 | DUBRAY YVES | LES VIKINGS VTT MARCHE NO | 0 | Vétérans B | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-16-VTTST-WAAST-LA-VALLEE/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-16-VTTST-WAAST-LA-VALLEE/2.jpg)
