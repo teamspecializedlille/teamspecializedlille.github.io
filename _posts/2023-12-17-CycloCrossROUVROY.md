@@ -4,7 +4,7 @@ title: Cyclo Cross - ROUVROY - 2024
 date: 2023-12-17
 category: Cyclo Cross
 tags: Cyclo Cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2023-12-17-CycloCrossROUVROY/1.jpg
 ---
 
 ### 3ème Catégorie
@@ -97,3 +97,5 @@ image: assets/img/blog/cx.jpeg
 | 79 | DERODE ELOISE | HAVELUY CYCLO CLUB | 4 | Féminines | 0:37:23 | 
 | 80 | DOCHNIAK LEO | HAVELUY CYCLO CLUB | 0 | 1ère | 0:38:53 | 
 | **81** | **[DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid)** | **TEAM SPECIALIZED LILLE** | **0** | **3ème** | **0:38:53** | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-17-CycloCrossROUVROY/1.jpg)
