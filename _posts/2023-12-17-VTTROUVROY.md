@@ -4,7 +4,7 @@ title: VTT - ROUVROY - 2024
 date: 2023-12-17
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2023-12-17-VTTROUVROY/1.jpg
 ---
 
 ### VTT Vétérans B
@@ -69,3 +69,6 @@ image: assets/img/blog/vtt.jpeg
 | 51 | LADENT JEROME | MERICOURT ULTRA VTT | 0 | Vétérans B | 0:38:53 | 
 | 52 | TRINQUART YANNICK | TEAM PEVELE CAREMBAULT CY | 0 | Vétérans B | 0:38:53 | 
 | 53 | LALEU DAVID | UNION SPORTIVE SAINT ANDR | 0 | Vétérans B | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-17-VTTROUVROY/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-17-VTTROUVROY/2.jpg)
