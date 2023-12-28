@@ -4,7 +4,7 @@ title: Cyclo Cross - BOUSIES - 2024
 date: 2023-12-23
 category: Cyclo Cross
 tags: Cyclo Cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2023-12-23-CycloCrossBOUSIES/1.jpg
 ---
 
 ### 2ème Catégorie
@@ -78,3 +78,6 @@ image: assets/img/blog/cx.jpeg
 | 60 | FARTEK LEA | TEAM ENFER DU NORD WALLERS ARENBERG | 5 | Cadets | 0:42:52 | 
 | 61 | BOULANGER DANIEL | LA CHERIZIENNE - VILLE DE CHAUNY | 2 | 3ème | 0:5:42 | 
 | 62 | ROULY ALEXIS | ETOILE CYCLISTE LIEU ST A | 0 | 2ème | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-23-CycloCrossBOUSIES/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-23-CycloCrossBOUSIES/2.jpg)

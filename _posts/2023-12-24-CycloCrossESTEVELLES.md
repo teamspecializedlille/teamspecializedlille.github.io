@@ -4,7 +4,7 @@ title: Cyclo Cross - ESTEVELLES - 2024
 date: 2023-12-24
 category: Cyclo Cross
 tags: Cyclo Cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2023-12-24-CycloCrossESTEVELLES/1.jpg
 ---
 
 ### 2ème Catégorie
@@ -83,3 +83,8 @@ image: assets/img/blog/cx.jpeg
 | 60 | MARTIN FABIEN | MANQUEVILLE LILLERS CLUB | 0 | 2ème | 0:38:53 | 
 | 61 | DUFOUR SYLVAIN | VELO CLUB UNION HALLUIN | 0 | 3ème | 0:38:53 | 
 | 62 | TAHON SIMON | AGNY ARTeam | 0 | 3ème | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-24-CycloCrossESTEVELLES/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-24-CycloCrossESTEVELLES/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-24-CycloCrossESTEVELLES/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-24-CycloCrossESTEVELLES/4.jpg)

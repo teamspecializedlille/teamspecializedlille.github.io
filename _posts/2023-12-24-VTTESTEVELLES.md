@@ -4,7 +4,7 @@ title: VTT - ESTEVELLES - 2024
 date: 2023-12-24
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2023-12-24-VTTESTEVELLES/1.jpg
 ---
 
 ### VTT Vétérans A
@@ -55,3 +55,6 @@ image: assets/img/blog/vtt.jpeg
 | 37 | LADENT JEROME | MERICOURT ULTRA VTT | 6 | Vétérans B | 0:51:12 | 
 | 38 | WALLART RODERIC | CYCLO CLUB WAVRIN | 6 | Vétérans A | 0:52:15 | 
 | 39 | DUHAMEL ARNAUD | AGNY ARTeam | 0 | Vétérans B | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-24-VTTESTEVELLES/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-24-VTTESTEVELLES/2.jpg)
