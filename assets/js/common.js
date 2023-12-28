@@ -14,7 +14,7 @@ $(window).on("load", function() {
 		/**
 			init Cursor
 		**/
-		initCursor();
+		//initCursor();
 
 		/**
 			init Scrolla
