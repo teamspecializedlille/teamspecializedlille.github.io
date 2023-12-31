@@ -4,7 +4,7 @@ title: VTT - HASPRES2 - 2024
 date: 2023-12-30
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2023-12-30-VTTHASPRES2/1.jpg
 ---
 
 ### VTT Vétérans B
@@ -50,3 +50,6 @@ image: assets/img/blog/vtt.jpeg
 | 32 | DEGRELLE BENJAMIN | LES VIKINGS VTT MARCHE NORDIQUE OHAIN | 6 | Seniors B | 0:57:19 | 
 | 33 | DUBRAY YVES | LES VIKINGS VTT MARCHE NORDIQUE OHAIN | 6 | Vétérans B | 0:59:0 | 
 | 34 | BERNIER STEPHANE | VTT  CLUB PONT SUR SAMBRE | 6 | Vétérans B | 1:0:24 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-30-VTTHASPRES2/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2023-12-30-VTTHASPRES2/2.jpg)
