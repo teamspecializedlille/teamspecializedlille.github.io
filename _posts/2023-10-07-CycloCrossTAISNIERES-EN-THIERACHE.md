@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - TAISNIERES EN THIERACHE - 2024
 date: 2023-10-07
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/blog/cx.jpeg
 ---
 

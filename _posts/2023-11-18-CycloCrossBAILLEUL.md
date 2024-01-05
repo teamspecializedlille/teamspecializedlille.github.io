@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - BAILLEUL - 2024
 date: 2023-11-18
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-11-18-CycloCrossBAILLEUL/1.jpeg
 ---
 

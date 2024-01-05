@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - BOUSIES - 2024
 date: 2023-12-23
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-12-23-CycloCrossBOUSIES/1.jpg
 ---
 

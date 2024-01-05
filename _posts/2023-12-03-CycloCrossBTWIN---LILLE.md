@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - BTWIN - LILLE - 2024
 date: 2023-12-03
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-12-03-CycloCrossBTWIN---LILLE/1.jpg
 ---
 

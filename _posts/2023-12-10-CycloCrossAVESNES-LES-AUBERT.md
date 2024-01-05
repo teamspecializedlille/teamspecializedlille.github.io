@@ -3,7 +3,7 @@ layout: post
 title:  Cyclo Cross - Championnat Départemental Nord 2023
 date: 2023-12-10
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-12-10-CycloCrossAVESNES-LES-AUBERT/1.jpg
 ---
 

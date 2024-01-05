@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - HASPRES - 2024
 date: 2023-11-19
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-11-19-CycloCrossHASPRES/1.jpg
 ---
 

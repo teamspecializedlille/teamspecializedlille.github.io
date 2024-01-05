@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - SAINT SAULVE - 2022
 date: 2022-01-08
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/blog/cx.jpeg
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - ESTEVELLES - 2024
 date: 2023-12-24
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-12-24-CycloCrossESTEVELLES/1.jpg
 ---
 

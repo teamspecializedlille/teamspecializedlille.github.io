@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - AUCHY LES MINES - 2024
 date: 2023-11-05
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/blog/cx.jpeg
 ---
 

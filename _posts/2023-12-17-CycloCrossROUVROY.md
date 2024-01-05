@@ -3,7 +3,7 @@ layout: post
 title: Cyclo Cross - ROUVROY - 2024
 date: 2023-12-17
 category: Cyclo Cross
-tags: Cyclo Cross
+tags: cyclo-cross
 image: assets/img/resultats/2023-12-17-CycloCrossROUVROY/1.jpg
 ---
 

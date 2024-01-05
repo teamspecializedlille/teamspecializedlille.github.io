@@ -271,7 +271,10 @@ class ParseResults:
             outfile.write("title: " + self.race_type + " - " + self.race_name + " - " + self.race_year + "\n")
             outfile.write("date: " + self.race_date.replace("/", "-") + "\n")
             outfile.write("category: " + self.race_type + "\n")
-            outfile.write("tags: " + self.race_type + "\n")
+            tag = self.race_type
+            if self.race_type == "Cyclo Cross":
+                tag = "cyclo-cross"
+            outfile.write("tags: " + tag + "\n")
             if self.race_type == "Cyclo Cross":
                 outfile.write("image: assets/img/blog/cx.jpeg\n")
             elif self.race_type == "VTT":
