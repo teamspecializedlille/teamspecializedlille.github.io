@@ -1261,6 +1261,7 @@ hr {
 /* - Cursor */
 
 .cursor {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1281,6 +1282,7 @@ hr {
 }
 
 .cursor.cursor-zoom {
+	display: none;
 	margin-top: -25px;
 	margin-left: -25px;
 	width: 80px;

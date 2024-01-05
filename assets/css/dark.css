@@ -187,11 +187,13 @@ body.dark-skin {
 /* - Cursor */
 
 .dark-skin .cursor {
+	display: none;
 	background: rgba(255, 255, 255, 0.2);
 	border: 1px solid transparent;
 }
 
 .dark-skin .cursor.cursor-zoom {
+	display: none;
 	background: rgba(255, 255, 255, 0);
 	border-color: rgba(255, 255, 255, 0.5);
 }
