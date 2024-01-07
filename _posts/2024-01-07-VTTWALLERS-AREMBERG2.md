@@ -4,7 +4,7 @@ title: VTT - WALLERS AREMBERG2 - 2024
 date: 2024-01-07
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/1.jpg
 ---
 
 ### VTT Vétérans A
@@ -56,3 +56,10 @@ image: assets/img/blog/vtt.jpeg
 | 34 | DEGRELLE BENJAMIN | LES VIKINGS VTT MARCHE NORDIQUE OHAIN | 6 | Seniors B | 0:55:20 | 
 | 35 | DUBRAY YVES | LES VIKINGS VTT MARCHE NORDIQUE OHAIN | 6 | Vétérans B | 0:55:20 | 
 | 36 | BERNIER STEPHANE | VTT  CLUB PONT SUR SAMBRE | 6 | Vétérans B | 0:57:46 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/4.jpg)
+![5](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/5.jpg)
+![6](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/6.jpg)
