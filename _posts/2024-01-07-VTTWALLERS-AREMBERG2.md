@@ -57,9 +57,9 @@ image: assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/1.jpg
 | 35 | DUBRAY YVES | LES VIKINGS VTT MARCHE NORDIQUE OHAIN | 6 | Vétérans B | 0:55:20 | 
 | 36 | BERNIER STEPHANE | VTT  CLUB PONT SUR SAMBRE | 6 | Vétérans B | 0:57:46 | 
 
-![1](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/1.jpg)
-![2](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/2.jpg)
-![3](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/3.jpg)
-![4](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/4.jpg)
-![5](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/5.jpg)
-![6](http://teamspecializedlille.github.io/assets/img/resultats/|2024-01-07-VTTWALLERS-AREMBERG2/6.jpg)
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/4.jpg)
+![5](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/5.jpg)
+![6](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-07-VTTWALLERS-AREMBERG2/6.jpg)
