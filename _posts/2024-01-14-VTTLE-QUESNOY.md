@@ -4,7 +4,7 @@ title: VTT - LE QUESNOY - 2024
 date: 2024-01-14
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2024-01-14-VTTLE-QUESNOY/1.jpg
 ---
 
 ### VTT Vétérans B
@@ -56,3 +56,5 @@ image: assets/img/blog/vtt.jpeg
 | 38 | BERNIER STEPHANE | VTT  CLUB PONT SUR SAMBRE | 6 | Vétérans B | 0:58:31 | 
 | 39 | BOURGEAULT LOUIS | VELO CLUB SOLESMES | 0 | Seniors A | 0:38:53 | 
 | 40 | FORRIERE MAXENCE | VELO CLUB SOLESMES | 0 | Seniors A | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-14-VTTLE-QUESNOY/1.jpg)

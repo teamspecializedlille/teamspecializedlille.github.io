@@ -4,7 +4,7 @@ title: Cyclo Cross - MAZINGARBE - 2024
 date: 2024-01-21
 category: Cyclo Cross
 tags: cyclo-cross
-image: assets/img/blog/cx.jpeg
+image: assets/img/resultats/2024-01-21-CycloCrossMAZINGARBE/1.jpg
 ---
 
 ### 3ème Catégorie
@@ -69,3 +69,5 @@ image: assets/img/blog/cx.jpeg
 | 51 | CLAISSE ANAIS | UNION SPORTIVE VALENCIENN | 0 | 3ème | 0:38:53 | 
 | 52 | DAGHELET THOMAS | ESPOIR CYCLISTE WAMBRECHI | 0 | 3ème | 0:38:53 | 
 | 53 | CANU CHRISTIAN | UNION SPORTIVE SAINT ANDR | 0 | 3ème | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-21-CycloCrossMAZINGARBE/1.jpg)

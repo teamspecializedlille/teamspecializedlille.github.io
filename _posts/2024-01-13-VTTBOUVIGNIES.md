@@ -4,7 +4,7 @@ title: VTT - BOUVIGNIES - 2024
 date: 2024-01-13
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2024-01-13-VTTBOUVIGNIES/1.jpg
 ---
 
 ### VTT Vétérans B
@@ -47,3 +47,5 @@ image: assets/img/blog/vtt.jpeg
 | 29 | GUENARD LUDOVIC | CYCLO CLUB ORCHIES | 5 | Vétérans B | 0:57:32 | 
 | 30 | TREHOUST FRANCOIS | AGNY ARTeam | 5 | Vétérans B | 1:1:20 | 
 | 31 | MARLIER RONALD | VELO CLUB UNION HALLUIN | 0 | Seniors B | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-01-13-VTTBOUVIGNIES/1.jpg)
