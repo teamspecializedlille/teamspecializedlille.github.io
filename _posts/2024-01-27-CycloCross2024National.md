@@ -8,11 +8,11 @@ image: assets/img/resultats/2024-01-27-CycloCross2024National/1.jpg
 ---
 
 ### Vétérans 50/59 ans
-83 participants 
+90 participants 
 - [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 27
 
 ### Juniors : 17-19 ans
-40 participants 
+60 participants 
 - [DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid) : 49
 - [LECOLIER LOUIS](https://teamspecializedlille.github.io/works/lecolierlouis) : 45
 
