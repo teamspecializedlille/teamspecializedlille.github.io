@@ -4,7 +4,7 @@ title: VTT - DOULLENS - 2024
 date: 2024-02-25
 category: VTT
 tags: VTT
-image: assets/img/blog/vtt.jpeg
+image: assets/img/resultats/2024-02-25-VTTDOULLENS/1.jpg
 ---
 
 ### VTT Vétérans B
@@ -53,3 +53,9 @@ image: assets/img/blog/vtt.jpeg
 | 35 | JOLY CEDRIC | TORCY TEAM PINK AND BLUE | 6 | Vétérans A | 0:58:0 | 
 | 36 | SAVARY FABIEN | ARTOIS CYCLING TEAM | 5 | Vétérans A | 0:49:21 | 
 | 37 | MIENS JEROME | VELO CLUB SOLESMES | 0 | Vétérans A | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-25-VTTDOULLENS/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-25-VTTDOULLENS/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-25-VTTDOULLENS/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-25-VTTDOULLENS/4.jpg)
+![5](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-25-VTTDOULLENS/5.jpg)
