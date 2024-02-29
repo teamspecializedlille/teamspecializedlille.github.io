@@ -12,7 +12,9 @@ class TeamMember:
         self.road = {}
 
     def to_dict(self):
-        res = {"name": self.name, "course": self.course, "cx": dict(sorted(self.cx.items(), reverse=True)),
+        print("in dict" + self.name)
+        res = {"name": self.name, "course": self.course,
+               "cx": dict(sorted(self.cx.items(), reverse=True)),
                "vtt": dict(sorted(self.vtt.items(), reverse=True)),
                "road": dict(sorted(self.road.items(), reverse=True))}
         return res

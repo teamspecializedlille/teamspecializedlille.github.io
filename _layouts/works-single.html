@@ -100,9 +100,11 @@ layout: default
 					{%- if team_people.road.size > 0 -%}
 					<h5>Route</h5>
 					<ul>
-						{% for res in team_people.road %}
-							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+						{% for road_year in team_people.road %}
+							{% for res in road_year %}
+								{% assign split_race = res.[0] | split: "|" %}
+								<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+							{% endfor %}
 						{% endfor %}
 					</ul>
 					{%- endif -%}
