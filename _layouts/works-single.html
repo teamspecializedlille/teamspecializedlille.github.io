@@ -97,25 +97,19 @@ layout: default
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 				<div class="post-content">
-					{%- if team_people.road.size > 0 -%}
-					{{ team_people.road | inspect }}
-					{{ team_people.road["2023"] | inspect }}
-					test
-					{{ team_people.road | hash  }}
 					<h5>Route</h5>
 					<ul>
 						{% for year in (2018..2024) reversed %}
-
 							{% assign year_string = year | append: "" %}}
-							{% if team_people.road[year_string] %}
-								<li>{{ year }}</li>
+							{%-  if team_people.road[year_string] -%}
+								<li><b>{{ year }}</b></li>
 								<ul>
 								{% for res in team_people.road[year_string] %}
 									{% assign split_race = res.[0] | split: "|" %}
 									<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ split_race[0] }} - {{ split_race[1] }}</a> ~ {{ res.[1] }}</li>
 								{% endfor %}
 								</ul>
-							{% endif  %}
+							{%- endif -%}
 						{% endfor %}
 					</ul>
 					{%- endif -%}
