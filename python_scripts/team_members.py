@@ -1,6 +1,13 @@
 import json
+import datetime
+import operator
 
 team_path_file = '../_data/team.json'
+challenge_path_file = "../_data/challenge.json"
+point_win = 3
+point_top5 = 2
+point_top10 = 1
+point_participation = 10
 
 
 class TeamMember:
@@ -12,12 +19,39 @@ class TeamMember:
         self.road = {}
 
     def to_dict(self):
-        print("in dict" + self.name)
         res = {"name": self.name, "course": self.course,
                "cx": dict(sorted(self.cx.items(), reverse=True)),
                "vtt": dict(sorted(self.vtt.items(), reverse=True)),
                "road": dict(sorted(self.road.items(), reverse=True))}
         return res
+
+    def challenge_calcul_point(self, year):
+        points = 0
+        if self.road.get(year):
+            for race in self.road[year].items():
+                if isinstance(race[1], int):
+                    if race[1] == 1:
+                        points += point_win
+                    elif race[1] <= 5:
+                        points += point_top5
+                    elif race[1] <= 10:
+                        points += point_top10
+                points += point_participation
+
+            res = {"name": self.name, "points": points}
+        return points
+
+
+def update_challenge(team: dict[str, TeamMember]):
+    data = {}
+    challenge_res = {}
+    for m in team.values():
+        challenge_res[m.name] = m.challenge_calcul_point("2023")
+    data["update_date"] = datetime.datetime.now().strftime("%A %d %Y")
+    data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
+    json_object = json.dumps(data, ensure_ascii=False)
+    with open(challenge_path_file, "w", encoding='utf8') as outfile:
+        outfile.write(json_object)
 
 
 def load_team_from_file(team: dict[str, TeamMember]) -> dict[str, TeamMember]:
