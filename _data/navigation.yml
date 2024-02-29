@@ -21,7 +21,7 @@ main:
     url: "/blog"
     parent: 0
 
-  - title: "Challenge"
+  - title: "Challenge Route"
     url: "/challenge"
     parent: 0
 
