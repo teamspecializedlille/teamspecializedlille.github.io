@@ -36,13 +36,19 @@ layout: default
 									<th scope="col">Points</th>
 								</tr>
 						  	</thead>
-								<tbody> <tr>
-									<th>1</th>
-									<td>Test</td>
-									<td>45</td>
-								</tr>
+							<tbody>
+								{% assign count=0  %}
+								{% for people in site.data.challenge.challenge %}
+									<tr>
+										<th>{{ count }}</th>
+										<td>{{ people[0] }}></td>
+										<td>{{ people[1] }}></td>
+									</tr>
+								{% endfor %}
+
 							</tbody>
 						</table>
+						Mis à jour le {{ site.data.challenge.update_date }}
 					</div>
 				</div>
 
