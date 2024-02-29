@@ -122,7 +122,7 @@ class ParseResults:
                     return True
         return False
 
-    def parse_results_race_sheet(self, workbook, sheet):
+    def parse_results_race_sheet(self, workbook, sheet, season):
         sheet = workbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
         hash_race = self.get_hash_race()
@@ -158,11 +158,11 @@ class ParseResults:
                 self.team[member].course += 1
                 hash_individual = self.get_hash_individual_race()
                 if self.race_type == "Cyclo Cross":
-                    self.team[member].cx[hash_individual] = return_result(sheet, line)
+                    self.team[member].cx[season][hash_individual] = return_result(sheet, line)
                 elif self.race_type == "VTT":
-                    self.team[member].vtt[hash_individual] = return_result(sheet, line)
+                    self.team[member].vtt[season][hash_individual] = return_result(sheet, line)
                 elif self.race_type == "Route":
-                    self.team[member].road[hash_individual] = return_result(sheet, line)
+                    self.team[member].road[season][hash_individual] = return_result(sheet, line)
                 if self.race_cat == "1ère":
                     self.results[hash_race].one[member] = return_result(sheet, line)
                 elif self.race_cat == "2ème":
@@ -206,7 +206,7 @@ class ParseResults:
                 self.results[hash_race].scratch[member] = {"team": str(sheet.cell_value(line, column_team)),
                                                            "lap": int(lap), "time": test, "cat": self.race_cat}
 
-    def parse_results_race(self, file_url):
+    def parse_results_race(self, file_url, season):
         try:
             r = requests.get(file_url, verify=False)
             if r.status_code == 200:
@@ -214,11 +214,11 @@ class ParseResults:
                 output.write(r.content)
 
                 workbook = xlrd.open_workbook('test.xls')
-                self.parse_results_race_sheet(workbook, 0)
-                self.parse_results_race_sheet(workbook, 1)
-                self.parse_results_race_sheet(workbook, 2)
-                self.parse_results_race_sheet(workbook, 3)
-                self.parse_results_race_sheet(workbook, 4)
+                self.parse_results_race_sheet(workbook, 0, season)
+                self.parse_results_race_sheet(workbook, 1, season)
+                self.parse_results_race_sheet(workbook, 2, season)
+                self.parse_results_race_sheet(workbook, 3, season)
+                self.parse_results_race_sheet(workbook, 4, season)
                 hash_race = self.get_hash_race()
 
                 if len(self.results[hash_race].scratch) > 0:
@@ -380,7 +380,7 @@ class ParseResults:
 
                 nb_line += 1
 
-    def parse_race_payload(self, res):
+    def parse_race_payload(self, res, season):
         for line in res:
 
             if "/" in line:
@@ -391,25 +391,26 @@ class ParseResults:
 
                 if file not in self.races_parsed:
                     url = base + file
-                    if self.parse_results_race(url):
+                    if self.parse_results_race(url, season):
                         self.races_parsed.append(file)
                         self.display_race_infos()
                         self.create_post_race()
 
     def generate_results(self):
         self.races_parsed = load_races_parsed()
-        myobj = {'saison': '2024'}
+        year = "2024"
+        myobj = {'saison': year}
 
         # vtt
         r = requests.post('https://cyclismeufolep5962.fr/calResVTT.php', verify=False, data=myobj).text.splitlines()
-        self.parse_race_payload(r)
+        self.parse_race_payload(r, year)
         # cross
         r = requests.post('https://cyclismeufolep5962.fr/calResCross.php', verify=False, data=myobj).text.splitlines()
-        self.parse_race_payload(r)
+        self.parse_race_payload(r, year)
         # road
         r = requests.post('https://cyclismeufolep5962.fr/calResRoute.php', verify=False, data=myobj).text.splitlines()
 
-        self.parse_race_payload(r)
+        self.parse_race_payload(r, year)
         save_races_parsed(self.races_parsed)
 
         return self.team
