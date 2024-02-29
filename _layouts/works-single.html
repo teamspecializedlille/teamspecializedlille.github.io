@@ -114,21 +114,39 @@ layout: default
 						{% endfor %}
 					</ul>
 					{%- endif -%}
+
 					{%- if team_people.cx.size > 0 -%}
-					<h5>CX</h5>
+					<h5>Cyclo-cross</h5>
 					<ul>
-						{% for res in team_people.cx  %}
-							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/cyclo%20cross/{{ split_race[0] | append: '/CycloCross' | append: split_race[1]  | replace: ' ', '-'  }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+						{% for year in (2018..2024) reversed %}
+							{% assign year_string = year | append: "" %}
+							{% if team_people.cx[year_string] %}
+								<li><b>{{ year }}</b></li>
+								<ul>
+								{% for res in team_people.cx[year_string] %}
+									{% assign split_race = res.[0] | split: "|" %}
+									<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ split_race[0] }} - {{ split_race[1] }}</a> ~ {{ res.[1] }}</li>
+								{% endfor %}
+								</ul>
+							{% endif %}
 						{% endfor %}
 					</ul>
 					{%- endif -%}
+
 					{%- if team_people.vtt.size > 0 -%}
 					<h5>VTT</h5>
 					<ul>
-						{% for res in team_people.vtt %}
-							{% assign split_race = res.[0] | split: "|" %}
-							<li><a href="/vtt/{{ split_race[0] | append: '/VTT' | append: split_race[1]  | replace: ' ', '-'  }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
+						{% for year in (2018..2024) reversed %}
+							{% assign year_string = year | append: "" %}
+							{% if team_people.vtt[year_string] %}
+								<li><b>{{ year }}</b></li>
+								<ul>
+								{% for res in team_people.vtt[year_string] %}
+									{% assign split_race = res.[0] | split: "|" %}
+									<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ split_race[0] }} - {{ split_race[1] }}</a> ~ {{ res.[1] }}</li>
+								{% endfor %}
+								</ul>
+							{% endif %}
 						{% endfor %}
 					</ul>
 					{%- endif -%}
