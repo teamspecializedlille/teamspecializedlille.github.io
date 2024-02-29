@@ -51,7 +51,7 @@ def update_challenge(team: dict[str, TeamMember]):
     data["point_top5"] = 2
     data["point_top10"] = 1
     data["point_participation"] = 10
-    data["update_date"] = datetime.datetime.now().strftime("%A %d %Y")
+    data["update_date"] = datetime.datetime.now().strftime("%d %B %Y")
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
     json_object = json.dumps(data, ensure_ascii=False)
     with open(challenge_path_file, "w", encoding='utf8') as outfile:
