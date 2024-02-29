@@ -1,6 +1,7 @@
 import team_members
 import parse_results
-
+print("update disable")
+exit(0)
 team = {}
 results = {}
 

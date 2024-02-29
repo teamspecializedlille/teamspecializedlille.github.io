@@ -99,6 +99,10 @@ layout: default
 				<div class="post-content">
 					{%- if team_people.road.size > 0 -%}
 					{{ team_people.road | inspect }}
+					toto
+					{{ team_people.road[0] | inspect }}
+					dezdez
+					{{ team_people.road["2023"] | inspect }}
 					<h5>Route</h5>
 					<ul>
 						{% for road_year in team_people.road %}
