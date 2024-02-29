@@ -107,7 +107,8 @@ layout: default
 						{% for year in (2018..2024) reversed %}
 							{{ year }}
 							ddieied
-							{% for res in team_people.road[year] %}
+							{% assign year_string = year | append: "" %}}
+							{% for res in team_people.road[year_string] %}
 								{% assign split_race = res.[0] | split: "|" %}
 								<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ res.[0] }}</a> - {{ res.[1] }}</li>
 							{% endfor %}
