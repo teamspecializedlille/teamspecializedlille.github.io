@@ -59,11 +59,12 @@ layout: default
 						</table>
 						<b>Réglement : </b>
 						<ul>
-							<li>Participation : 10 points</li>
-							<li>Victoire : 3 points</li>
-							<li>Top 5 : 2 points</li>
-							<li>Top 10 : 1 points</li>
+							<li>Participation : {{ site.data.challenge.point_participation }} points</li>
+							<li>Victoire : {{ site.data.challenge.point_win }} points</li>
+							<li>Top 5 : {{ site.data.challenge.point_top5 }} points</li>
+							<li>Top 10 : {{ site.data.challenge.point_top10 }} points</li>
 						</ul>
+
 						Mis à jour le {{ site.data.challenge.update_date }}
 					</div>
 				</div>

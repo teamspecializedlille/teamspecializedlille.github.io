@@ -47,6 +47,10 @@ def update_challenge(team: dict[str, TeamMember]):
     challenge_res = {}
     for m in team.values():
         challenge_res[m.name] = m.challenge_calcul_point("2023")
+    data["point_win"] = 3
+    data["point_top5"] = 2
+    data["point_top10"] = 1
+    data["point_participation"] = 10
     data["update_date"] = datetime.datetime.now().strftime("%A %d %Y")
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
     json_object = json.dumps(data, ensure_ascii=False)
