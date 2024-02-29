@@ -44,7 +44,7 @@ layout: default
 										<td><a href="https://teamspecializedlille.github.io/works/{{ people[0] | downcase | replace: ' ', '' }}">{{ people[0] }}</a></td>
 										<td>{{ people[1] }}</td>
 									</tr>
-								{% assign count = count + 1 %}
+								{% increment count %}
 								{% endfor %}
 
 							</tbody>
