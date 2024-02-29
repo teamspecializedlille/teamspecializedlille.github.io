@@ -100,8 +100,9 @@ layout: default
 					<h5>Route</h5>
 					<ul>
 						{% for year in (2018..2024) reversed %}
+
 							{% assign year_string = year | append: "" %}}
-							{%-  if team_people.road[year_string] -%}
+							{% if team_people.road[year_string] %}
 								<li><b>{{ year }}</b></li>
 								<ul>
 								{% for res in team_people.road[year_string] %}
@@ -109,7 +110,7 @@ layout: default
 									<li><a href="/route/{{ split_race[0] | append: '/Route' | append: split_race[1] | replace: ' ', '-' }}">{{ split_race[0] }} - {{ split_race[1] }}</a> ~ {{ res.[1] }}</li>
 								{% endfor %}
 								</ul>
-							{%- endif -%}
+							{% endif %}
 						{% endfor %}
 					</ul>
 					{%- endif -%}
