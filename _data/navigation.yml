@@ -21,8 +21,8 @@ main:
     url: "/blog"
     parent: 0
 
-  - title: "Challenge 2024"
-    url: "/challenge2024"
+  - title: "Challenge"
+    url: "/challenge"
     parent: 0
 
 #  # Contact

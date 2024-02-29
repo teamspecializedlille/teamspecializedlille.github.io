@@ -37,21 +37,24 @@ class TeamMember:
                     elif race[1] <= 10:
                         points += point_top10
                 points += point_participation
-
-            res = {"name": self.name, "points": points}
         return points
 
 
 def update_challenge(team: dict[str, TeamMember]):
+    challenge_year = "2023"
+    now = datetime.datetime.now()
+    if now.date() >= datetime.datetime.strptime("03-03-2024", '%m-%d-%Y').date():
+        challenge_year = "2024"
     data = {}
     challenge_res = {}
     for m in team.values():
-        challenge_res[m.name] = m.challenge_calcul_point("2023")
+        challenge_res[m.name] = m.challenge_calcul_point(challenge_year)
     data["point_win"] = 3
     data["point_top5"] = 2
     data["point_top10"] = 1
     data["point_participation"] = 10
-    data["update_date"] = datetime.datetime.now().strftime("%d %B %Y")
+    data["update_date"] = now.strftime("%d %B %Y")
+    data["challenge_year"] = challenge_year
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
     json_object = json.dumps(data, ensure_ascii=False)
     with open(challenge_path_file, "w", encoding='utf8') as outfile:
