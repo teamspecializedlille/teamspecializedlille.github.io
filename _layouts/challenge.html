@@ -46,8 +46,9 @@ layout: default
 											<th>&#129352;</th>
 										{% elsif count == 3 %}
 											<th>&#129353;</th>
+										{% else %}
+											<th>{{ count }}</th>
 										{% endif %}
-										<th>{{ count }}</th>
 										<td><a href="https://teamspecializedlille.github.io/works/{{ people[0] | downcase | replace: ' ', '' }}">{{ people[0] }}</a></td>
 										<td>{{ people[1] }}</td>
 									</tr>
