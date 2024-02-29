@@ -104,7 +104,7 @@ layout: default
 					{{ team_people.road | hash  }}
 					<h5>Route</h5>
 					<ul>
-						{% for year in (2024..2018) %}
+						{% for year in (2018..2024) reversed %}
 							{{ year }}
 							ddieied
 							{% for res in team_people.road["2024"] %}
