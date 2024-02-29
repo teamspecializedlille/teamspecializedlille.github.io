@@ -40,6 +40,13 @@ layout: default
 								{% assign count=1  %}
 								{% for people in site.data.challenge.challenge %}
 									<tr>
+										{% if count == 1 %}
+											<th>&#129351;</th>
+										{% elsif count == 2 %}
+											<th>&#129352;</th>
+										{% elsif count == 3 %}
+											<th>&#129353;</th>
+										{% endif %}
 										<th>{{ count }}</th>
 										<td><a href="https://teamspecializedlille.github.io/works/{{ people[0] | downcase | replace: ' ', '' }}">{{ people[0] }}</a></td>
 										<td>{{ people[1] }}</td>
