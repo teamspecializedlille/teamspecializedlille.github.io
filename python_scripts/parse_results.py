@@ -158,10 +158,16 @@ class ParseResults:
                 self.team[member].course += 1
                 hash_individual = self.get_hash_individual_race()
                 if self.race_type == "Cyclo Cross":
+                    if self.team[member].cx.get(season) is None:
+                        self.team[member].cx[season] = {}
                     self.team[member].cx[season][hash_individual] = return_result(sheet, line)
                 elif self.race_type == "VTT":
+                    if self.team[member].vtt.get(season) is None:
+                        self.team[member].vtt[season] = {}
                     self.team[member].vtt[season][hash_individual] = return_result(sheet, line)
                 elif self.race_type == "Route":
+                    if self.team[member].road.get(season) is None:
+                        self.team[member].road[season] = {}
                     self.team[member].road[season][hash_individual] = return_result(sheet, line)
                 if self.race_cat == "1ère":
                     self.results[hash_race].one[member] = return_result(sheet, line)
