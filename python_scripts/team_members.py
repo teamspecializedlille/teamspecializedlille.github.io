@@ -36,7 +36,7 @@ class TeamMember:
                         points += point_top5
                     elif race[1] <= 10:
                         points += point_top10
-                points += point_participation
+                    points += point_participation
         return points
 
 
