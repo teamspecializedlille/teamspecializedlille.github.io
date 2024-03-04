@@ -4,7 +4,7 @@ title: Route - ORCHIES - 2024
 date: 2024-03-03
 category: Route
 tags: Route
-image: assets/img/blog/road.jpeg
+image: assets/img/resultats/2024-03-03-RouteORCHIES/1.jpg
 ---
 
 ### 1ère Catégorie
@@ -186,3 +186,10 @@ image: assets/img/blog/road.jpeg
 | 160 | DEKOSTER MICKAEL | AGNY ARTeam | 0 | 2ème | 0:38:53 | 
 | 161 | CLAISSE ANAIS | UNION SPORTIVE VALENCIENN | 0 | 3ème | 0:38:53 | 
 | 162 | LONGELIN LOIC | ESEG DOUAI | 0 | 3ème | 0:38:53 | 
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-03-RouteORCHIES/1.jpg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-03-RouteORCHIES/2.jpg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-03-RouteORCHIES/3.jpg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-03-RouteORCHIES/4.jpg)
+![5](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-03-RouteORCHIES/5.jpg)
+![6](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-03-RouteORCHIES/6.jpg)
