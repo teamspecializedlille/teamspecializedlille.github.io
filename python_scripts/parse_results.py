@@ -402,9 +402,8 @@ class ParseResults:
                         self.display_race_infos()
                         self.create_post_race()
 
-    def generate_results(self):
+    def generate_results(self, year):
         self.races_parsed = load_races_parsed()
-        year = "2024"
         myobj = {'saison': year}
 
         # vtt

@@ -40,11 +40,7 @@ class TeamMember:
         return points
 
 
-def update_challenge(team: dict[str, TeamMember]):
-    challenge_year = "2023"
-    now = datetime.datetime.now()
-    if now.date() >= datetime.datetime.strptime("03-03-2024", '%m-%d-%Y').date():
-        challenge_year = "2024"
+def update_challenge(team: dict[str, TeamMember], challenge_year):
     data = {}
     challenge_res = {}
     for m in team.values():
@@ -53,7 +49,7 @@ def update_challenge(team: dict[str, TeamMember]):
     data["point_top5"] = 2
     data["point_top10"] = 1
     data["point_participation"] = 10
-    data["update_date"] = now.strftime("%d %B %Y")
+    data["update_date"] = datetime.datetime.now().strftime("%d %B %Y")
     data["challenge_year"] = challenge_year
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
     json_object = json.dumps(data, ensure_ascii=False)
