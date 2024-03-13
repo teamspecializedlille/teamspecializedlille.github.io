@@ -5,7 +5,7 @@ title: CROMBEZ THOMAS
 name: CROMBEZ THOMAS
 category: Route
 category_slug: road
-image: assets/img/team/CROMBEZTHOMAS_1.jpg
+image: assets/img/team/CROMBEZTHOMAS_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -18,6 +18,6 @@ info:
  #   value: 3ème
 
 gallery:
-  - assets/img/team/CROMBEZTHOMAS_1.jpg
+  - assets/img/team/CROMBEZTHOMAS_1.jpeg
 
 ---

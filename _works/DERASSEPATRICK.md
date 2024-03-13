@@ -5,7 +5,7 @@ title: DERASSE PATRICK
 name: DERASSE PATRICK
 category: CX Route
 category_slug: cx road
-image: assets/img/team/DERASSEPATRICK_1.JPG
+image: assets/img/team/DERASSEPATRICK_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -18,6 +18,6 @@ info:
  #   value: 3ème
 
 gallery:
-  - assets/img/team/DERASSEPATRICK_1.JPG
+  - assets/img/team/DERASSEPATRICK_1.jpeg
 
 ---
