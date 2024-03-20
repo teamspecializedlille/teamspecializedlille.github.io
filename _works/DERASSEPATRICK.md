@@ -16,7 +16,7 @@ info:
     value: 09/01/2007
  #- label: Catégorie 
  #   value: 3ème
-
+strava: https://www.strava.com/athletes/104406709
 gallery:
   - assets/img/team/DERASSEPATRICK_1.jpeg
 

@@ -16,7 +16,7 @@ info:
     value: 16/01/1985
  #- label: Catégorie 
  #   value: 3ème
-
+strava: https://www.strava.com/athletes/22275259
 gallery:
   - assets/img/team/DEJONGHEMICKAEL_1.jpeg
   - assets/img/team/DEJONGHEMICKAEL_2.jpeg

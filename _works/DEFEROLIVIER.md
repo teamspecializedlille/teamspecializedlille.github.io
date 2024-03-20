@@ -8,6 +8,7 @@ category_slug:  road
 image: assets/img/team/DEFEROLIVIER_1.jpg
 
 # full details
+strava: https://www.strava.com/athletes/33163192
 live_preview: https://bslthemes.com
 #1920 / 1020
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg

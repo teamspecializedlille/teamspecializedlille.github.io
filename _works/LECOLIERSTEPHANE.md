@@ -22,5 +22,5 @@ gallery:
   - assets/img/team/LECOLIERSTEPHANE_2.jpg
   - assets/img/team/LECOLIERSTEPHANE_3.jpg
   - assets/img/team/LECOLIERSTEPHANE_4.jpg
-
+strava: https://www.strava.com/athletes/6184039
 ---

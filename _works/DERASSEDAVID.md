@@ -16,7 +16,7 @@ info:
     value: 09/01/2007
  #- label: Catégorie 
  #   value: 3ème
-
+strava: https://www.strava.com/athletes/95634890
 gallery:
   - assets/img/team/DERASSEDAVID_1.JPG
   - assets/img/team/DERASSEDAVID_2.JPG

@@ -23,5 +23,5 @@ gallery:
   - assets/img/team/WALTERBENOIT_3.jpeg
   - assets/img/team/WALTERBENOIT_4.jpeg
 
-
+strava: https://www.strava.com/athletes/33849612
 ---

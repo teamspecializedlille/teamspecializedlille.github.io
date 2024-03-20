@@ -16,7 +16,7 @@ info:
     value: 00/00/2000
  #- label: Catégorie 
  #   value: 3ème
-
+strava: https://www.strava.com/athletes/8607391
 gallery:
   - assets/img/team/DEGRAALROBIN_1.jpeg
 

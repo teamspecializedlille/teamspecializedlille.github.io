@@ -22,5 +22,5 @@ gallery:
   - assets/img/team/MATTIOLIRONALD_2.jpeg
   - assets/img/team/MATTIOLIRONALD_3.jpeg
   - assets/img/team/MATTIOLIRONALD_4.jpeg
-
+strava: https://www.strava.com/athletes/2243274
 ---

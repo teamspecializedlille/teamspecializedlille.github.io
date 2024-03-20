@@ -16,6 +16,7 @@ info:
     value: 00/00/2000
  #- label: Catégorie 
  #   value: 3ème
+strava: https://www.strava.com/athletes/105331433
 
 gallery:
   - assets/img/works/work5.jpeg

@@ -6,7 +6,7 @@ name: CROMBEZ THOMAS
 category: Route
 category_slug: road
 image: assets/img/team/CROMBEZTHOMAS_1.jpeg
-
+strava: https://www.strava.com/athletes/65224301
 # full details
 live_preview: https://bslthemes.com
 #1920 / 1020

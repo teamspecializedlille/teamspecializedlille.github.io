@@ -16,7 +16,7 @@ info:
     value: 00/00/2000
  #- label: Catégorie 
  #   value: 3ème
-
+strava: https://www.strava.com/athletes/16763427
 gallery:
   - assets/img/team/DENDIEVELCYRIL_1.jpeg
 

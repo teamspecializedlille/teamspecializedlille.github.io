@@ -6,7 +6,7 @@ name: BOONE NICOLAS
 category: Route
 category_slug: road
 image: assets/img/works/work5.jpeg
-
+strava: https://www.strava.com/athletes/6930261
 # full details
 live_preview: https://bslthemes.com
 #1920 / 1020

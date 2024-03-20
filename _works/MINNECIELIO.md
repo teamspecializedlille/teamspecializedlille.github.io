@@ -23,5 +23,5 @@ gallery:
   - assets/img/team/MINNECIELIO_3.jpeg
   - assets/img/team/MINNECIELIO_4.jpeg
 
-
+strava: https://www.strava.com/athletes/55203043
 ---

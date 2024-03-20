@@ -19,6 +19,6 @@ info:
 
 gallery:
   - assets/img/team/MEAUSOONEHENRI_1.jpeg
-
+strava: https://www.strava.com/athletes/44445128
 
 ---
