@@ -10,6 +10,7 @@ image: assets/img/team/FELIXMOULIN_1.jpeg
 # full details
 live_preview: https://bslthemes.com
 #1920 / 1020
+strava: https://www.strava.com/athletes/24292544
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
