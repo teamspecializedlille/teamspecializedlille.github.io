@@ -182,7 +182,7 @@ def update_team_for_category(team, cate, season, race_cat):
                     team[member].road[season] = {}
                 hash_individual = get_hash_individual_race(race_cat)
                 if line.points and int(line.points) > 0:
-                    team[member].road[season][hash_individual] = line.points
+                    team[member].road[season][hash_individual] = int(line.place)
                 else:
                     team[member].road[season][hash_individual] = "Ab"
     return team

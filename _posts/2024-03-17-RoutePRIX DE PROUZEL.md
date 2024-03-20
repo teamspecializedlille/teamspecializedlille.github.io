@@ -4,7 +4,7 @@ title: Route - PRIX DE PROUZEL - 2024
 date: 2024-03-17
 category: Route
 tags: Route
-image: assets/img/blog/road.jpeg
+image: assets/img/resultats/2024-03-17-RoutePRIXDEPROUZEL/1.jpeg
 ---
 
 ### 3ème Catégorie
@@ -36,3 +36,8 @@ image: assets/img/blog/road.jpeg
 |20|POULET-FABBRI MATHEO|AMIS DU CYCLISME NESLOIS|
 |Ab|TORIO ERIC|LE SPRINTER CLUB DE ROCHY CONDE|
 |**Ab**|**[DERASSE PATRICK](https://teamspecializedlille.github.io/works/derassepatrick)**|**TEAM SPECIALIZED LILLE**|
+
+![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-17-RoutePRIXDEPROUZEL/1.jpeg)
+![2](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-17-RoutePRIXDEPROUZEL/2.jpeg)
+![3](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-17-RoutePRIXDEPROUZEL/3.jpeg)
+![4](http://teamspecializedlille.github.io/assets/img/resultats/2024-03-17-RoutePRIXDEPROUZEL/4.jpeg)
