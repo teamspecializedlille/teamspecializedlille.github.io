@@ -1,7 +1,6 @@
 import fitz
 import team_members
 
-
 race_date = "2024/03/17"
 pdf_path = "test.pdf"
 race_name = "PRIX DE PROUZEL"
@@ -54,15 +53,11 @@ def print_table_results(outfile, results):
     outfile.write("\n| Place | Nom | Team |\n")
     outfile.write("|---|---|---|\n")
     for line in results:
-        if line.points and int(line.points) > 0:
-            place = line.place
-        else:
-            place = "Ab"
         if line.team == SPECIALIZED:
             outfile.write(
-                "|**" + place + "**|**" + get_member_with_link(line.name) + "**|**" + line.team + "**|\n")
+                "|**" + line.place + "**|**" + get_member_with_link(line.name) + "**|**" + line.team + "**|\n")
         else:
-            outfile.write("|" +  place + "|" + line.name + "|" + line.team + "|\n")
+            outfile.write("|" + line.place + "|" + line.name + "|" + line.team + "|\n")
 
 
 def create_post_race(cate_1, cate_2, cate_3, cate_4):
@@ -166,9 +161,11 @@ def validate_results_for_spe(results):
         return None
     return results
 
+
 def get_hash_individual_race(race_cat):
     # year / race / cate /  => pos
     return race_date + "|" + race_name + "|" + race_cat
+
 
 def update_team_for_category(team, cate, season, race_cat):
     for line in cate:
@@ -181,11 +178,9 @@ def update_team_for_category(team, cate, season, race_cat):
                 if team[member].road.get(season) is None:
                     team[member].road[season] = {}
                 hash_individual = get_hash_individual_race(race_cat)
-                if line.points and int(line.points) > 0:
-                    team[member].road[season][hash_individual] = int(line.place)
-                else:
-                    team[member].road[season][hash_individual] = "Ab"
+                team[member].road[season][hash_individual] = int(line.place)
     return team
+
 
 # noinspection PyShadowingNames
 def update_team_results(team, cate_1, cate_2, cate_3, cate_4, season):
@@ -194,6 +189,7 @@ def update_team_results(team, cate_1, cate_2, cate_3, cate_4, season):
     team = update_team_for_category(team, cate_3, season, "3ème")
     team = update_team_for_category(team, cate_4, season, "4ème")
     return team
+
 
 # noinspection PyShadowingNames
 def extract_table_from_pdf(pdf_path):
