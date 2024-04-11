@@ -19,6 +19,6 @@ info:
 
 gallery:
   - assets/img/team/LECOLIERLOUIS_1.jpg
-strava:https://www.strava.com/athletes/84784364
+strava: https://www.strava.com/athletes/84784364
 
 ---
