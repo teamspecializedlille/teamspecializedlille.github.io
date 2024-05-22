@@ -87,7 +87,20 @@ def remove_old_team(team):
         team.pop("VERHULST ERIC")
     if "LECLERCQ FRANCK" in team:
         team.pop("LECLERCQ FRANCK")
-
+    if "MOLKA MICHAEL" in team:
+        team.pop("MOLKA MICHAEL")
+    if "RAMBEAU CHRISTOPHER" in team:
+        team.pop("RAMBEAU CHRISTOPHER")
+    if "HULEUX LUDOVIC" in team:
+        team.pop("HULEUX LUDOVIC")
+    if "LECLERCQ CLEMENT" in team:
+        team.pop("LECLERCQ CLEMENT")
+    if "LECLERC CLEMENT" in team:
+        team.pop("LECLERC CLEMENT")
+    if "GINET LIONEL" in team:
+        team.pop("GINET LIONEL")
+    if "THEIL MICKAEL" in team:
+        team.pop("THEIL MICKAEL")
 
 def update_team_file(team):
     data = {}
