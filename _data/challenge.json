@@ -1,1 +1,33 @@
-{"point_win": 3, "point_top5": 2, "point_top10": 1, "point_participation": 10, "update_date": "05 June 2024", "challenge_year": "2024", "challenge": {"DERASSE DAVID": 174, "DEFOSSE HERVE": 171, "WALTER BENOIT": 141, "DEFER OLIVIER": 138, "MINNECI ELIO": 121, "DUFOUR JULIEN": 90, "LECOLIER STEPHANE": 61, "LECOLIER LOUIS": 61, "CROMBEZ THOMAS": 61, "SCHERNU CHRISTOPHE": 60, "MATTIOLI RONALD": 50, "DERASSE PATRICK": 50, "DEJONGHE MICKAEL": 40, "BROUTIN ANTOINE": 40, "LECOLIER BENOIT": 22, "HOUREZ CEDRIC": 10, "MOULIN FELIX": 0, "DE GRAAL ROBIN": 0, "BOONE NICOLAS": 0, "HUBAUT CHRISTOPHE": 0, "DENDIEVEL CYRIL": 0, "SHERNU CHRISTOPHE": 0, "TRINEL EMILY": 0}}
+{
+   "point_win":3,
+   "point_top5":2,
+   "point_top10":1,
+   "point_participation":10,
+   "update_date":"05 June 2024",
+   "challenge_year":"2024",
+   "challenge":{
+      "DERASSE DAVID":174,
+      "DEFOSSE HERVE":171,
+      "WALTER BENOIT":152,
+      "DEFER OLIVIER":149,
+      "MINNECI ELIO":131,
+      "DUFOUR JULIEN":100,
+      "LECOLIER STEPHANE":71,
+      "LECOLIER LOUIS":71,
+      "CROMBEZ THOMAS":61,
+      "SCHERNU CHRISTOPHE":60,
+      "MATTIOLI RONALD":50,
+      "DERASSE PATRICK":50,
+      "DEJONGHE MICKAEL":40,
+      "BROUTIN ANTOINE":40,
+      "LECOLIER BENOIT":22,
+      "HOUREZ CEDRIC":10,
+      "MOULIN FELIX":0,
+      "DE GRAAL ROBIN":0,
+      "BOONE NICOLAS":0,
+      "HUBAUT CHRISTOPHE":0,
+      "DENDIEVEL CYRIL":0,
+      "SHERNU CHRISTOPHE":0,
+      "TRINEL EMILY":0
+   }
+}
