@@ -44,6 +44,7 @@ image: assets/img/blog/road.jpeg
 
 ### 3ème Catégorie
 26 participants
+- [DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid) : 4
 - [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 6
 - [DEFER OLIVIER](https://teamspecializedlille.github.io/works/deferolivier) : 9
 - [MINNECI ELIO](https://teamspecializedlille.github.io/works/minnecielio) : 12
@@ -56,7 +57,7 @@ image: assets/img/blog/road.jpeg
 | 1      | CARPELS GUILLAUME                                                              | VELO CLUB UNION HALLUIN                    |
 | 2      | FLAMENT JAMES                                                                  | HARNES VELO CLUB HARNESIEN                 |
 | 3      | MARCHANDISE PATRICE                                                            | VELO CLUB UNION HALLUIN                    |
-| 4      | DERASSE DAVID                                                                  | TEAM SPECIALIZED LILLE                     |
+| **4**  | **[DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid)** | **TEAM SPECIALIZED LILLE**                 |
 | 5      | BRION CLEMENT                                                                  | VELO SPRINT DE L'OSTREVENT - AUBERCHICOURT |
 | **6**  | **[WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit)** | **TEAM SPECIALIZED LILLE**                 |
 | 7      | CANDELIER YANN                                                                 | ARTOIS CYCLING TEAM                        |
