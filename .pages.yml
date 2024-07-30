@@ -31,5 +31,5 @@ content:
         type: string
         description: Route | CX | VTT 
 media:
-  input: assets/img/blog
-  output: assets/img/blog
+  input: assets/img/resultats
+  output: assets/img/resultats
