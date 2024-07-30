@@ -19,8 +19,8 @@ content:
       - name: body
         label: Body
         type: rich-text
-      - name: cover
-        label: Cover Image
+      - name: image
+        label: Image de couverture
         type: image
       - name: category
         label: Categorie
