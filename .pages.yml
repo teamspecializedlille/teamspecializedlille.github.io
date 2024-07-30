@@ -3,7 +3,7 @@ content:
     label: Coureurs
     path: _works
     type: collection
-    filename: fields.title
+    filename: '{fields.title}'
     fields:
       - name: layout
         label: layout
