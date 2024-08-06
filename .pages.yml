@@ -58,7 +58,7 @@ content:
       - name: published
         label: Published
         type: boolean
-        default: false
+        default: true
       - name: date
         label: Date
         type: date
