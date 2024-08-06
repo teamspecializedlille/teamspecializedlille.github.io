@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 date: 2024-08-04
 title: Route - HERGNIES LA BAYONNE - 2024
 image: assets/img/resultats/2024-08-04-RouteHERGNIES-LA-BAYONNE/lill_sory.png
