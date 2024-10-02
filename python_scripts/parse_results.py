@@ -37,11 +37,13 @@ def return_result(sheet, line):
 
 
 def check_if_scratch_enable(sheet):
-    r = str(sheet.row(1))
-    if "Tours" in r and "Temps" in r:
-        return True
-    return False
-
+    try:
+        r = str(sheet.row(1))
+        if "Tours" in r and "Temps" in r:
+            return True
+        return False
+    except Exception:
+        return False
 
 def save_races_parsed(races_parsed):
     data = {"races_parsed": races_parsed}
@@ -397,6 +399,7 @@ class ParseResults:
 
                 if file not in self.races_parsed:
                     url = base + file
+                    print(url)
                     if self.parse_results_race(url, season):
                         self.races_parsed.append(file)
                         self.display_race_infos()
