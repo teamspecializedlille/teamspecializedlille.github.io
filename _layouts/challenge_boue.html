@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="m-titles align-center">
+      <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+        <span>Challenge Boue {{ site.data.boue.challenge_year }}</span>
+      </h1>
+    </div>
+
+  </div>
+</section>
+
+<!-- Section - Blog -->
+<section class="section section-inner m-archive">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+				<!-- content -->
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+						<table>
+							<thead>
+								<tr>
+									<th scope="col">Place</th>
+									<th scope="col">Nom</th>
+									<th scope="col">Points</th>
+								</tr>
+						  	</thead>
+							<tbody>
+								{% assign count=1  %}
+								{% for people in site.data.boue.challenge %}
+									<tr>
+										{% if count == 1 %}
+											<th>&#129351;</th>
+										{% elsif count == 2 %}
+											<th>&#129352;</th>
+										{% elsif count == 3 %}
+											<th>&#129353;</th>
+										{% else %}
+											<th>{{ count }}</th>
+										{% endif %}
+										<td><a href="https://teamspecializedlille.github.io/works/{{ people[0] | downcase | replace: ' ', '' }}">{{ people[0] }}</a></td>
+										<td>{{ people[1] }}</td>
+									</tr>
+									{% assign count = count | plus: 1 %}
+								{% endfor %}
+
+							</tbody>
+						</table>
+						<b>Réglement : </b>
+						<ul>
+							<li>Participation : {{ site.data.boue.point_participation }} points</li>
+							<li>Victoire : {{ site.data.boue.point_win }} points</li>
+							<li>Top 5 : {{ site.data.boue.point_top5 }} points</li>
+							<li>Top 10 : {{ site.data.boue.point_top10 }} points</li>
+						</ul>
+
+						Mis à jour le {{ site.data.boue.update_date }}
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+	</div>
+</section>

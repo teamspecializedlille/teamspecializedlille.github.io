@@ -39,6 +39,30 @@ class TeamMember:
                     points += point_participation
         return points
 
+    def challenge_calcul_point_boue(self, year):
+        points = 0
+        if self.cx.get(year):
+            for race in self.road[year].items():
+                if isinstance(race[1], int):
+                    if race[1] == 1:
+                        points += point_win
+                    elif race[1] <= 5:
+                        points += point_top5
+                    elif race[1] <= 10:
+                        points += point_top10
+                    points += point_participation
+        if self.vtt.get(year):
+            for race in self.road[year].items():
+                if isinstance(race[1], int):
+                    if race[1] == 1:
+                        points += point_win
+                    elif race[1] <= 5:
+                        points += point_top5
+                    elif race[1] <= 10:
+                        points += point_top10
+                    points += point_participation
+        return points
+
 
 def update_challenge(team: dict[str, TeamMember], challenge_year):
     data = {}
@@ -54,6 +78,22 @@ def update_challenge(team: dict[str, TeamMember], challenge_year):
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
     json_object = json.dumps(data, ensure_ascii=False)
     with open(challenge_path_file, "w", encoding='utf8') as outfile:
+        outfile.write(json_object)
+
+def update_challenge_boue(team: dict[str, TeamMember], challenge_year):
+    data = {}
+    challenge_res = {}
+    for m in team.values():
+        challenge_res[m.name] = m.challenge_calcul_point_boue(challenge_year)
+    data["point_win"] = 3
+    data["point_top5"] = 2
+    data["point_top10"] = 1
+    data["point_participation"] = 10
+    data["update_date"] = datetime.datetime.now().strftime("%d %B %Y")
+    data["challenge_year"] = challenge_year
+    data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
+    json_object = json.dumps(data, ensure_ascii=False)
+    with open("../_data/boue.json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
 
