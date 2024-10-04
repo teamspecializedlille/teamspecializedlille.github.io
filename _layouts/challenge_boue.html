@@ -11,7 +11,7 @@ layout: default
     <!-- Heading -->
     <div class="m-titles align-center">
       <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
-        <span>Challenge Boue {{ site.data.boue.challenge_year }}</span>
+        <span>Challenge Boue {{ site.data.boue2025.challenge_year }}</span>
       </h1>
     </div>
 
@@ -38,7 +38,7 @@ layout: default
 						  	</thead>
 							<tbody>
 								{% assign count=1  %}
-								{% for people in site.data.boue.challenge %}
+								{% for people in site.data.boue2025.challenge %}
 									<tr>
 										{% if count == 1 %}
 											<th>&#129351;</th>
@@ -59,13 +59,13 @@ layout: default
 						</table>
 						<b>Réglement : </b>
 						<ul>
-							<li>Participation : {{ site.data.boue.point_participation }} points</li>
-							<li>Victoire : {{ site.data.boue.point_win }} points</li>
-							<li>Top 5 : {{ site.data.boue.point_top5 }} points</li>
-							<li>Top 10 : {{ site.data.boue.point_top10 }} points</li>
+							<li>Participation : {{ site.data.boue2025.point_participation }} points</li>
+							<li>Victoire : {{ site.data.boue2025.point_win }} points</li>
+							<li>Top 5 : {{ site.data.boue2025.point_top5 }} points</li>
+							<li>Top 10 : {{ site.data.boue2025.point_top10 }} points</li>
 						</ul>
 
-						Mis à jour le {{ site.data.boue.update_date }}
+						Mis à jour le {{ site.data.boue2025.update_date }}
 					</div>
 				</div>
 
