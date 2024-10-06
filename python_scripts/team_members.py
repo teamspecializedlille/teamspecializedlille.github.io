@@ -42,7 +42,7 @@ class TeamMember:
     def challenge_calcul_point_boue(self, year):
         points = 0
         if self.cx.get(year):
-            for race in self.road[year].items():
+            for race in self.cx[year].items():
                 if isinstance(race[1], int):
                     if race[1] == 1:
                         points += point_win
@@ -52,7 +52,7 @@ class TeamMember:
                         points += point_top10
                     points += point_participation
         if self.vtt.get(year):
-            for race in self.road[year].items():
+            for race in self.vtt[year].items():
                 if isinstance(race[1], int):
                     if race[1] == 1:
                         points += point_win
