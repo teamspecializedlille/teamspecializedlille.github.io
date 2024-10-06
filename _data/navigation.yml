@@ -26,7 +26,7 @@ main:
     parent: 0
 
   - title: "Challenge Boue"
-    url: "/challenge_boue"
+    url: "/boue"
     parent: 0
 
 #  # Contact
