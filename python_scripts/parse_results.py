@@ -199,6 +199,7 @@ class ParseResults:
 
                     raw_time = sheet.cell(line, column_time).value
                     if isinstance(raw_time, str):
+                        raw_time = raw_time.split('.')[0]  # Remove characters after the point
                         split_time = raw_time.split(":")
                         test = (0, 0, 0, int(split_time[0]), int(split_time[1]), int(split_time[2]))
                     else:
