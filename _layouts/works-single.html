@@ -107,7 +107,7 @@ layout: default
 					{%- if team_people.road.size > 0 -%}
 					<h5>Route</h5>
 					<ul>
-						{% for year in (2018..2024) reversed %}
+						{% for year in (2018..2025) reversed %}
 							{% assign year_string = year | append: "" %}
 							{% if team_people.road[year_string] %}
 								<li><b>{{ year }}</b></li>
@@ -125,7 +125,7 @@ layout: default
 					{%- if team_people.cx.size > 0 -%}
 					<h5>Cyclo-cross</h5>
 					<ul>
-						{% for year in (2018..2024) reversed %}
+						{% for year in (2018..2025) reversed %}
 							{% assign year_string = year | append: "" %}
 							{% if team_people.cx[year_string] %}
 								<li><b>{{ year }}</b></li>
@@ -143,7 +143,7 @@ layout: default
 					{%- if team_people.vtt.size > 0 -%}
 					<h5>VTT</h5>
 					<ul>
-						{% for year in (2018..2024) reversed %}
+						{% for year in (2018..2025) reversed %}
 							{% assign year_string = year | append: "" %}
 							{% if team_people.vtt[year_string] %}
 								<li><b>{{ year }}</b></li>

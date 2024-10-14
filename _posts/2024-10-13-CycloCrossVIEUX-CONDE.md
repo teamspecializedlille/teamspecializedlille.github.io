@@ -4,7 +4,7 @@ title: Cyclo Cross - VIEUX CONDE - 2025
 date: 2024-10-13
 category: Cyclo Cross
 tags: cyclo-cross
-image: assets/img/blog/cx.jpeg
+image: http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/1.jpg
 ---
 
 ### 2ème Catégorie
@@ -129,3 +129,15 @@ image: assets/img/blog/cx.jpeg
 | 106 | MARTIN FABIEN | MANQUEVILLE LILLERS CLUB | 0 | 2ème | 0:38:53 | 
 | 107 | LOIRE HERVE | AMIS DU CYCLISME NESLOIS | 0 | 3ème | 0:38:53 | 
 | 108 | CODDEVILLE RUDY | VELO CLUB UNION HALLUIN | 0 | 3ème | 0:38:53 | 
+
+![2.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/2.jpg)
+![3.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/3.jpg)
+![4.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/4.jpg)
+![5.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/5.jpg)
+![6.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/6.jpg)
+![7.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/7.jpg)
+![8.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/8.jpg)
+![9.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/9.jpg)
+![10.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/10.jpg)
+![11.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/11.jpg)
+![12.jpg](http://teamspecializedlille.github.io/assets/img/resultats/2024-10-13-CycloCrossVIEUX-CONDE/12.jpg)
