@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import requests
 import re
 import xlrd
@@ -390,15 +392,14 @@ class ParseResults:
                 nb_line += 1
 
     def parse_race_payload(self, res, season):
+        current_date = datetime.now().strftime("%Y/%m/%d")
         for line in res:
-
             if "/" in line:
                 self.set_race_date(line)
             if "Classements.xls" in line:
                 file = re.search(r"(.*)='(.*)'(.*)", line).group(2)
                 self.set_race_infos(file)
-
-                if file not in self.races_parsed:
+                if file not in self.races_parsed and self.race_date <= current_date:
                     url = base + file
                     print(url)
                     if self.parse_results_race(url, season):
