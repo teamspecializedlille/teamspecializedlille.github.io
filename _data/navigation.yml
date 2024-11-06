@@ -11,11 +11,6 @@ main:
     url: "/"
     parent: 0
 
-  # Works
-  - title: "Team"
-    url: "#works-section"
-    parent: 0
-
   # Blog
   - title: "Résultats"
     url: "/blog"

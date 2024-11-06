@@ -5,6 +5,10 @@ date: 2024-02-18
 category: VTT
 tags: VTT
 image: assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
+images:
+    - assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
+    - assets/img/resultats/2024-02-18-VTTHERGNIES/2.jpg
+    - assets/img/resultats/2024-02-18-VTTHERGNIES/3.jpg
 ---
 
 ### VTT Vétérans B
@@ -46,6 +50,3 @@ image: assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
 | 28 | SAVARY FABIEN | ARTOIS CYCLING TEAM | 5 | Vétérans A | 1:1:58 | 
 | 29 | VAN STAEN ELOUAN | CYCLO CLUB WAVRIN | 0 | Seniors A | 0:38:53 | 
 
-![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg)
-![2](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-18-VTTHERGNIES/2.jpg)
-![3](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-18-VTTHERGNIES/3.jpg)

@@ -5,7 +5,7 @@ title: DEFOSSE HERVE
 name: DEFOSSE HERVE
 category:  Route
 category_slug:  road
-image: assets/img/works/work5.jpeg
+image: assets/img/team/empty.png
 
 # full details
 live_preview: https://bslthemes.com
@@ -19,7 +19,7 @@ info:
 strava: https://www.strava.com/athletes/105331433
 
 gallery:
-  - assets/img/works/work5.jpeg
+  - assets/img/team/empty.png
   - assets/img/blog/blog8.jpg
   - assets/img/blog/blog6.jpg
 

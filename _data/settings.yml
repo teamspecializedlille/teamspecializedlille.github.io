@@ -6,11 +6,7 @@
 settings:
   skin: "light" # select initial skin option: "light" or "dark"
 
-### Preloader
-preloader:
-  logo:
-    image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+
 
 ### Header
 header:

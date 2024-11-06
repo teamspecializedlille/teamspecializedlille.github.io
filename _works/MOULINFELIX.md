@@ -3,7 +3,7 @@
 layout: works-single
 title: Félix Moulin
 name: MOULIN FELIX
-category: CX Route
+category: Cyclo-Cross Route
 category_slug: cx road
 image: assets/img/team/FELIXMOULIN_1.jpeg
 
