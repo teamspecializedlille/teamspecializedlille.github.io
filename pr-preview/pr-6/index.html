@@ -28,7 +28,7 @@
     <title>Team Specialized Lille</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/imgs/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
@@ -42,7 +42,12 @@
     <link rel="stylesheet" href="/assets/css/plugins.css" />
 
     <!-- Core Style Css -->
-  <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/country-flag.css">
+    <script src="/assets/js/country-flag.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script>
     function updateDisplay() {
         var narrow_screen = window.matchMedia("(max-width: 768px)").matches;
@@ -64,8 +69,16 @@
         }
     }
 
-	document.addEventListener("DOMContentLoaded", updateDisplay);
+	document.addEventListener("DOMContentLoaded", function () {
+		updateDisplay();
+		const flagElement = document.querySelector(".country-flag");
+	    if (flagElement) {
+            const flag = new CountryFlag(flagElement);
+            flag.selectByAlpha2(flagElement.id);
+        }
+    });
     window.addEventListener("resize", updateDisplay);
+
 
 </script>
 </head>
@@ -810,7 +823,7 @@
                             <div class="img">
                                 <img src="/assets/img/team/FELIXMOULIN_1.jpeg" alt="Félix Moulin">
                                 <div class="info">
-                                    <span class="fz-12">Cyclo-Cross Route</span>
+                                    <span class="fz-12">3ème</span>
                                     <h6 class="fz-18">Félix Moulin</h6>
                                 </div>
                             </div>
@@ -823,6 +836,10 @@
                                 </a>
                                 
                                  
+                                <a href="Lobwick" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -843,30 +860,6 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/20939373" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
-                                </a>
-                                
-                                 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="col-lg-4">
-                    <div class="item md-mb50">
-                        <a  href="/works/schernuchristophe">
-                            <div class="img">
-                                <img src="/assets/img/team/empty.png" alt="SCHERNU CHRISTOPHE">
-                                <div class="info">
-                                    <span class="fz-12">Route</span>
-                                    <h6 class="fz-18">SCHERNU CHRISTOPHE</h6>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="social">
-                            <div class="links">
-                                
-                                <a href="https://www.strava.com/athletes/62280708" target="_blank">
                                     <i class="fa-brands fa-strava"></i>
                                 </a>
                                 
@@ -997,6 +990,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="img icon-img-100">
+                                        <a href="https://www.thenwc.org/" target="_blank">
+                                            <img src="/assets/imgs/brands/nwc.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1055,11 +1057,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">01 November 2024</a>
+                            <a href="/vtt/2024/11/01/VTTHENIN-BEAUMONT/">01 November 2024</a>
                         </div>
                         <h5>
                             
-                            <a href="blog-details.html">VTT - HENIN BEAUMONT</a>
+                            <a href="/vtt/2024/11/01/VTTHENIN-BEAUMONT/">VTT - HENIN BEAUMONT</a>
                         </h5>
                     </div>
                 </div>
@@ -1091,11 +1093,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">01 November 2024</a>
+                            <a href="/cyclo%20cross/2024/11/01/CycloCrossHENIN-BEAUMONT/">01 November 2024</a>
                         </div>
                         <h5>
                             
-                            <a href="blog-details.html">Cyclo Cross - HENIN BEAUMONT</a>
+                            <a href="/cyclo%20cross/2024/11/01/CycloCrossHENIN-BEAUMONT/">Cyclo Cross - HENIN BEAUMONT</a>
                         </h5>
                     </div>
                 </div>
@@ -1127,11 +1129,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">27 October 2024</a>
+                            <a href="/vtt/2024/10/27/VTTHALLUIN/">27 October 2024</a>
                         </div>
                         <h5>
                             
-                            <a href="blog-details.html">VTT - HALLUIN</a>
+                            <a href="/vtt/2024/10/27/VTTHALLUIN/">VTT - HALLUIN</a>
                         </h5>
                     </div>
                 </div>
@@ -1163,11 +1165,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">27 October 2024</a>
+                            <a href="/vtt/2024/10/27/VTTAVESNES-SUR-HELPE/">27 October 2024</a>
                         </div>
                         <h5>
                             
-                            <a href="blog-details.html">VTT - AVESNES SUR HELPE</a>
+                            <a href="/vtt/2024/10/27/VTTAVESNES-SUR-HELPE/">VTT - AVESNES SUR HELPE</a>
                         </h5>
                     </div>
                 </div>
@@ -1199,11 +1201,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">27 October 2024</a>
+                            <a href="/cyclo%20cross/2024/10/27/CycloCrossHALLUIN/">27 October 2024</a>
                         </div>
                         <h5>
                             
-                            <a href="blog-details.html">Cyclo Cross - HALLUIN</a>
+                            <a href="/cyclo%20cross/2024/10/27/CycloCrossHALLUIN/">Cyclo Cross - HALLUIN</a>
                         </h5>
                     </div>
                 </div>
@@ -1235,11 +1237,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">26 October 2024</a>
+                            <a href="/vtt/2024/10/26/VTTANZIN/">26 October 2024</a>
                         </div>
                         <h5>
                             
-                            <a href="blog-details.html">VTT - ANZIN</a>
+                            <a href="/vtt/2024/10/26/VTTANZIN/">VTT - ANZIN</a>
                         </h5>
                     </div>
                 </div>
