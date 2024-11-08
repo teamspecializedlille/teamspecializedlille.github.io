@@ -9,40 +9,30 @@
     <meta name="keywords" content="Team Specialized Lille - Équipe cycliste du nord de la france">
     <meta name="description" content="Team Specialized Lille - Équipe cycliste du nord de la france">
     <meta name="author" content="Félix Moulin"><!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>Félix Moulin | Team Specialized Lille</title>
+    <title>Challenge Route | Team Specialized Lille</title>
     <meta name="generator" content="Jekyll v4.3.4"/>
-    <meta property="og:title" content="Félix Moulin"/>
+    <meta property="og:title" content="Challenge Route"/>
     <meta name="author" content="Félix"/>
     <meta property="og:locale" content="en_US"/>
     <meta name="description" content="Team Specialized Lille - Équipe cycliste du nord de la france"/>
     <meta property="og:description" content="Team Specialized Lille - Équipe cycliste du nord de la france"/>
-    <link rel="canonical" href="http://localhost:4000/works/moulinfelix"/>
-    <meta property="og:url" content="http://localhost:4000/works/moulinfelix"/>
+    <link rel="canonical" href="http://localhost:4000/challenge/"/>
+    <meta property="og:url" content="http://localhost:4000/challenge/"/>
     <meta property="og:site_name" content="Team Specialized Lille"/>
-    <meta property="og:image" content="http://localhost:4000/assets/img/team/FELIXMOULIN_1.jpeg"/>
-    <meta property="og:type" content="article"/>
-    <meta property="article:published_time" content="2024-11-06T11:09:39+01:00"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:image" content="http://localhost:4000/assets/img/team/FELIXMOULIN_1.jpeg"/>
-    <meta property="twitter:title" content="Félix Moulin"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta property="twitter:title" content="Challenge Route"/>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "BlogPosting",
+            "@type": "WebPage",
             "author": {
                 "@type": "Person",
                 "name": "Félix"
             },
-            "dateModified": "2024-11-06T11:09:39+01:00",
-            "datePublished": "2024-11-06T11:09:39+01:00",
             "description": "Team Specialized Lille - Équipe cycliste du nord de la france",
-            "headline": "Félix Moulin",
-            "image": "http://localhost:4000/assets/img/team/FELIXMOULIN_1.jpeg",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "http://localhost:4000/works/moulinfelix"
-            },
-            "url": "http://localhost:4000/works/moulinfelix"
+            "headline": "Challenge Route",
+            "url": "http://localhost:4000/challenge/"
         }</script>
     <!-- End Jekyll SEO tag -->
     <!-- Title  -->
@@ -64,6 +54,10 @@
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/country-flag.css">
+    <script src="/assets/js/country-flag.js"></script>
+
+
     <script>
 		function updateDisplay() {
 			var narrow_screen = window.matchMedia("(max-width: 768px)").matches;
@@ -85,13 +79,21 @@
 			}
 		}
 
-		document.addEventListener("DOMContentLoaded", updateDisplay);
+		document.addEventListener("DOMContentLoaded", function () {
+			updateDisplay();
+			const flagElement = document.querySelector(".country-flag");
+			if (flagElement) {
+				const flag = new CountryFlag(flagElement);
+				flag.selectByAlpha2(flagElement.id);
+			}
+		});
 		window.addEventListener("resize", updateDisplay);
+
 
     </script>
 </head>
 
-<body class="vcard">
+<body class="">
 
 
 <!-- ==================== Start Loading ==================== -->
@@ -131,7 +133,7 @@
 <!-- ==================== End progress-scroll-button ==================== -->
 
 
-<div id="smooth-wrapper" class="bg-img vcard-bg" data-background="/assets/imgs/intro/felix_full.png">
+<div id="smooth-wrapper" class="" data-background="/assets/imgs/intro/felix_full.png">
 
 
     <!-- ==================== Start Navbar ==================== -->
@@ -140,7 +142,7 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="logo " href="#"><!--icon-img-100-->
+            <a class="logo " href="/"><!--icon-img-100-->
                 <!--<img src="/assets/imgs/logo-light.png" alt="logo">-->
                 <h5>Team Specialized Lille</h5>
             </a>
@@ -278,481 +280,329 @@
 
     <!-- ==================== End Navbar ==================== -->
     <div id="smooth-content">
-        <main class="">
+        <main class="main-bg">
 
 
-            <!-- ==================== Start Coureur ==================== -->
+            <!-- Section Started Heading -->
+            <section class="section section-inner started-heading">
+                <div class="container">
 
-            <section class="container">
-                <div class="row justify-content-end">
-                    <section class="col-lg-6 bord-thin-top">
+                    <!-- Heading -->
+                    <div class="m-titles align-center">
+                        <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                            data-animate="active">
+                            <span>Challenge Route 2024</span>
+                        </h1>
+                    </div>
 
-                        <!-- ==================== Start intro ==================== -->
+                </div>
+            </section>
 
-                        <div class="intro-card section-padding" data-scroll-index="0">
-                            <div class="container-fluid ontop">
-                                <div class="container"
-                                     style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                                    <div class="lg-text">
+            <!-- Section - Blog -->
+            <section class="section section-inner m-archive">
+                <div class="container">
 
-                                        <h1>Félix Moulin</h1>
-                                        <div class="d-flex">
-                                            <h6 class="ml-auto">Cyclo-Cross Route</h6>
-                                        </div>
-                                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+                            <!-- content -->
+                            <div class="description">
+                                <div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Place</th>
+                                            <th scope="col">Nom</th>
+                                            <th scope="col">Points</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                                        <tr>
+
+                                            <th>&#129351;</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/walterbenoit">WALTER
+                                                BENOIT</a></td>
+                                            <td>394</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>&#129352;</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/defosseherve">DEFOSSE
+                                                HERVE</a></td>
+                                            <td>371</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>&#129353;</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/derassedavid">DERASSE
+                                                DAVID</a></td>
+                                            <td>359</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>4</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/deferolivier">DEFER
+                                                OLIVIER</a></td>
+                                            <td>310</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>5</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/minnecielio">MINNECI
+                                                ELIO</a></td>
+                                            <td>290</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>6</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/dejonghemickael">DEJONGHE
+                                                MICKAEL</a></td>
+                                            <td>240</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>7</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/broutinantoine">BROUTIN
+                                                ANTOINE</a></td>
+                                            <td>175</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>8</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/dufourjulien">DUFOUR
+                                                JULIEN</a></td>
+                                            <td>170</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>9</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/lecolierstephane">LECOLIER
+                                                STEPHANE</a></td>
+                                            <td>149</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>10</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/lecolierlouis">LECOLIER
+                                                LOUIS</a></td>
+                                            <td>132</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>11</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/mattiolironald">MATTIOLI
+                                                RONALD</a></td>
+                                            <td>127</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>12</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/lecolierbenoit">LECOLIER
+                                                BENOIT</a></td>
+                                            <td>120</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>13</th>
+
+                                            <td>
+                                                <a href="https://teamspecializedlille.github.io/works/schernuchristophe">SCHERNU
+                                                    CHRISTOPHE</a></td>
+                                            <td>104</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>14</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/crombezthomas">CROMBEZ
+                                                THOMAS</a></td>
+                                            <td>82</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>15</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/derassepatrick">DERASSE
+                                                PATRICK</a></td>
+                                            <td>50</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>16</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/boonenicolas">BOONE
+                                                NICOLAS</a></td>
+                                            <td>22</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>17</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/trinelemily">TRINEL
+                                                EMILY</a></td>
+                                            <td>10</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>18</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/meausoonehenri">MEAUSOONE
+                                                HENRI</a></td>
+                                            <td>10</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>19</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/moulinfelix">MOULIN
+                                                FELIX</a></td>
+                                            <td>0</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>20</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/degraalrobin">DE
+                                                GRAAL ROBIN</a></td>
+                                            <td>0</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>21</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/hubautchristophe">HUBAUT
+                                                CHRISTOPHE</a></td>
+                                            <td>0</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>22</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/dendievelcyril">DENDIEVEL
+                                                CYRIL</a></td>
+                                            <td>0</td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <th>23</th>
+
+                                            <td><a href="https://teamspecializedlille.github.io/works/shernuchristophe">SHERNU
+                                                CHRISTOPHE</a></td>
+                                            <td>0</td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                    <b>Réglement : </b>
+                                    <ul>
+                                        <li>Participation : 10 points</li>
+                                        <li>Victoire : 3 points</li>
+                                        <li>Top 5 : 2 points</li>
+                                        <li>Top 10 : 1 points</li>
+                                    </ul>
+
+                                    Mis à jour le 04 October 2024
                                 </div>
-                                <div class="img conditional-display">
-                                    <img src="/assets/imgs/intro/felix.png" alt="">
-                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="v-line-left v-line-top">
+                        <div class="v-line-block"><span></span></div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ==================== Start Footer ==================== -->
+
+            <footer class="min-footer sub-bg pt-30 pb-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 md-mb15">
+                            <div class="logo icon-img-100">
+                                <img src="" alt="">
                             </div>
                         </div>
+                        <div class="col-lg-4 order-md-3">
+                            <div class="text-center">
 
-                        <!-- ==================== End intro ==================== -->
-
-
-                        <!-- ==================== Start Resume ==================== -->
-
-                        <!-- ==================== CX ==================== -->
-                        <section class="faqs section-padding position-re">
-                            <div class="sec-head mb-50">
-                                <h2>Résultats</h2>
+                                <p class="fz-14">© 2024 <span
+                                        class="underline main-color"><a href="https://twomoulins.fr"
+                                                                        target="_blank">Félix Moulin</a></span> All
+                                    rights reserved</p>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="list-serv">
-                                    <div class="accordion bord">
-
-
-                                        <div class="item mb-15 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="title">
-                                                <h6>2025</h6>
-                                                <span class="ico ti-plus"></span>
-                                            </div>
-                                            <div class="accordion-info">
-
-
-                                                <h5>Cyclo-cross</h5>
-                                                <div class="row">
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2024/10/13/RouteVIEUX-CONDE">2024/10/13 -
-                                                            VIEUX CONDE</a> ~ 13</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2024/10/27/RouteHALLUIN">2024/10/27
-                                                            - HALLUIN</a> ~ 13</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2024/11/01/RouteHENIN-BEAUMONT">2024/11/01
-                                                            - HENIN BEAUMONT</a> ~ 29</p>
-                                                    </div>
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-
-                                        <div class="item mb-15 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="title">
-                                                <h6>2024</h6>
-                                                <span class="ico ti-plus"></span>
-                                            </div>
-                                            <div class="accordion-info">
-
-
-                                                <h5>Cyclo-cross</h5>
-                                                <div class="row">
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2024/02/11/RouteMERICOURT-(62680)-ULTRA-VTT">2024/02/11
-                                                            - MERICOURT (62680) ULTRA VTT</a> ~ 3</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2024/01/07/RouteWALLERS-AREMBERG2">2024/01/07
-                                                            - WALLERS AREMBERG2</a> ~ 14</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/12/31/RouteESTEVELLES2">2023/12/31 -
-                                                            ESTEVELLES2</a> ~ 6</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/12/10/RouteAVESNES-LES-AUBERT">2023/12/10
-                                                            - AVESNES LES AUBERT</a> ~ 15</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/12/03/RouteBTWIN---LILLE">2023/12/03 -
-                                                            BTWIN - LILLE</a> ~ 9</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2023/11/26/RouteWILLEMS">2023/11/26
-                                                            - WILLEMS</a> ~ 14</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2023/11/19/RouteHASPRES">2023/11/19
-                                                            - HASPRES</a> ~ 17</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/11/18/RouteBAILLEUL">2023/11/18 -
-                                                            BAILLEUL</a> ~ 5</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2023/10/29/RouteHALLUIN">2023/10/29
-                                                            - HALLUIN</a> ~ 18</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/10/15/RouteVIEUX-CONDE">2023/10/15 -
-                                                            VIEUX CONDE</a> ~ Ab</p>
-                                                    </div>
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-
-                                        <div class="item mb-15 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="title">
-                                                <h6>2023</h6>
-                                                <span class="ico ti-plus"></span>
-                                            </div>
-                                            <div class="accordion-info">
-
-
-                                                <h5>Road</h5>
-                                                <div class="row">
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2023/09/30/RouteLEWARDE">2023/09/30
-                                                            - LEWARDE</a> ~ Ab</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/07/30/RouteSAINT-ANDRE">2023/07/30 -
-                                                            SAINT ANDRE</a> ~ 34</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2023/05/01/RouteWAVRIN">2023/05/01
-                                                            - WAVRIN</a> ~ 41</p>
-                                                    </div>
-
-                                                </div>
-
-
-                                                <h5>Cyclo-cross</h5>
-                                                <div class="row">
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2023/02/11/RouteBOUVIGNIES">2023/02/11 -
-                                                            BOUVIGNIES</a> ~ 18</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2022/11/13/RouteBTWIN">2022/11/13
-                                                            - BTWIN</a> ~ 37</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2022/10/09/RouteBAILLEUL">2022/10/09 -
-                                                            BAILLEUL</a> ~ 24</p>
-                                                    </div>
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-
-                                        <div class="item mb-15 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="title">
-                                                <h6>2022</h6>
-                                                <span class="ico ti-plus"></span>
-                                            </div>
-                                            <div class="accordion-info">
-
-
-                                                <h5>Cyclo-cross</h5>
-                                                <div class="row">
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2022/01/22/RouteVERLINGHEM">2022/01/22 -
-                                                            VERLINGHEM</a> ~ 26</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2022/01/08/RouteSAINT-SAULVE">2022/01/08 -
-                                                            SAINT SAULVE</a> ~ 999</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2021/11/20/RouteCamphin-en-Carembault">2021/11/20
-                                                            - Camphin en Carembault</a> ~ Ab</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a href="/route/2021/11/11/RouteWINGLES">2021/11/11
-                                                            - WINGLES</a> ~ 26</p>
-                                                    </div>
-
-
-                                                    <div class="col-md-10">
-                                                        <p class="mt-15 fz-14"><a
-                                                                href="/route/2021/11/07/RouteBTWIN-VILLAGE">2021/11/07 -
-                                                            BTWIN VILLAGE</a> ~ 36</p>
-                                                    </div>
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section><!-- ==================== End Resume ==================== -->
-
-
-                        <!-- ==================== Start Services ==================== -->
-
-                        <!--<div class="services section-padding bord-thin-top" data-scroll-index="3">
-                            <div class="sec-head mb-50">
-                                <h3>My <span class="fw-200">Specializations</span></h3>
-                            </div>
-                            <div class="row sm-marg">
-                                <div class="col-md-6">
-                                    <div class="item-box2 mb-10">
-                                        <div>
-                                            <div class="icon mb-40">
-                                                <img src="" alt="">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-15">UI-UX Design</h5>
-                                            <p>Live workshop where we define the main problems and challenges before
-                                                building.</p>
-                                        </div>
-                                        <a href="page-services-details.html" class="rmore">
-                                            <div class="arrow">
-                                                <img src="" alt="" class="icon-img-20">
-                                            </div>
-                                            <div class="shap-left-top">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="shap-right-bottom">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-box2 mb-10">
-                                        <div>
-                                            <div class="icon mb-40">
-                                                <img src="" alt="">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-15">Web Development</h5>
-                                            <p>Live workshop where we define the main problems and challenges before
-                                                building.</p>
-                                        </div>
-                                        <a href="page-services-details.html" class="rmore">
-                                            <div class="arrow">
-                                                <img src="" alt="" class="icon-img-20">
-                                            </div>
-                                            <div class="shap-left-top">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="shap-right-bottom">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-box2 mb-10">
-                                        <div>
-                                            <div class="icon mb-40">
-                                                <img src="" alt="">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-15">Digital Marketing</h5>
-                                            <p>Live workshop where we define the main problems and challenges before
-                                                building.</p>
-                                        </div>
-                                        <a href="page-services-details.html" class="rmore">
-                                            <div class="arrow">
-                                                <img src="" alt="" class="icon-img-20">
-                                            </div>
-                                            <div class="shap-left-top">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="shap-right-bottom">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="item-box2 mb-10">
-                                        <div>
-                                            <div class="icon mb-40">
-                                                <img src="" alt="">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-15">Product Design</h5>
-                                            <p>Live workshop where we define the main problems and challenges before
-                                                building.</p>
-                                        </div>
-                                        <a href="page-services-details.html" class="rmore">
-                                            <div class="arrow">
-                                                <img src="" alt="" class="icon-img-20">
-                                            </div>
-                                            <div class="shap-left-top">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="shap-right-bottom">
-                                                <svg viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
-                                                    <path
-                                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                                        fill="#1a1a1a"></path>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-
-                        <!-- ==================== End Services ==================== -->
-
+                        </div>
+                    </div>
                 </div>
+            </footer>
+
+            <!-- ==================== End Footer ==================== -->
+
+
+        </main>
     </div>
-    </section>
-
-    <!-- ==================== End Coureur ==================== -->
-
-
-    <!-- ==================== Start Footer ==================== -->
-
-    <footer class="min-footer sub-bg pt-30 pb-30">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 md-mb15">
-                    <div class="logo icon-img-100">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 order-md-3">
-                    <div class="text-center">
-
-                        <p class="fz-14">© 2024 <span
-                                class="underline main-color"><a href="https://twomoulins.fr"
-                                                                target="_blank">Félix Moulin</a></span> All rights
-                            reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ==================== End Footer ==================== -->
-
-
-    </main>
-</div>
 </div><!-- Plugins -->
 
 <!-- jQuery -->

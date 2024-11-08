@@ -3,15 +3,14 @@
 layout: works-single
 title: Félix Moulin
 name: MOULIN FELIX
-category: Cyclo-Cross Route
-category_slug: cx road
+sports: Cyclo-Cross Route
 image: assets/img/team/FELIXMOULIN_1.jpeg
 
-# full details
-live_preview: https://bslthemes.com
-#1920 / 1020
 strava: https://www.strava.com/athletes/24292544
-#full_image: assets/img/team/FELIXMOULIN_large.jpeg
+nationality: fr
+instagram: Lobwick
+date_of_birth: 08/09/1994
+category: 3ème
 info:
   - label: Date de naissance
     value: 08/09/1994

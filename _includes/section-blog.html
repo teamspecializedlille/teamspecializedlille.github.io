@@ -45,11 +45,11 @@
                     </div>
                     <div class="cont">
                         <div class="date sub-title mb-10 opacity-7">
-                            <a href="blog-details.html">{{ post.date | date: site.date_format }}</a>
+                            <a href="{{ post.url }}">{{ post.date | date: site.date_format }}</a>
                         </div>
                         <h5>
                             {% assign title_parts = post.title | split: ' - ' %}
-                            <a href="blog-details.html">{{ title_parts[0] }} - {{ title_parts[1] }}</a>
+                            <a href="{{ post.url }}">{{ title_parts[0] }} - {{ title_parts[1] }}</a>
                         </h5>
                     </div>
                 </div>

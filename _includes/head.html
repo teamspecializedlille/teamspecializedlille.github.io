@@ -13,7 +13,7 @@
     <title>{{ site.title }}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ 'assets/imgs/favicon.ico' | relative_url }}" />
+    <link rel="shortcut icon" href="{{ 'assets/images/favicons/favicon.ico' | relative_url }}" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
@@ -27,7 +27,12 @@
     <link rel="stylesheet" href="{{ 'assets/css/plugins.css' | relative_url }}" />
 
     <!-- Core Style Css -->
-  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ 'assets/css/country-flag.css' | relative_url }}">
+    <script src="{{ 'assets/js/country-flag.js' | relative_url }}"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script>
     function updateDisplay() {
         var narrow_screen = window.matchMedia("(max-width: 768px)").matches;
@@ -49,8 +54,16 @@
         }
     }
 
-	document.addEventListener("DOMContentLoaded", updateDisplay);
+	document.addEventListener("DOMContentLoaded", function () {
+		updateDisplay();
+		const flagElement = document.querySelector(".country-flag");
+	    if (flagElement) {
+            const flag = new CountryFlag(flagElement);
+            flag.selectByAlpha2(flagElement.id);
+        }
+    });
     window.addEventListener("resize", updateDisplay);
+
 
 </script>
 </head>

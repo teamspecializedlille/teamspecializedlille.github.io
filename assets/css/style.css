@@ -12,6 +12,9 @@
 /* Variables
 -----------------------------------------------------------------*/
 
+.label {
+    min-width: 190px; /* Adjust this value based on the longest label */
+}
 
 .no-background {
     background-image: none !important;
