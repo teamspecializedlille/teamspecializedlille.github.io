@@ -14,7 +14,7 @@ category: 2ème
 
 strava: https://www.strava.com/athletes/62452007
 gallery:
-  - assets/img/team/HUBAUTCHRISTOPHE_1.jpeg
+  - assets/imgs/team/small/hubaut_christophe.jpeg
 
 
 ---

@@ -18,6 +18,5 @@ info:
  #   value: 3ème
 
 gallery:
-  - assets/img/team/CROMBEZTHOMAS_1.jpeg
 
 ---

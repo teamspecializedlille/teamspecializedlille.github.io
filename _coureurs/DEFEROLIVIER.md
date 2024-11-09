@@ -19,7 +19,6 @@ info:
  #   value: 3ème
 
 gallery:
-  - assets/img/team/DEFEROLIVIER_1.jpg
 
 
 ---

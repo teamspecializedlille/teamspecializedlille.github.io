@@ -9,6 +9,5 @@ date_of_birth: 01/12/1994
 
 
 gallery:
-  - assets/img/team/BROUTINANTOINE_1.jpg
 
 ---

@@ -7,7 +7,6 @@ name: DUFOUR JULIEN
 sports: Route
 image: assets/imgs/team/small/dufour_julien.jpeg
 large: assets/imgs/team/large/dufour_julien.png
-#strava: https://www.strava.com/athletes/24292544
 nationality: fr
 date_of_birth: 09/08/1988
 category: 3ème

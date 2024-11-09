@@ -12,7 +12,7 @@ category: 2ème
 
 
 gallery:
-  - assets/img/team/MEAUSOONEHENRI_1.jpeg
+  - assets/imgs/team/small/meausoone_henri.jpeg
 strava: https://www.strava.com/athletes/44445128
 
 ---

@@ -14,7 +14,7 @@ date_of_birth: 10/10/1974
 category: 1ère
 
 gallery:
-  - assets/img/team/LECOLIERSTEPHANE_1.jpg
+  - assets/imgs/team/small/lecolier_stephane.jpg
   - assets/img/team/LECOLIERSTEPHANE_2.jpg
   - assets/img/team/LECOLIERSTEPHANE_3.jpg
   - assets/img/team/LECOLIERSTEPHANE_4.jpg

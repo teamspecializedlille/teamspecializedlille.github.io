@@ -13,7 +13,7 @@ nationality: fr
 category: 1ère
 
 gallery:
-  - assets/img/team/LECOLIERLOUIS_1.jpg
+  - assets/imgs/team/small/lecolier_louis.jpg
 strava: https://www.strava.com/athletes/84784364
 
 ---

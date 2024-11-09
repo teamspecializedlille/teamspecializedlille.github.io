@@ -11,7 +11,7 @@ category: 3ème
 
 strava: https://www.strava.com/athletes/8607391
 gallery:
-  - assets/img/team/DEGRAALROBIN_1.jpeg
+  - assets/imgs/team/small/degraal_robin.jpeg
 
 
 ---

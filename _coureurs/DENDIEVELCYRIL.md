@@ -15,7 +15,7 @@ category: 2ème
 
 strava: https://www.strava.com/athletes/16763427
 gallery:
-  - assets/img/team/DENDIEVELCYRIL_1.jpeg
+  - assets/imgs/team/small/dendievel_cyril.jpeg
 
 
 
