@@ -5,7 +5,7 @@ title: ORBIER AXEL
 name: ORBIER AXEL
 category: CX
 category_slug: cx
-image: assets/img/team/ORBIERAXEL_1.JPG
+image: assets/imgs/team/small/empty.png
 strava: https://www.strava.com/athletes/20939373
 # full details
 live_preview: https://bslthemes.com

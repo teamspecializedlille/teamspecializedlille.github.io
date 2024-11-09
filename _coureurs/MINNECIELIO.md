@@ -2,20 +2,15 @@
 # preview details
 layout: coureurs-single
 title: MINNECI ELIO
-name: MINNEC ELIO
-category: CX Route
-category_slug: cx road
-image: assets/img/team/MINNECIELIO_1.jpeg
+name: MINNECI ELIO
 
-# full details
-live_preview: https://bslthemes.com
-#1920 / 1020
-#full_image: assets/img/team/FELIXMOULIN_large.jpeg
-info:
-  - label: Date de naissance
-    value: 18/09/2004
- #- label: Catégorie 
- #   value: 3ème
+
+sports:  Route
+image: assets/imgs/team/small/minneci_elio.jpeg
+large: assets/imgs/team/large/minneci_elio.png
+nationality: fr
+date_of_birth: 18/09/2004
+category: 3ème
 
 gallery:
   - assets/img/team/MINNECIELIO_1.jpeg

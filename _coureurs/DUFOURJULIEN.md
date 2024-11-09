@@ -3,22 +3,18 @@
 layout: coureurs-single
 title: DUFOUR JULIEN
 name: DUFOUR JULIEN
-category:  Route
-category_slug:  road
-image: assets/img/team/DUFOURJULIEN_1.jpeg
 
-# full details
-live_preview: https://bslthemes.com
-#1920 / 1020
-#full_image: assets/img/team/FELIXMOULIN_large.jpeg
-info:
-  - label: Date de naissance
-    value: 09/08/1988
- #- label: Catégorie 
- #   value: 3ème
+sports: Route
+image: assets/imgs/team/small/dufour_julien.jpeg
+large: assets/imgs/team/large/dufour_julien.png
+#strava: https://www.strava.com/athletes/24292544
+nationality: fr
+date_of_birth: 09/08/1988
+category: 3ème
+  
 
 gallery:
-  - assets/img/team/DUFOURJULIEN_1.jpeg
+  - assets/imgs/team/small/dufour_julien.jpeg
   - assets/img/team/DUFOURJULIEN_2.jpeg
   - assets/img/team/DUFOURJULIEN_3.jpeg
   - assets/img/team/DUFOURJULIEN_4.jpeg

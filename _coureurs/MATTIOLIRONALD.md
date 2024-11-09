@@ -4,13 +4,13 @@ layout: coureurs-single
 title: MATTIOLI RONALD
 name: MATTIOLI RONALD
 
-image: assets/img/team/MATTIOLIRONALD_1.jpeg
-large: assets/img/team/MATTIOLIRONALD_1.jpeg
-sports: VTT Route 
+
+sports: VTT Route
+image: assets/imgs/team/small/mattioli_ronald.jpeg
+large: assets/imgs/team/large/mattioli_ronald.png
 nationality: be
 date_of_birth: 28/12/1973
 category: 1ère
-
 
 gallery:
   - assets/img/team/MATTIOLIRONALD_2.jpeg

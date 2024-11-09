@@ -3,22 +3,19 @@
 layout: coureurs-single
 title: DERASSE DAVID
 name: DERASSE DAVID
-category: CX Route
-category_slug: cx road
-image: assets/img/team/DERASSEDAVID_1.JPG
 
-# full details
-live_preview: https://bslthemes.com
-#1920 / 1020
-#full_image: assets/img/team/FELIXMOULIN_large.jpeg
-info:
-  - label: Date de naissance
-    value: 09/01/2007
- #- label: Catégorie 
- #   value: 3ème
+  
+sports: Cyclo-Cross Route
+image: assets/imgs/team/small/derasse_david.JPG
+large: assets/imgs/team/large/derasse_david.png
+nationality: fr
+date_of_birth: 09/01/2007
+category: 3ème
+
+
 strava: https://www.strava.com/athletes/95634890
 gallery:
-  - assets/img/team/DERASSEDAVID_1.JPG
+  - assets/imgs/team/small/derasse_david.JPG
   - assets/img/team/DERASSEDAVID_2.JPG
   - assets/img/team/DERASSEDAVID_3.JPG
   - assets/img/team/DERASSEDAVID_4.JPG

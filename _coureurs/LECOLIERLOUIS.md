@@ -3,19 +3,14 @@
 layout: coureurs-single
 title: LECOLIER LOUIS
 name: LECOLIER LOUIS
-category: CX Route
-category_slug: cx road
-image: assets/img/team/LECOLIERLOUIS_1.jpg
 
-# full details
-live_preview: https://bslthemes.com
-#1920 / 1020
-#full_image: assets/img/team/FELIXMOULIN_large.jpeg
-info:
-  - label: Date de naissance
-    value: 00/00/2000
- #- label: Catégorie 
- #   value: 3ème
+
+  
+sports: Cyclo-Cross Route
+image: assets/imgs/team/small/lecolier_louis.jpg
+large: assets/imgs/team/large/lecolier_louis.png
+nationality: fr
+category: 1ère
 
 gallery:
   - assets/img/team/LECOLIERLOUIS_1.jpg

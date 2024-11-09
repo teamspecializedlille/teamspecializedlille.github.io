@@ -5,7 +5,7 @@ title: DEFER OLIVIER
 name: DEFER OLIVIER
 category:  Route
 category_slug:  road
-image: assets/img/team/DEFEROLIVIER_1.jpg
+image: assets/imgs/team/small/empty.png
 
 # full details
 strava: https://www.strava.com/athletes/33163192

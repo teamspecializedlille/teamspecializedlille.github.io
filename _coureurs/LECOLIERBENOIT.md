@@ -3,19 +3,14 @@
 layout: coureurs-single
 title: LECOLIER BENOIT
 name: LECOLIER BENOIT
-category: VTT Route
-category_slug: vtt road
-image: assets/img/team/LECOLIERBENOIT_1.JPG
 
-# full details
-live_preview: https://bslthemes.com
-#1920 / 1020
-#full_image: assets/img/team/FELIXMOULIN_large.jpeg
-info:
-  - label: Date de naissance
-    value: 15/09/1978
- #- label: Catégorie 
- #   value: 3ème
+
+sports: VTT Route
+image: assets/imgs/team/small/lecolier_benoit.JPG
+large: assets/imgs/team/large/lecolier_benoit.png
+nationality: fr
+date_of_birth: 15/09/1978
+category: 2ème
 
 gallery:
   - assets/img/team/LECOLIERBENOIT_1.JPG
