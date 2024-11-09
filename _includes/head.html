@@ -31,19 +31,18 @@
     <link rel="stylesheet" href="{{ 'assets/css/country-flag.css' | relative_url }}">
     <script src="{{ 'assets/js/country-flag.js' | relative_url }}"></script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script>
     function updateDisplay() {
-        var narrow_screen = window.matchMedia("(max-width: 768px)").matches;
-        var smoothWrapper = document.getElementById("smooth-wrapper");
-        if (narrow_screen && smoothWrapper) {
+	    const narrow_screen = window.matchMedia("(max-width: 768px)").matches;
+	    const smoothWrapper = document.getElementById("smooth-wrapper");
+	    if (narrow_screen && smoothWrapper) {
             smoothWrapper.removeAttribute("data-background");
             smoothWrapper.classList.add("no-background");
             console.log("data-background attribute removed");
 
         } else if (smoothWrapper) {
-            smoothWrapper.setAttribute("data-background", "{{ 'assets/imgs/intro/felix_full.png' | relative_url }}");
+			const image = smoothWrapper.getAttribute("data-name");
+            smoothWrapper.setAttribute("data-background", image);
         }
 
         var element = document.querySelector(".conditional-display");

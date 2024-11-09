@@ -11,6 +11,11 @@
 -----------------------------------------------------------------------------------*/
 /* Variables
 -----------------------------------------------------------------*/
+tr,th,td {
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
 
 .label {
     min-width: 190px; /* Adjust this value based on the longest label */

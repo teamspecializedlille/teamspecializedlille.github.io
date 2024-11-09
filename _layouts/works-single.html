@@ -42,7 +42,7 @@ layout: default
                             </div>
                         </div>
                         <div class="img conditional-display">
-                            <img src="{{ 'assets/imgs/intro/felix.png' | relative_url }}" alt="">
+                            <img src="{{ page.large | relative_url }}" alt="">
                         </div>
                     </div>
             </div>
@@ -64,7 +64,7 @@ layout: default
                                                     {% if page.nationality %}
                                                         <div class="d-flex align-items-center">
                                                             <span class="sub-title fw-200 label">Nationalité : </span>
-                                                            <div id="fr" class="country-flag ml-2"></div>
+                                                            <div id="{{ page.nationality }}" class="country-flag ml-2"></div>
                                                         </div>
                                                     {% endif %}
                                                     {% if page.category %}
@@ -194,22 +194,13 @@ layout: default
                         <h3>Gallery<span class="fw-200"></span></h3>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="gallery-item">
-                                    <img src="{{ 'assets/imgs/intro/felix.png' | relative_url }}" alt="" class="img-fluid">
+                        {% for img in page.gallery %}
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="gallery-item">
+                                        <img src="{{ img | relative_url }}" alt="" class="img-fluid">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="gallery-item">
-                                    <img src="{{ 'assets/imgs/intro/felix.png' | relative_url }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="gallery-item">
-                                    <img src="{{ 'assets/imgs/intro/felix.png' | relative_url }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Add more images as needed -->
+                        {% endfor %}
                     </div>
                 </div>
             </section>
