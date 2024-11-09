@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: BROUTIN ANTOINE
 name: BROUTIN ANTOINE
 category: Route

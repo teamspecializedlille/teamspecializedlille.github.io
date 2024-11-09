@@ -1215,7 +1215,7 @@
 	var _parseProp = function(val) {
 		var numbers = [];
 
-		//One special case, where floats don't work.
+		//One special case, where floats don't coureur.
 		//We replace all occurences of rgba colors
 		//which don't use percentage notation with the percentage notation.
 		rxRGBAIntegerColor.lastIndex = 0;
@@ -1583,7 +1583,7 @@
 
 	/**
 	 * Returns a string of space separated classnames for the current element.
-	 * Works with SVG as well.
+	 * coureurs with SVG as well.
 	 */
 	var _getClass = function(element) {
 		var prop = 'className';
@@ -1599,7 +1599,7 @@
 
 	/**
 	 * Adds and removes a CSS classes.
-	 * Works with SVG as well.
+	 * coureurs with SVG as well.
 	 * add and remove are arrays of strings,
 	 * or if remove is ommited add is a string and overwrites all classes.
 	 */
@@ -1618,7 +1618,7 @@
 			return;
 		}
 
-		//Cache current classes. We will work on a string before passing back to DOM.
+		//Cache current classes. We will coureur on a string before passing back to DOM.
 		var val = element[prop];
 
 		//All classes to be removed.

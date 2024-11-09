@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: ORBIER AXEL
 name: ORBIER AXEL
 category: CX

@@ -9,4 +9,4 @@ image: assets/img/blog/road.jpeg
 
 ### 2ème Catégorie
 62 participants
-- [BROUTIN ANTOINE](https://teamspecializedlille.github.io/works/broutinantoine) : 25
+- [BROUTIN ANTOINE](https://teamspecializedlille.github.io/coureurs/broutinantoine) : 25

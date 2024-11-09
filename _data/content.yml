@@ -273,11 +273,11 @@ contacts:
       text: "+1 900 - 900 - 9000"
 
 ### Portfolio [ portfolio ]
-#items generates from dir /_works/*
+#items generates from dir /_coureurs/*
 portfolio:
   title: "Team"
   subtitle: ""
   bg_title: "Team"
   button:
-    link: "works/"
+    link: "coureurs/"
     label: "Toute l'équipe"

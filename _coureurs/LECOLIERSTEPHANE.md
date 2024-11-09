@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: LECOLIER STEPHANE
 name: LECOLIER STEPHANE
 category: CX Route

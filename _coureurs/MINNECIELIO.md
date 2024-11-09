@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: MINNECI ELIO
 name: MINNEC ELIO
 category: CX Route

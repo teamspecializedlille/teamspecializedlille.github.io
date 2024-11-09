@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 53 participants
-- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/works/leclercqfranck) : 11
-- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/works/darquejeanfrancois) : 21
-- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 23
-- [SCHERNU CHRISTOPHE](https://teamspecializedlille.github.io/works/schernuchristophe) : 27
-- [RAMBEAU CHRISTOPHER](https://teamspecializedlille.github.io/works/rambeauchistopher) : 42
+- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/coureurs/leclercqfranck) : 11
+- [DARQUE JEAN FRANCOIS](https://teamspecializedlille.github.io/coureurs/darquejeanfrancois) : 21
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/coureurs/dufourjulien) : 23
+- [SCHERNU CHRISTOPHE](https://teamspecializedlille.github.io/coureurs/schernuchristophe) : 27
+- [RAMBEAU CHRISTOPHER](https://teamspecializedlille.github.io/coureurs/rambeauchistopher) : 42
 
 ### Scratch
 302 participants

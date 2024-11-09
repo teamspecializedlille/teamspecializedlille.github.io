@@ -1,27 +1,25 @@
 ---
 # preview details
-layout: works-single
-title: DEFOSSE HERVE
-name: DEFOSSE HERVE
+layout: coureurs-single
+title: DEFER OLIVIER
+name: DEFER OLIVIER
 category:  Route
 category_slug:  road
-image: assets/img/team/empty.png
+image: assets/img/team/DEFEROLIVIER_1.jpg
 
 # full details
+strava: https://www.strava.com/athletes/33163192
 live_preview: https://bslthemes.com
 #1920 / 1020
 #full_image: assets/img/team/FELIXMOULIN_large.jpeg
 info:
   - label: Date de naissance
-    value: 00/00/2000
+    value: 21/11/1985
  #- label: Catégorie 
  #   value: 3ème
-strava: https://www.strava.com/athletes/105331433
 
 gallery:
-  - assets/img/team/empty.png
-  - assets/img/blog/blog8.jpg
-  - assets/img/blog/blog6.jpg
+  - assets/img/team/DEFEROLIVIER_1.jpg
 
 
 ---

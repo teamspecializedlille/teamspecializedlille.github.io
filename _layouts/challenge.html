@@ -35,12 +35,12 @@ layout: default
     <div class="container">
 		<div class="row">
 		{% for people in data.challenge limit:3 %}
-				{% assign work = site.works | where: "name", people[0] | first %}
+				{% assign coureur = site.coureurs | where: "name", people[0] | first %}
 				<div class="col-lg-4">
 					<div class="item md-mb50" >
-						<a  href="{{ work.url }}">
+						<a  href="{{ coureur.url }}">
 							<div class="img">
-								<img src="{{ work.image | relative_url }}" alt="{{ work.title }}">
+								<img src="{{ coureur.image | relative_url }}" alt="{{ coureur.title }}">
 								<div class="info">
 									<h6 class="fz-18">{{ people[0] }}</h6>
 								</div>
@@ -48,13 +48,13 @@ layout: default
 						</a>
 						<div class="social">
 							<div class="links">
-								{% if work.strava != nil %}
-								<a href="{{ work.strava }}" target="_blank">
+								{% if coureur.strava != nil %}
+								<a href="{{ coureur.strava }}" target="_blank">
 									<i class="fab fa-strava"></i>
 								</a>
 								{% endif %}
-								 {% if work.instagram != nil %}
-								<a href="{{ work.instagram }}" target="_blank">
+								 {% if coureur.instagram != nil %}
+								<a href="{{ coureur.instagram }}" target="_blank">
 									<i class="fab fa-instagram"></i>
 								</a>
 								{% endif %}
@@ -105,7 +105,7 @@ layout: default
                                 {% endif %}
                             </td>
                             <td style="position: relative; padding: 20px;">
-                                <a href="{{ '/works/' | append: people[0] | downcase | replace: " ", "" | relative_url }}">{{ people[0] }}</a>
+                                <a href="{{ '/coureurs/' | append: people[0] | downcase | replace: " ", "" | relative_url }}">{{ people[0] }}</a>
                             </td>
                             <td style="position: relative; padding: 20px;">
                                 <span>{{ people[1] }}</span>

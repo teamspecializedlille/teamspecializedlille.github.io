@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: WALTER BENOIT
 name: WALTER BENOIT
 category: VTT Route

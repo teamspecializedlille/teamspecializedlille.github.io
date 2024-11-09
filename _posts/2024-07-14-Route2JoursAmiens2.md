@@ -8,9 +8,9 @@ image: assets/img/blog/road.jpeg
 ---
 
 ### 2ème Catégorie
-- [BROUTIN ANTOINE](https://teamspecializedlille.github.io/works/broutinantoine) : 33
+- [BROUTIN ANTOINE](https://teamspecializedlille.github.io/coureurs/broutinantoine) : 33
 
 ### 3ème Catégorie
 54 participants
-- [DERASSE DAVID](https://teamspecializedlille.github.io/works/derassedavid) : 6
-- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 9
+- [DERASSE DAVID](https://teamspecializedlille.github.io/coureurs/derassedavid) : 6
+- [WALTER BENOIT](https://teamspecializedlille.github.io/coureurs/walterbenoit) : 9

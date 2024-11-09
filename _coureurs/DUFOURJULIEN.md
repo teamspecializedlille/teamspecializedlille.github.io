@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: DUFOUR JULIEN
 name: DUFOUR JULIEN
 category:  Route

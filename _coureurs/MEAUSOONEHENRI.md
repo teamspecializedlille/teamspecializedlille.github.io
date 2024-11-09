@@ -1,11 +1,11 @@
 ---
 # preview details
-layout: works-single
-title: DENDIEVEL CYRIL
-name: DENDIEVEL CYRIL
+layout: coureurs-single
+title: MEAUSOONE HENRI
+name: MEAUSOONE HENRI
 category:  Route
 category_slug:  road
-image: assets/img/team/DENDIEVELCYRIL_1.jpeg
+image: assets/img/team/MEAUSOONEHENRI_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -16,10 +16,9 @@ info:
     value: 00/00/2000
  #- label: Catégorie 
  #   value: 3ème
-strava: https://www.strava.com/athletes/16763427
+
 gallery:
-  - assets/img/team/DENDIEVELCYRIL_1.jpeg
-
-
+  - assets/img/team/MEAUSOONEHENRI_1.jpeg
+strava: https://www.strava.com/athletes/44445128
 
 ---

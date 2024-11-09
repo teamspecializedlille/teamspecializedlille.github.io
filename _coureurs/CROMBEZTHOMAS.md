@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: CROMBEZ THOMAS
 name: CROMBEZ THOMAS
 category: Route

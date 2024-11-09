@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: HUBAUT CHRISTOPHE
 name: HUBAUT CHRISTOPHE
 category:  Route

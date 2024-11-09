@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: DERASSE PATRICK
 name: DERASSE PATRICK
 category: CX Route

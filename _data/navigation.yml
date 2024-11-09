@@ -34,8 +34,8 @@ main:
 #    url: ""
 #    parent: 1
 #    childs:
-#        - title: "Works"
-#          url: "works/"
+#        - title: "coureurs"
+#          url: "coureurs/"
 #
 #        - title: "Blog"
 #          url: "blog/"

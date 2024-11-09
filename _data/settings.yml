@@ -29,7 +29,7 @@ footer:
 
 ### Portfolio Filters Settings
 portfolio:
-  layout: "list" # select works layout options: "Grid" or "List"
+  layout: "list" # select coureurs layout options: "Grid" or "List"
   filters:
     - name: "Route"
       slug: "road"

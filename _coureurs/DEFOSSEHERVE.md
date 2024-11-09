@@ -1,11 +1,11 @@
 ---
 # preview details
-layout: works-single
-title: MEAUSOONE HENRI
-name: MEAUSOONE HENRI
+layout: coureurs-single
+title: DEFOSSE HERVE
+name: DEFOSSE HERVE
 category:  Route
 category_slug:  road
-image: assets/img/team/MEAUSOONEHENRI_1.jpeg
+image: assets/img/team/empty.png
 
 # full details
 live_preview: https://bslthemes.com
@@ -16,9 +16,12 @@ info:
     value: 00/00/2000
  #- label: Catégorie 
  #   value: 3ème
+strava: https://www.strava.com/athletes/105331433
 
 gallery:
-  - assets/img/team/MEAUSOONEHENRI_1.jpeg
-strava: https://www.strava.com/athletes/44445128
+  - assets/img/team/empty.png
+  - assets/img/blog/blog8.jpg
+  - assets/img/blog/blog6.jpg
+
 
 ---

@@ -14,27 +14,27 @@
             </div>
         </div>
         <div class="row">
-            {% for work in site.works %}
+            {% for coureur in site.coureurs %}
                 <div class="col-lg-4">
                     <div class="item md-mb50">
-                        <a  href="{{ work.url }}">
+                        <a  href="{{ coureur.url }}">
                             <div class="img">
-                                <img src="{{ work.image | relative_url }}" alt="{{ work.title }}">
+                                <img src="{{ coureur.image | relative_url }}" alt="{{ coureur.title }}">
                                 <div class="info">
-                                    <span class="fz-12">{{ work.category }}</span>
-                                    <h6 class="fz-18">{{ work.title }}</h6>
+                                    <span class="fz-12">{{ coureur.category }}</span>
+                                    <h6 class="fz-18">{{ coureur.title }}</h6>
                                 </div>
                             </div>
                         </a>
                         <div class="social">
                             <div class="links">
-                                {% if work.strava != nil %}
-                                <a href="{{ work.strava }}" target="_blank">
+                                {% if coureur.strava != nil %}
+                                <a href="{{ coureur.strava }}" target="_blank">
                                     <i class="fab fa-strava"></i>
                                 </a>
                                 {% endif %}
-                                 {% if work.instagram != nil %}
-                                <a href="{{ work.instagram }}" target="_blank">
+                                 {% if coureur.instagram != nil %}
+                                <a href="{{ coureur.instagram }}" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                                 {% endif %}

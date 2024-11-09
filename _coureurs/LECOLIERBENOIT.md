@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: LECOLIER BENOIT
 name: LECOLIER BENOIT
 category: VTT Route

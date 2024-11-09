@@ -1,11 +1,11 @@
 ---
 # preview details
-layout: works-single
-title: LECOLIER LOUIS
-name: LECOLIER LOUIS
-category: CX Route
-category_slug: cx road
-image: assets/img/team/LECOLIERLOUIS_1.jpg
+layout: coureurs-single
+title: DENDIEVEL CYRIL
+name: DENDIEVEL CYRIL
+category:  Route
+category_slug:  road
+image: assets/img/team/DENDIEVELCYRIL_1.jpeg
 
 # full details
 live_preview: https://bslthemes.com
@@ -16,9 +16,10 @@ info:
     value: 00/00/2000
  #- label: Catégorie 
  #   value: 3ème
-
+strava: https://www.strava.com/athletes/16763427
 gallery:
-  - assets/img/team/LECOLIERLOUIS_1.jpg
-strava: https://www.strava.com/athletes/84784364
+  - assets/img/team/DENDIEVELCYRIL_1.jpeg
+
+
 
 ---

@@ -22,7 +22,7 @@ formspree_endpoint: "https://formspree.io/f/your_endpoint" # sign up on https://
 
 # collections
 collections:
-  works:
+  coureurs:
     output: true
     permalink: /:collection/:name
 

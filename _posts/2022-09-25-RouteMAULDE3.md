@@ -9,11 +9,11 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 47 participants
-- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 23
-- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 24
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/coureurs/defosseherve) : 23
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/coureurs/dufourjulien) : 24
 
 ### 2ème Catégorie
 52 participants
-- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/works/dufourjonathan) : 12
-- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 15
-- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/works/leclercqfranck) : 29
+- [DUFOUR JONATHAN](https://teamspecializedlille.github.io/coureurs/dufourjonathan) : 12
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/coureurs/lecolierstephane) : 15
+- [LECLERCQ FRANCK](https://teamspecializedlille.github.io/coureurs/leclercqfranck) : 29

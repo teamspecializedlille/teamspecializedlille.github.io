@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: TRINEL EMILY
 name: TRINEL EMILY
 category:  Route

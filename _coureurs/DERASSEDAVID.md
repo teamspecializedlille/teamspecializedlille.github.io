@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: DERASSE DAVID
 name: DERASSE DAVID
 category: CX Route

@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: DE GRAAL ROBIN
 name: DE GRAAL ROBIN
 category: VTT

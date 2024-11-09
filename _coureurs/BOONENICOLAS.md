@@ -1,6 +1,6 @@
 ---
 # preview details
-layout: works-single
+layout: coureurs-single
 title: BOONE NICOLAS
 name: BOONE NICOLAS
 category: Route
