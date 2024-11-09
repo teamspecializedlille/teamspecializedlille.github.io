@@ -46,19 +46,18 @@
     <link rel="stylesheet" href="/assets/css/country-flag.css">
     <script src="/assets/js/country-flag.js"></script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script>
     function updateDisplay() {
-        var narrow_screen = window.matchMedia("(max-width: 768px)").matches;
-        var smoothWrapper = document.getElementById("smooth-wrapper");
-        if (narrow_screen && smoothWrapper) {
+	    const narrow_screen = window.matchMedia("(max-width: 768px)").matches;
+	    const smoothWrapper = document.getElementById("smooth-wrapper");
+	    if (narrow_screen && smoothWrapper) {
             smoothWrapper.removeAttribute("data-background");
             smoothWrapper.classList.add("no-background");
             console.log("data-background attribute removed");
 
         } else if (smoothWrapper) {
-            smoothWrapper.setAttribute("data-background", "/assets/imgs/intro/felix_full.png");
+			const image = smoothWrapper.getAttribute("data-name");
+            smoothWrapper.setAttribute("data-background", image);
         }
 
         var element = document.querySelector(".conditional-display");
@@ -90,7 +89,7 @@
 
     <!-- ==================== Start Loading ==================== -->
 
-    <div class="loader-wrap">
+    <div class="loader-wrap" style="display: none">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
         </svg>
@@ -111,7 +110,7 @@
     <!-- ==================== End Loading ==================== -->
 
 
-    <div class="cursor"></div>
+    <div class="cursor" style="display: none;"></div>
 
 
     <!-- ==================== Start progress-scroll-button ==================== -->
@@ -134,7 +133,7 @@
 
 
 
-<div id="smooth-wrapper" class="" data-background="/assets/imgs/intro/felix_full.png">
+<div id="smooth-wrapper" class="" data-name="" data-background="">
 
 
 
@@ -194,7 +193,7 @@
 
 <div class="hamenu one-scroll">
     <div class="logo icon-img-100">
-        <img src="/assets/imgs/logo-light.png" alt="">
+        <h5>Team Specialized Lille</h5>
     </div>
     <div class="close-menu cursor-pointer ti-close"></div>
     <div class="container">
@@ -248,31 +247,24 @@
             <div class="col-lg-3">
                 <div class="cont-info">
                     <div class="item mb-50">
-                        <h6 class="sub-title mb-15 opacity-7">Address</h6>
-                        <h5>541 Melville Geek, <br> Palo Alto, CA 94301</h5>
+                        <h6 class="sub-title mb-15 opacity-7">Cycle Lecolier</h6>
+                        <h5>5 Rue de la Source, <br>59320 Hallennes-lez-Haubourdin<br></h5>
                     </div>
                     <div class="item mb-50">
                         <h6 class="sub-title mb-15 opacity-7">Social Media</h6>
                         <ul class="rest social-text">
                             <li class="mb-10">
-                                <a href="#0" class="hover-this"><span class="hover-anim">Facebook</span></a>
+                                <a href="https://www.facebook.com/cycleslecolierspecializedlille" target="_blank" class="hover-this"><span class="hover-anim">Facebook</span></a>
                             </li>
                             <li class="mb-10">
-                                <a href="#0" class="hover-this"><span class="hover-anim">Twitter</span></a>
+                                <a href="https://cycleslecolier.fr/" target="_blank" class="hover-this"><span class="hover-anim">Site Web</span></a>
                             </li>
-                            <li class="mb-10">
-                                <a href="#0" class="hover-this"><span class="hover-anim">LinkedIn</span></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="hover-this"><span class="hover-anim">Instagram</span></a>
+                           <li class="mb-10">
+                                <a href=“tel:0320548339” class="hover-this"><span class="hover-anim">Téléphone</span></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="item mb-40">
-                        <h6 class="sub-title mb-15 opacity-7">Contact Us</h6>
-                        <h5><a href="#0">Hello@email.com</a></h5>
-                        <h5 class="underline mt-10"><a href="#0">+1 840 841 25 69</a></h5>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -412,7 +404,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/6930261" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -456,7 +448,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/65224301" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -480,7 +472,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/33163192" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -504,7 +496,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/105331433" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -528,7 +520,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/8607391" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -552,7 +544,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/22275259" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -576,7 +568,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/16763427" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -600,7 +592,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/95634890" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -624,7 +616,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/104406709" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -668,7 +660,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/62452007" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -712,7 +704,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/84784364" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -736,7 +728,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/6184039" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -751,7 +743,7 @@
                             <div class="img">
                                 <img src="/assets/img/team/MATTIOLIRONALD_1.jpeg" alt="MATTIOLI RONALD">
                                 <div class="info">
-                                    <span class="fz-12">CX Route VTT</span>
+                                    <span class="fz-12">1ère</span>
                                     <h6 class="fz-18">MATTIOLI RONALD</h6>
                                 </div>
                             </div>
@@ -760,7 +752,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/2243274" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -784,7 +776,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/44445128" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -808,7 +800,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/55203043" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -832,7 +824,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/24292544" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -860,7 +852,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/20939373" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  
@@ -904,7 +896,7 @@
                             <div class="links">
                                 
                                 <a href="https://www.strava.com/athletes/33849612" target="_blank">
-                                    <i class="fa-brands fa-strava"></i>
+                                    <i class="fab fa-strava"></i>
                                 </a>
                                 
                                  

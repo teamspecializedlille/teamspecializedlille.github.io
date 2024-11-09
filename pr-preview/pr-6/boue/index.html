@@ -8,9 +8,9 @@
     <meta name="keywords" content="Team Specialized Lille - Équipe cycliste du nord de la france">
     <meta name="description" content="Team Specialized Lille - Équipe cycliste du nord de la france">
     <meta name="author" content="Félix Moulin"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Challenge Boue (VTT &amp; Cyclo-cross) | Team Specialized Lille</title>
+<title>Boue 2025 | Team Specialized Lille</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Challenge Boue (VTT &amp; Cyclo-cross)" />
+<meta property="og:title" content="Boue 2025" />
 <meta name="author" content="Félix" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Team Specialized Lille - Équipe cycliste du nord de la france" />
@@ -20,9 +20,9 @@
 <meta property="og:site_name" content="Team Specialized Lille" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Challenge Boue (VTT &amp; Cyclo-cross)" />
+<meta property="twitter:title" content="Boue 2025" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Félix"},"description":"Team Specialized Lille - Équipe cycliste du nord de la france","headline":"Challenge Boue (VTT &amp; Cyclo-cross)","url":"https://teamspecializedlille.github.io/boue/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Félix"},"description":"Team Specialized Lille - Équipe cycliste du nord de la france","headline":"Boue 2025","url":"https://teamspecializedlille.github.io/boue/"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Title  -->
     <title>Team Specialized Lille</title>
@@ -46,19 +46,18 @@
     <link rel="stylesheet" href="/assets/css/country-flag.css">
     <script src="/assets/js/country-flag.js"></script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script>
     function updateDisplay() {
-        var narrow_screen = window.matchMedia("(max-width: 768px)").matches;
-        var smoothWrapper = document.getElementById("smooth-wrapper");
-        if (narrow_screen && smoothWrapper) {
+	    const narrow_screen = window.matchMedia("(max-width: 768px)").matches;
+	    const smoothWrapper = document.getElementById("smooth-wrapper");
+	    if (narrow_screen && smoothWrapper) {
             smoothWrapper.removeAttribute("data-background");
             smoothWrapper.classList.add("no-background");
             console.log("data-background attribute removed");
 
         } else if (smoothWrapper) {
-            smoothWrapper.setAttribute("data-background", "/assets/imgs/intro/felix_full.png");
+			const image = smoothWrapper.getAttribute("data-name");
+            smoothWrapper.setAttribute("data-background", image);
         }
 
         var element = document.querySelector(".conditional-display");
@@ -90,7 +89,7 @@
 
     <!-- ==================== Start Loading ==================== -->
 
-    <div class="loader-wrap">
+    <div class="loader-wrap" style="display: none">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
         </svg>
@@ -111,7 +110,7 @@
     <!-- ==================== End Loading ==================== -->
 
 
-    <div class="cursor"></div>
+    <div class="cursor" style="display: none;"></div>
 
 
     <!-- ==================== Start progress-scroll-button ==================== -->
@@ -134,7 +133,7 @@
 
 
 
-<div id="smooth-wrapper" class="" data-background="/assets/imgs/intro/felix_full.png">
+<div id="smooth-wrapper" class="" data-name="" data-background="">
 
 
 
@@ -194,7 +193,7 @@
 
 <div class="hamenu one-scroll">
     <div class="logo icon-img-100">
-        <img src="/assets/imgs/logo-light.png" alt="">
+        <h5>Team Specialized Lille</h5>
     </div>
     <div class="close-menu cursor-pointer ti-close"></div>
     <div class="container">
@@ -248,31 +247,24 @@
             <div class="col-lg-3">
                 <div class="cont-info">
                     <div class="item mb-50">
-                        <h6 class="sub-title mb-15 opacity-7">Address</h6>
-                        <h5>541 Melville Geek, <br> Palo Alto, CA 94301</h5>
+                        <h6 class="sub-title mb-15 opacity-7">Cycle Lecolier</h6>
+                        <h5>5 Rue de la Source, <br>59320 Hallennes-lez-Haubourdin<br></h5>
                     </div>
                     <div class="item mb-50">
                         <h6 class="sub-title mb-15 opacity-7">Social Media</h6>
                         <ul class="rest social-text">
                             <li class="mb-10">
-                                <a href="#0" class="hover-this"><span class="hover-anim">Facebook</span></a>
+                                <a href="https://www.facebook.com/cycleslecolierspecializedlille" target="_blank" class="hover-this"><span class="hover-anim">Facebook</span></a>
                             </li>
                             <li class="mb-10">
-                                <a href="#0" class="hover-this"><span class="hover-anim">Twitter</span></a>
+                                <a href="https://cycleslecolier.fr/" target="_blank" class="hover-this"><span class="hover-anim">Site Web</span></a>
                             </li>
-                            <li class="mb-10">
-                                <a href="#0" class="hover-this"><span class="hover-anim">LinkedIn</span></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="hover-this"><span class="hover-anim">Instagram</span></a>
+                           <li class="mb-10">
+                                <a href=“tel:0320548339” class="hover-this"><span class="hover-anim">Téléphone</span></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="item mb-40">
-                        <h6 class="sub-title mb-15 opacity-7">Contact Us</h6>
-                        <h5><a href="#0">Hello@email.com</a></h5>
-                        <h5 class="underline mt-10"><a href="#0">+1 840 841 25 69</a></h5>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -284,280 +276,340 @@
 
                         
 
-<!-- Section Started Heading -->
-<section class="section section-inner started-heading">
-  <div class="container">
+boue2025
 
-    <!-- Heading -->
-    <div class="m-titles align-center">
-      <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
-        <span>Challenge Boue 2025</span>
-      </h1>
-    </div>
 
-  </div>
-</section>
 
-<!-- Section - Blog -->
-<section class="section section-inner m-archive">
-	<div class="container">
 
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
-
-				<!-- content -->
-				<div class="description">
-					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
-						<table>
-							<thead>
-								<tr>
-									<th scope="col">Place</th>
-									<th scope="col">Nom</th>
-									<th scope="col">Points</th>
-								</tr>
-						  	</thead>
-							<tbody>
-								
-								
-									<tr>
-										
-											<th>&#129351;</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/mattiolironald">MATTIOLI RONALD</a></td>
-										<td>114</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>&#129352;</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/walterbenoit">WALTER BENOIT</a></td>
-										<td>55</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>&#129353;</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/derassedavid">DERASSE DAVID</a></td>
-										<td>50</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>4</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/orbieraxel">ORBIER AXEL</a></td>
-										<td>48</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>5</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/moulinfelix">MOULIN FELIX</a></td>
-										<td>30</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>6</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/lecolierstephane">LECOLIER STEPHANE</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>7</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/lecolierlouis">LECOLIER LOUIS</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>8</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/degraalrobin">DE GRAAL ROBIN</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>9</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/boonenicolas">BOONE NICOLAS</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>10</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/dufourjulien">DUFOUR JULIEN</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>11</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/defosseherve">DEFOSSE HERVE</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>12</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/deferolivier">DEFER OLIVIER</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>13</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/schernuchristophe">SCHERNU CHRISTOPHE</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>14</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/hubautchristophe">HUBAUT CHRISTOPHE</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>15</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/dendievelcyril">DENDIEVEL CYRIL</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>16</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/dejonghemickael">DEJONGHE MICKAEL</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>17</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/lecolierbenoit">LECOLIER BENOIT</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>18</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/shernuchristophe">SHERNU CHRISTOPHE</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>19</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/trinelemily">TRINEL EMILY</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>20</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/minnecielio">MINNECI ELIO</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>21</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/broutinantoine">BROUTIN ANTOINE</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>22</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/derassepatrick">DERASSE PATRICK</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>23</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/crombezthomas">CROMBEZ THOMAS</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-									<tr>
-										
-											<th>24</th>
-										
-										<td><a href="https://teamspecializedlille.github.io/works/meausoonehenri">MEAUSOONE HENRI</a></td>
-										<td>0</td>
-									</tr>
-									
-								
-
-							</tbody>
-						</table>
-						<b>Réglement : </b>
-						<ul>
-							<li>Participation : 10 points</li>
-							<li>Victoire : 3 points</li>
-							<li>Top 5 : 2 points</li>
-							<li>Top 10 : 1 points</li>
-						</ul>
-
-						Mis à jour le 08 November 2024
-					</div>
-				</div>
-
+<!-- ==================== Start Header ==================== -->
+<header class="page-header-cerv bg-img section-padding" data-background="/assets/imgs/team/team.jpeg"
+	data-overlay-dark="1" style="background-position: center;">
+	<div class="container pt-100 ontop">
+		<div class="text-center">
+			<h1 class="fz-100">Boue 2025</h1>
+			<div class="mt-15">
+				<a href="/">Home</a>
+				<span class="padding-rl-20">|</span>
+				<span class="main-color">Boue 2025</span>
 			</div>
 		</div>
+	</div>
+</header>
 
-		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+<!-- ==================== End Header ==================== -->
 
+<!-- ==================== Start First ==================== -->
+<section class="team section-padding" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="container">
+		<div class="row">
+		
+				
+				<div class="col-lg-4">
+					<div class="item md-mb50" >
+						<a  href="/works/mattiolironald">
+							<div class="img">
+								<img src="/assets/img/team/MATTIOLIRONALD_1.jpeg" alt="MATTIOLI RONALD">
+								<div class="info">
+									<h6 class="fz-18">MATTIOLI RONALD</h6>
+								</div>
+							</div>
+						</a>
+						<div class="social">
+							<div class="links">
+								
+								<a href="https://www.strava.com/athletes/2243274" target="_blank">
+									<i class="fab fa-strava"></i>
+								</a>
+								
+								 
+							</div>
+						</div>
+					</div>
+					<div class="item md-mb50">
+						<h2 class="fz-100 numb-font" style="text-align: center;">1.</h2>
+					</div>
+				</div>
+		
+				
+				<div class="col-lg-4">
+					<div class="item md-mb50" >
+						<a  href="/works/walterbenoit">
+							<div class="img">
+								<img src="/assets/img/team/WALTERBENOIT_1.jpeg" alt="WALTER BENOIT">
+								<div class="info">
+									<h6 class="fz-18">WALTER BENOIT</h6>
+								</div>
+							</div>
+						</a>
+						<div class="social">
+							<div class="links">
+								
+								<a href="https://www.strava.com/athletes/33849612" target="_blank">
+									<i class="fab fa-strava"></i>
+								</a>
+								
+								 
+							</div>
+						</div>
+					</div>
+					<div class="item md-mb50">
+						<h2 class="fz-100 numb-font" style="text-align: center;">2.</h2>
+					</div>
+				</div>
+		
+				
+				<div class="col-lg-4">
+					<div class="item md-mb50" >
+						<a  href="/works/derassedavid">
+							<div class="img">
+								<img src="/assets/img/team/DERASSEDAVID_1.JPG" alt="DERASSE DAVID">
+								<div class="info">
+									<h6 class="fz-18">DERASSE DAVID</h6>
+								</div>
+							</div>
+						</a>
+						<div class="social">
+							<div class="links">
+								
+								<a href="https://www.strava.com/athletes/95634890" target="_blank">
+									<i class="fab fa-strava"></i>
+								</a>
+								
+								 
+							</div>
+						</div>
+					</div>
+					<div class="item md-mb50">
+						<h2 class="fz-100 numb-font" style="text-align: center;">3.</h2>
+					</div>
+				</div>
+		
+		</div>
 	</div>
 </section>
+<!-- ==================== End First ==================== -->
 
+<!-- ==================== Start Table ==================== -->
+
+<section class="brands-crev simple section-padding pb-0" style="padding-top: 50px;padding-bottom: 50px;">
+    <div class="container">
+        <table style="width: 100%; border-collapse: separate; border-spacing: 0 10px; margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th scope="col" style="position: relative; padding: 20px; text-align: center; position: relative;border: 1px solid rgba(255, 255, 255, 0.08);">
+                        <span>Place</span>
+                    </th>
+                    <th scope="col" style="position: relative; padding: 20px;">
+                        <span>Nom</span>
+                    </th>
+                    <th scope="col" style="position: relative; padding: 20px;">
+                        <span>Points</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    
+                        <tr>
+                            <td style="position: relative; padding: 20px;">
+                                
+                                    <span>&#129351;</span>
+                                
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <a href="/works/mattiolironald">MATTIOLI RONALD</a>
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <span>114</span>
+                            </td>
+                        </tr>
+                    
+                
+                    
+                        <tr>
+                            <td style="position: relative; padding: 20px;">
+                                
+                                    <span>&#129352;</span>
+                                
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <a href="/works/walterbenoit">WALTER BENOIT</a>
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <span>55</span>
+                            </td>
+                        </tr>
+                    
+                
+                    
+                        <tr>
+                            <td style="position: relative; padding: 20px;">
+                                
+                                    <span>&#129353;</span>
+                                
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <a href="/works/derassedavid">DERASSE DAVID</a>
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <span>50</span>
+                            </td>
+                        </tr>
+                    
+                
+                    
+                        <tr>
+                            <td style="position: relative; padding: 20px;">
+                                
+                                    <span>4</span>
+                                
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <a href="/works/orbieraxel">ORBIER AXEL</a>
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <span>48</span>
+                            </td>
+                        </tr>
+                    
+                
+                    
+                        <tr>
+                            <td style="position: relative; padding: 20px;">
+                                
+                                    <span>5</span>
+                                
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <a href="/works/moulinfelix">MOULIN FELIX</a>
+                            </td>
+                            <td style="position: relative; padding: 20px;">
+                                <span>30</span>
+                            </td>
+                        </tr>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </tbody>
+        </table>
+        <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+            <b>Réglement : </b>
+            <ul>
+                <li>Participation : 10 points</li>
+                <li>Victoire : 3 points</li>
+                <li>Top 5 : 2 points</li>
+                <li>Top 10 : 1 points</li>
+            </ul>
+            Mis à jour le 09 November 2024
+        </div>
+    </div>
+</section>
+<!-- ==================== End Table ==================== -->
+
+
+<!-- ==================== Start recent Blog ==================== -->
+
+<section class="blog-list-half section-padding sub-bg">
+    <div class="container">
+        <div class="sec-head mb-80">
+            <h6 class="sub-title main-color mb-25">Résultats</h6>
+            <div class="bord pt-25 bord-thin-top d-flex align-items-center">
+                <h2 class="fw-600">Les dernières <span class="fw-200"> courses</span></h2>
+                <div class="ml-auto">
+                    <a href="/blog" class="go-more">
+                        <span class="text">Toutes les courses</span>
+                        <span class="icon ti-arrow-top-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-lg-6">
+                <div class="item main-bg md-mb50">
+                    <div class="row rest">
+                        <div class="col-lg-6 col-md-5 img rest">
+                            <img src="/assets/img/blog/vtt.jpeg" alt="VTT - HENIN BEAUMONT - 2025" class="img-post">
+                        </div>
+                        <div class="col-lg-6 col-md-7 cont valign">
+                            <div class="full-width">
+                                <div class="tags mb-15">
+                                    <a href="blog-list.html">VTT</a>
+                                </div>
+                                <h5>
+                                    <a href="/vtt/2024/11/01/VTTHENIN-BEAUMONT/">VTT - HENIN BEAUMONT - 2025</a>
+                                </h5>
+                                <span class="date fz-12 ls1 text-u opacity-7 mt-80">01 November 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="item main-bg md-mb50">
+                    <div class="row rest">
+                        <div class="col-lg-6 col-md-5 img rest">
+                            <img src="/assets/img/blog/cx.jpeg" alt="Cyclo Cross - HENIN BEAUMONT - 2025" class="img-post">
+                        </div>
+                        <div class="col-lg-6 col-md-7 cont valign">
+                            <div class="full-width">
+                                <div class="tags mb-15">
+                                    <a href="blog-list.html">Cyclo Cross</a>
+                                </div>
+                                <h5>
+                                    <a href="/cyclo%20cross/2024/11/01/CycloCrossHENIN-BEAUMONT/">Cyclo Cross - HENIN BEAUMONT - 2025</a>
+                                </h5>
+                                <span class="date fz-12 ls1 text-u opacity-7 mt-80">01 November 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== End recent Blog ==================== -->
 
 
             <!-- ==================== Start Footer ==================== -->
