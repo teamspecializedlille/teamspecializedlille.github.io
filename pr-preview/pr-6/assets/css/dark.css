@@ -452,7 +452,7 @@ body.dark-skin {
 }
 
 .dark-skin .services-item .image,
-.dark-skin .works-item .bg-img,
+.dark-skin .coureurs-item .bg-img,
 .dark-skin .testimonials-item .bg-img,
 .dark-skin .pricing-item .bg-img {
 	opacity: 0.6;
@@ -460,7 +460,7 @@ body.dark-skin {
 }
 
 /**
-* Section Works
+* Section coureurs
 **/
 
 .dark-skin .filter-links a {
@@ -471,33 +471,33 @@ body.dark-skin {
 	color: #29a587;
 }
 
-.dark-skin .works-item .image:before,
-.dark-skin .works-item .image:after {
+.dark-skin .coureurs-item .image:before,
+.dark-skin .coureurs-item .image:after {
 	background: #222831;
 }
 
-.dark-skin .works-item .image .img:before,
-.dark-skin .works-item .image .img:after {
+.dark-skin .coureurs-item .image .img:before,
+.dark-skin .coureurs-item .image .img:after {
 	background: #222831;
 }
 
-.dark-skin .works-items.works-list-items .works-item .desc .name {
+.dark-skin .coureurs-items.coureurs-list-items .coureurs-item .desc .name {
 	color: #fff;
 }
 
-.dark-skin .works-items.works-list-items .works-item .desc .name a {
+.dark-skin .coureurs-items.coureurs-list-items .coureurs-item .desc .name a {
 	color: #fff;
 }
 
-.dark-skin .works-items.works-masonry-items .works-item {
+.dark-skin .coureurs-items.coureurs-masonry-items .coureurs-item {
 	background: #1d222a;
 }
 
-.dark-skin .works-items.works-masonry-items .works-item .desc .name a {
+.dark-skin .coureurs-items.coureurs-masonry-items .coureurs-item .desc .name a {
 	color: #fff;
 }
 
-.dark-skin .works-item:hover .desc .name a {
+.dark-skin .coureurs-item:hover .desc .name a {
 	color: #29a587;
 }
 

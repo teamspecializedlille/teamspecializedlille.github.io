@@ -350,7 +350,7 @@
             return array;
         }
 
-        // Start & Stop currently not working
+        // Start & Stop currently not coureuring
 
         // , stop: function() {
         //     var self = this;

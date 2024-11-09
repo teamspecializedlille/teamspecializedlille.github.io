@@ -391,7 +391,7 @@ $(function () {
 
 
     /* =============================================================================
-    ------------------------------  Interactive work   -----------------------------
+    ------------------------------  Interactive coureur   -----------------------------
     ============================================================================= */
 
     $('.inter-links-center .links-text li').on('mouseenter', function () {
@@ -446,7 +446,7 @@ $(function () {
 
 
     /* =============================================================================
-    ------------------------------  Interactive work   -----------------------------
+    ------------------------------  Interactive coureur   -----------------------------
     ============================================================================= */
 
     $('.inter-fixed-text .links-img .img').on('mouseenter', function () {
@@ -497,7 +497,7 @@ $(function () {
     });
 
 
-    /* ===============================  Work Tabs  =============================== */
+    /* ===============================  coureur Tabs  =============================== */
 
     $('.portfolio-tab .cluom').on('mouseenter', function () {
         var tab_id = $(this).attr('data-tab');
@@ -1038,7 +1038,7 @@ $(function () {
             };
         };
 
-        if ($(this).hasClass('work-swiper-auto')) {
+        if ($(this).hasClass('coureur-swiper-auto')) {
             var conf = {
 
                 breakpoints: {
@@ -1063,7 +1063,7 @@ $(function () {
             };
         };
 
-        if ($(this).hasClass('work-swiper-center')) {
+        if ($(this).hasClass('coureur-swiper-center')) {
             var conf = {
 
                 breakpoints: {
@@ -1096,7 +1096,7 @@ $(function () {
             };
         };
 
-        if ($(this).hasClass('work-crus5')) {
+        if ($(this).hasClass('coureur-crus5')) {
             var conf = {
 
                 breakpoints: {
@@ -1115,8 +1115,8 @@ $(function () {
                 },
 
                 navigation: {
-                    nextEl: '.work-carsouel .swiper-button-next',
-                    prevEl: '.work-carsouel .swiper-button-prev'
+                    nextEl: '.coureur-carsouel .swiper-button-next',
+                    prevEl: '.coureur-carsouel .swiper-button-prev'
                 }
             };
         };

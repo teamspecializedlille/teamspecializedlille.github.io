@@ -2800,7 +2800,7 @@ readers do not read off random characters that represent icons */
 .fa-neos:before {
   content: "\f612"; }
 
-.fa-network-wired:before {
+.fa-netcoureur-wired:before {
   content: "\f6ff"; }
 
 .fa-neuter:before {
@@ -2998,7 +2998,7 @@ readers do not read off random characters that represent icons */
 .fa-phabricator:before {
   content: "\f3db"; }
 
-.fa-phoenix-framework:before {
+.fa-phoenix-framecoureur:before {
   content: "\f3dc"; }
 
 .fa-phoenix-squadron:before {
