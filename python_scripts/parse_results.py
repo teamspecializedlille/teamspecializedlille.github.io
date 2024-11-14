@@ -49,7 +49,7 @@ def check_if_scratch_enable(sheet):
 
 def save_races_parsed(races_parsed):
     data = {"races_parsed": races_parsed}
-    json_object = json.dumps(data, ensure_ascii=False)
+    json_object = json.dumps(data, ensure_ascii=False, indent=4)
     with open("../_data/races_parsed.json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
