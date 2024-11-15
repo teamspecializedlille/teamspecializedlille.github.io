@@ -56,12 +56,6 @@ jobs:
         run: |
           cd python_scripts
           python main.py > ../output.txt
-      - name: Save new posts
-        id: save-posts
-        run: |
-          cat output.txt
-          POSTS_OUTPUT=$(cat output.txt | sed ':a;N;$!ba;s/\n/ /g')
-          echo "::set-output name=posts_output::$POSTS_OUTPUT"
 
       - name: Save change in git
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -87,11 +81,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  notifications:
-    runs-on: ubuntu-latest
-    needs: build #deploy
-    steps:
-      - name: Read and use output
-        run: |
-          echo "${{ needs.build.outputs.posts_output }}"
