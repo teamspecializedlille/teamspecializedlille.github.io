@@ -55,10 +55,7 @@ jobs:
       - name: Run update of website
         run: |
           cd python_scripts
-          python main.py
-      - name: Get new post
-        run: |
-          git status  > ../output.txt
+          python main.py > ../output.txt
       - name: Save new posts
         id: save-posts
         run: echo "POSTS_OUTPUT=$(cat ../output.txt | sed ':a;N;$!ba;s/\n/ /g')" >> $GITHUB_ENV
