@@ -2,14 +2,16 @@ import requests
 import json
 from datetime import datetime, timedelta
 import re
+import os
+
 
 host = "https://teamspecializedlille.github.io/"
 
 
 def post_notification(title, content, post_url, delay):
     # Informations d'authentification OneSignal
-    API_KEY = "os_v2_app_xjfnsbamhvhltn7wgx3kg3aysntdeb7yvgee2p4bmig7r4myuiavmvjheg5ikmy4qjp5zjthui6oxsv3wvfsavd4a3ev23wywita63q"
-    APP_ID = "ba4ad904-0c3d-4eb9-b7f6-35f6a36c1893"
+    API_KEY = os.getenv('API_KEY')
+    APP_ID = os.getenv('APP_ID')
 
     # URL de l'API OneSignal
     url = "https://onesignal.com/api/v1/notifications"
@@ -101,4 +103,3 @@ def create_notifications(posts):
 
 new_posts = get_new_posts()
 create_notifications(new_posts)
-#/cyclo%20cross/2024/11/11/CycloCrossPORTE-DU-HAINAUT-AREMBERG/
