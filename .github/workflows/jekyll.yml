@@ -61,7 +61,7 @@ jobs:
           git status  > ../output.txt
       - name: Save new posts
         id: save-posts
-        run: echo "POSTS_OUTPUT=$(cat ../output.txt)" >> $GITHUB_ENV
+        run: echo "POSTS_OUTPUT=$(cat ../output.txt | sed ':a;N;$!ba;s/\n/ /g')" >> $GITHUB_ENV
       - name: Save change in git
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -89,7 +89,7 @@ jobs:
 
   notifications:
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: build #deploy
     steps:
       - name: Read and use output
         run: |
