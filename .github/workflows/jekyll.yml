@@ -61,7 +61,7 @@ jobs:
         run: |
           cat output.txt
           POSTS_OUTPUT=$(cat output.txt | sed ':a;N;$!ba;s/\n/ /g')
-          echo "POSTS_OUTPUT=$POSTS_OUTPUT" >> $GITHUB_ENV
+          echo "::set-output name=posts_output::$POSTS_OUTPUT"
 
       - name: Save change in git
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -94,4 +94,4 @@ jobs:
     steps:
       - name: Read and use output
         run: |
-          echo "${{ env.POSTS_OUTPUT }}"
+          echo "${{ needs.build.outputs.posts_output }}"
