@@ -276,6 +276,7 @@ class ParseResults:
             return
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(
             " ", "-") + ".md"
+        print("[NEW POST] : " + file_name)
         with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
             outfile.write("---\n")
             outfile.write("layout: post\n")
