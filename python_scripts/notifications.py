@@ -22,10 +22,9 @@ def post_notification(title, content, post_url, delay):
         "contents": {"en": content},
         "url": post_url,  # URL vers laquelle rediriger les utilisateurs
         "send_after": (datetime.utcnow() + timedelta(minutes=delay)).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Délai de 10 minutes
-        "safari_icon": "https://example.com/icon.png",
-        "chrome_web_image": "https://example.com/image.png",  # URL de l'image pour Chrome
-        "firefox_image": "https://example.com/image.png",  # URL de l'image pour Firefox
-        "safari_image": "https://example.com/image.png"  # URL de l'image pour Safari
+        "chrome_web_icon": f"{host}assets/images/favicons/android-chrome-192x192.png",  # URL de l'image pour Chrome
+        "firefox_icon": f"{host}assets/images/favicons/128.png",  # URL de l'image pour Firefox
+        "safari_icon": f"{host}assets/images/favicons/256.png"  # URL de l'image pour Safari
     }
 
     # En-têtes pour la requête
