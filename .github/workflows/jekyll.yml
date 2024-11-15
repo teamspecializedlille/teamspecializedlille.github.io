@@ -56,6 +56,9 @@ jobs:
         run: |
           cd python_scripts
           python main.py
+      - name: Get new post
+        run: |
+          git status  > ../output.txt
       - name: Save change in git
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -80,3 +83,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notifications:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Read and use output
+        run: |
+          cat ./output/output.txt
