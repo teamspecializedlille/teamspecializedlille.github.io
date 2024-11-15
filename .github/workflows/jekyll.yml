@@ -90,4 +90,4 @@ jobs:
     steps:
       - name: Read and use output
         run: |
-          echo "${{ env.SCRIPT_OUTPUT }}"
+          echo "${{ env.POSTS_OUTPUT }}"
