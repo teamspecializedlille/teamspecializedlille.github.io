@@ -76,7 +76,7 @@ def update_challenge(team: dict[str, TeamMember], challenge_year):
     data["update_date"] = datetime.datetime.now().strftime("%d %B %Y")
     data["challenge_year"] = challenge_year
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
-    json_object = json.dumps(data, ensure_ascii=False)
+    json_object = json.dumps(data, ensure_ascii=False, indent=4)
     with open("../_data/challenge"+challenge_year+".json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
@@ -92,7 +92,7 @@ def update_challenge_boue(team: dict[str, TeamMember], challenge_year):
     data["update_date"] = datetime.datetime.now().strftime("%d %B %Y")
     data["challenge_year"] = challenge_year
     data["challenge"] = dict(sorted(challenge_res.items(), key=operator.itemgetter(1), reverse=True))
-    json_object = json.dumps(data, ensure_ascii=False)
+    json_object = json.dumps(data, ensure_ascii=False, indent=4)
     with open("../_data/boue"+challenge_year+".json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
@@ -151,6 +151,6 @@ def update_team_file(team):
     for m in team.values():
         array.append(m.to_dict())
     data["team_members"] = array
-    json_object = json.dumps(data, ensure_ascii=False)
+    json_object = json.dumps(data, ensure_ascii=False, indent=4)
     with open(team_path_file, "w", encoding='utf8') as outfile:
         outfile.write(json_object)

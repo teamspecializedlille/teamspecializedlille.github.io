@@ -46,6 +46,8 @@
     <link rel="stylesheet" href="/assets/css/country-flag.css">
     <script src="/assets/js/country-flag.js"></script>
 
+
+
 <script>
     function updateDisplay() {
 	    const narrow_screen = window.matchMedia("(max-width: 768px)").matches;
@@ -78,7 +80,19 @@
     });
     window.addEventListener("resize", updateDisplay);
 
+    gtag('config', 'G-L8GMTBYT7Q');
+  </script>
 
+
+
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "ba4ad904-0c3d-4eb9-b7f6-35f6a36c1893",
+    });
+  });
 </script>
 </head>
 

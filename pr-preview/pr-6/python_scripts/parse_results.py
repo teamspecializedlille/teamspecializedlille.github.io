@@ -49,7 +49,7 @@ def check_if_scratch_enable(sheet):
 
 def save_races_parsed(races_parsed):
     data = {"races_parsed": races_parsed}
-    json_object = json.dumps(data, ensure_ascii=False)
+    json_object = json.dumps(data, ensure_ascii=False, indent=4)
     with open("../_data/races_parsed.json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
@@ -276,6 +276,7 @@ class ParseResults:
             return
         file_name = self.race_date.replace("/", "-") + "-" + self.race_type.replace(" ", "") + self.race_name.replace(
             " ", "-") + ".md"
+        print("[NEW POST] : " + file_name)
         with open("../_posts/" + file_name, "w", encoding='utf8') as outfile:
             outfile.write("---\n")
             outfile.write("layout: post\n")
