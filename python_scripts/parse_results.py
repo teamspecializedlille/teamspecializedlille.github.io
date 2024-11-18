@@ -22,7 +22,7 @@ def display_result_line_with_link(outfile, team_member, position):
 
 
 def get_member_with_link(team_member):
-    link = "https://teamspecializedlille.github.io/works/"
+    link = "https://teamspecializedlille.github.io/coureurs/"
     return "[" + team_member + "](" + link + team_member.replace(" ", "").lower() + ")"
 
 
@@ -49,7 +49,7 @@ def check_if_scratch_enable(sheet):
 
 def save_races_parsed(races_parsed):
     data = {"races_parsed": races_parsed}
-    json_object = json.dumps(data, ensure_ascii=False)
+    json_object = json.dumps(data, ensure_ascii=False, indent=4)
     with open("../_data/races_parsed.json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
@@ -126,8 +126,8 @@ class ParseResults:
                     return True
         return False
 
-    def parse_results_race_sheet(self, workbook, sheet, season):
-        sheet = workbook.sheet_by_index(sheet)
+    def parse_results_race_sheet(self, coureurbook, sheet, season):
+        sheet = coureurbook.sheet_by_index(sheet)
         self.race_cat = sheet.name
         hash_race = self.get_hash_race()
         scratch_enable = check_if_scratch_enable(sheet)
@@ -224,12 +224,12 @@ class ParseResults:
                 output = open('test.xls', 'wb')
                 output.write(r.content)
 
-                workbook = xlrd.open_workbook('test.xls')
-                self.parse_results_race_sheet(workbook, 0, season)
-                self.parse_results_race_sheet(workbook, 1, season)
-                self.parse_results_race_sheet(workbook, 2, season)
-                self.parse_results_race_sheet(workbook, 3, season)
-                self.parse_results_race_sheet(workbook, 4, season)
+                coureurbook = xlrd.open_coureurbook('test.xls')
+                self.parse_results_race_sheet(coureurbook, 0, season)
+                self.parse_results_race_sheet(coureurbook, 1, season)
+                self.parse_results_race_sheet(coureurbook, 2, season)
+                self.parse_results_race_sheet(coureurbook, 3, season)
+                self.parse_results_race_sheet(coureurbook, 4, season)
                 hash_race = self.get_hash_race()
 
                 if len(self.results[hash_race].scratch) > 0:

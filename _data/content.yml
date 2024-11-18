@@ -2,7 +2,9 @@
 ##
 ### use navigation.yml file to re-order, delete or add section of each card
 ### here you can find all content in all pre-build sections
-
+site:
+  title: "Team Specialized Lille"
+  baseline: "Route, CX & VTT"
 ### Hero [ hero-image ]
 hero:
   image: "assets/img/profil.png"
@@ -271,11 +273,11 @@ contacts:
       text: "+1 900 - 900 - 9000"
 
 ### Portfolio [ portfolio ]
-#items generates from dir /_works/*
+#items generates from dir /_coureurs/*
 portfolio:
   title: "Team"
   subtitle: ""
   bg_title: "Team"
   button:
-    link: "works/"
+    link: "coureurs/"
     label: "Toute l'équipe"

@@ -1105,7 +1105,7 @@ proto.enableTransition = function(/* style */) {
   }
 
   // make `transition: foo, bar, baz` from style object
-  // HACK un-comment this when enableTransition can work
+  // HACK un-comment this when enableTransition can coureur
   // while a transition is happening
   // var transitionValues = [];
   // for ( var prop in style ) {

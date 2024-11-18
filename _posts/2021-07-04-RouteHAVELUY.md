@@ -9,14 +9,14 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 50 participants
-- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/works/lecolierstephane) : 7
-- [DUFOUR JULIEN](https://teamspecializedlille.github.io/works/dufourjulien) : 19
-- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : 20
+- [LECOLIER STEPHANE](https://teamspecializedlille.github.io/coureurs/lecolierstephane) : 7
+- [DUFOUR JULIEN](https://teamspecializedlille.github.io/coureurs/dufourjulien) : 19
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/coureurs/defosseherve) : 20
 
 ### 3ème Catégorie
 111 participants
-- [BOONE ERIC](https://teamspecializedlille.github.io/works/booneeric) : 
-- [VERHULST ERIC](https://teamspecializedlille.github.io/works/verhulsteric) : 
+- [BOONE ERIC](https://teamspecializedlille.github.io/coureurs/booneeric) : 
+- [VERHULST ERIC](https://teamspecializedlille.github.io/coureurs/verhulsteric) : 
 
 ### Scratch
 305 participants

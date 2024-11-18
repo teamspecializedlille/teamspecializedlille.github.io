@@ -1,75 +1,75 @@
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  {%- seo -%}
 
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="Félix Moulin">
+    {%- seo -%}
 
-  <!-- Load CSS -->
-  <link rel="stylesheet" href="{{ 'assets/css/bootstrap.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/animate.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/splitting.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/swiper.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/font-awesome.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/syntax.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ 'assets/css/dark.css' | relative_url }}">
+    <!-- Title  -->
+    <title>{{ site.title }}</title>
 
-  <!--[if lt IE 9]>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ 'assets/images/favicons/favicon.ico' | relative_url }}" />
 
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="{{ 'assets/images/favicons/favicon.ico' | relative_url }}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&amp;display=swap" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png'| relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/favicons/favicon-32x32.png' | relative_url }}" >
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/images/favicons/favicon-16x16.png' | relative_url }}"> 
-  <link rel="mask-icon" href="{{ 'assets/images/favicons/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
-  <link rel="manifest" href="{{ 'assets/images/favicons/site.webmanifest' | relative_url }}">
+    <!-- Font -->
+    <link rel="stylesheet" href="{{ 'assets/css/satoshi.css' | relative_url }}" />
 
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{{ 'assets/css/plugins.css' | relative_url }}" />
 
-  {%- include custom-head.html -%}
-  <style type="text/css">
-    .tg-sort-header::-moz-selection{background:0 0}
-    .tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}
-    .tg-sort-header:after{content:'';float:right;margin-top:7px;border-width:0 5px 5px;border-style:solid;
-    border-color:#404040 transparent;visibility:hidden}
-    .tg-sort-header:hover:after{visibility:visible}
-    .tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:.4}
-    .tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}
-    </style>
-    <script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n?n.length:0}function t(n,t,e,o=0){for(e=r(n);o<e;++o)t(n[o],o)}function e(n){return n.split("").reverse().join("")}function o(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function u(n,r,e=[]){return t(n,function(n){r(n)&&e.push(n)}),e}var a=parseFloat;function i(n,r){return function(t){var e="";return t.replace(n,function(n,t,o){return e=t.replace(r,"")+"."+(o||"").substring(1)}),a(e)}}var s=i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),c=i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);function f(n){var t=a(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function d(n){var e=[],o=n;return t([f,s,c],function(u){var a=[],i=[];t(n,function(n,r){r=u(n),a.push(r),r||i.push(n)}),r(i)<r(o)&&(o=i,e=a)}),r(u(o,function(n){return n==o[0]}))==r(o)?e:[]}function v(n){if("TABLE"==n.nodeName){for(var a=function(r){var e,o,u=[],a=[];return function n(r,e){e(r),t(r.childNodes,function(r){n(r,e)})}(n,function(n){"TR"==(o=n.nodeName)?(e=[],u.push(e),a.push(n)):"TD"!=o&&"TH"!=o||e.push(n)}),[u,a]}(),i=a[0],s=a[1],c=r(i),f=c>1&&r(i[0])<r(i[1])?1:0,v=f+1,p=i[f],h=r(p),l=[],g=[],N=[],m=v;m<c;++m){for(var T=0;T<h;++T){r(g)<h&&g.push([]);var C=i[m][T],L=C.textContent||C.innerText||"";g[T].push(L.trim())}N.push(m-v)}t(p,function(n,t){l[t]=0;var a=n.classList;a.add("tg-sort-header"),n.addEventListener("click",function(){var n=l[t];!function(){for(var n=0;n<h;++n){var r=p[n].classList;r.remove("tg-sort-asc"),r.remove("tg-sort-desc"),l[n]=0}}(),(n=1==n?-1:+!n)&&a.add(n>0?"tg-sort-asc":"tg-sort-desc"),l[t]=n;var i,f=g[t],m=function(r,t){return n*f[r].localeCompare(f[t])||n*(r-t)},T=function(n){var t=d(n);if(!r(t)){var u=o(n),a=o(n.map(e));t=d(n.map(function(n){return n.substring(u,r(n)-a)}))}return t}(f);(r(T)||r(T=r(u(i=f.map(Date.parse),isNaN))?[]:i))&&(m=function(r,t){var e=T[r],o=T[t],u=isNaN(e),a=isNaN(o);return u&&a?0:u?-n:a?n:e>o?n:e<o?-n:n*(r-t)});var C,L=N.slice();L.sort(m);for(var E=v;E<c;++E)(C=s[E].parentNode).removeChild(s[E]);for(E=v;E<c;++E)C.appendChild(s[v+L[E-v]])})})}}n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{v(t[e])}catch(n){}})}(document)</script>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:3733305,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GMTBYT7Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ 'assets/css/country-flag.css' | relative_url }}">
+    <script src="{{ 'assets/js/country-flag.js' | relative_url }}"></script>
+
+
+
+<script>
+    function updateDisplay() {
+	    const narrow_screen = window.matchMedia("(max-width: 768px)").matches;
+	    const smoothWrapper = document.getElementById("smooth-wrapper");
+	    if (narrow_screen && smoothWrapper) {
+            smoothWrapper.removeAttribute("data-background");
+            smoothWrapper.classList.add("no-background");
+            console.log("data-background attribute removed");
+
+        } else if (smoothWrapper) {
+			const image = smoothWrapper.getAttribute("data-name");
+            smoothWrapper.setAttribute("data-background", image);
+        }
+
+        var element = document.querySelector(".conditional-display");
+        if (narrow_screen && element) {
+            element.style.display = "block";
+        } else if (element) {
+            element.style.display = "none";
+        }
+    }
+
+	document.addEventListener("DOMContentLoaded", function () {
+		updateDisplay();
+		const flagElement = document.querySelector(".country-flag");
+	    if (flagElement) {
+            const flag = new CountryFlag(flagElement);
+            flag.selectByAlpha2(flagElement.id);
+        }
+    });
+    window.addEventListener("resize", updateDisplay);
 
     gtag('config', 'G-L8GMTBYT7Q');
   </script>
+
+
+
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
@@ -79,5 +79,4 @@
     });
   });
 </script>
-
 </head>

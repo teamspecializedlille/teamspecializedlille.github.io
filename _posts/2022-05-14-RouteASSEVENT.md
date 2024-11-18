@@ -9,8 +9,8 @@ image: assets/img/blog/road.jpeg
 
 ### 1ère Catégorie
 23 participants
-- [DEFOSSE HERVE](https://teamspecializedlille.github.io/works/defosseherve) : Ab
+- [DEFOSSE HERVE](https://teamspecializedlille.github.io/coureurs/defosseherve) : Ab
 
 ### 3ème Catégorie
 54 participants
-- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/works/hubautchristophe) : 25
+- [HUBAUT CHRISTOPHE](https://teamspecializedlille.github.io/coureurs/hubautchristophe) : 25

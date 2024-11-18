@@ -5,11 +5,15 @@ date: 2024-02-18
 category: VTT
 tags: VTT
 image: assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
+images:
+    - assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
+    - assets/img/resultats/2024-02-18-VTTHERGNIES/2.jpg
+    - assets/img/resultats/2024-02-18-VTTHERGNIES/3.jpg
 ---
 
 ### VTT Vétérans B
 11 participants
-- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 1
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/coureurs/mattiolironald) : 1
 
 ### Scratch
 29 participants
@@ -20,7 +24,7 @@ image: assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
 | 2 | MICHEL KEVIN | ASSOCIATION CYCLISTE BELLAINGEOISE | 7 | Seniors A | 0:54:35 | 
 | 3 | FLORIAN MATHIEU | ETOILE CYCLISTE LIEU ST AMAND | 7 | Seniors B | 0:56:28 | 
 | 4 | STIENNES JOHAN | ETOILE CYCLISTE LIEU ST AMAND | 7 | Vétérans A | 0:58:0 | 
-| **5** | **[MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald)** | **TEAM SPECIALIZED LILLE** | **7** | **Vétérans B** | **0:58:38** | 
+| **5** | **[MATTIOLI RONALD](https://teamspecializedlille.github.io/coureurs/mattiolironald)** | **TEAM SPECIALIZED LILLE** | **7** | **Vétérans B** | **0:58:38** | 
 | 6 | JABLONSKI SEBASTIEN | TEAM B.B.L. HERGNIES | 7 | Vétérans A | 0:58:46 | 
 | 7 | BREVIERE ALEXANDRE | CAMPHIN EN CAREMBAULT CYCLING TEAM | 7 | Vétérans B | 1:0:25 | 
 | 8 | ROMAIN RICHARD | LES MOULIN'EUX - ST VAAST EN CAMBRESIS | 7 | Seniors B | 1:0:27 | 
@@ -46,6 +50,3 @@ image: assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg
 | 28 | SAVARY FABIEN | ARTOIS CYCLING TEAM | 5 | Vétérans A | 1:1:58 | 
 | 29 | VAN STAEN ELOUAN | CYCLO CLUB WAVRIN | 0 | Seniors A | 0:38:53 | 
 
-![1](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-18-VTTHERGNIES/1.jpg)
-![2](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-18-VTTHERGNIES/2.jpg)
-![3](http://teamspecializedlille.github.io/assets/img/resultats/2024-02-18-VTTHERGNIES/3.jpg)

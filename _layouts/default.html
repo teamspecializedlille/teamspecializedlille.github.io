@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-  {%- include head.html -%}
+    {%- include head.html -%}
 
-  {% assign settings = site.data.settings['settings'] %}
+    {% assign settings = site.data.settings['settings'] %}
 
-  <body class="{% if page.layout == 'builder' %} home{% endif %}{% if page.layout == 'blog' or page.layout == 'archive' %} blog{% endif %}{% if page.layout == 'post' or page.layout == 'works-single' or page.layout == 'page' or page.layout == 'error' %} page{% endif %}{% if settings.skin == 'light' %} light-skin{% endif %}{% if settings.skin == 'dark' %} dark-skin{% endif %}">
+    <body class="{% if page.layout == 'coureurs-single' %}vcard{% endif %}">
+        {%- include header.html -%}
+            <div id="smooth-wrapper" class="{% if page.layout == 'coureurs-single' %}bg-img vcard-bg{% endif %}" data-name="{{ page.large | relative_url }}" data-background="{{ page.large | relative_url }}">
 
-    <div class="container-page ">
+                {%- include navbar.html -%}
 
-      {%- include preloader.html -%}
+                 <div id="smooth-content">
+                    <main class="{% if page.layout != 'coureurs-single' %}main-bg{% endif %}">
 
-      {%- include header.html -%}
+                        {{ content }}
+                        {%- include footer.html -%}
 
-      <!-- Wrapper -->
-  		<div class="wrapper{% if page.layout == 'works-single' or page.layout == 'page' %} portfolio-template{% endif %}{% if page.layout == 'post' %} single-post{% endif %}">
-        {{ content }}
-      </div>
+                    </main>
+                 </div>
+            </div>
 
-      {%- include footer.html -%}
+        {%- include scripts.html -%}
 
-    </div>
-
-    <!-- cursor -->
-    <div class="cursor"></div>
-
-    {%- include scripts.html -%}
-
-  </body>
+    </body>
 
 </html>

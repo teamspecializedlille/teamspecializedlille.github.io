@@ -6,11 +6,7 @@
 settings:
   skin: "light" # select initial skin option: "light" or "dark"
 
-### Preloader
-preloader:
-  logo:
-    image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+
 
 ### Header
 header:
@@ -33,7 +29,7 @@ footer:
 
 ### Portfolio Filters Settings
 portfolio:
-  layout: "list" # select works layout options: "Grid" or "List"
+  layout: "list" # select coureurs layout options: "Grid" or "List"
   filters:
     - name: "Route"
       slug: "road"

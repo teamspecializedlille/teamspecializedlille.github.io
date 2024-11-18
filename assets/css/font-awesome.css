@@ -2800,7 +2800,7 @@ readers do not read off random characters that represent icons */
 .fa-neos:before {
   content: "\f612"; }
 
-.fa-network-wired:before {
+.fa-netcoureur-wired:before {
   content: "\f6ff"; }
 
 .fa-neuter:before {
@@ -2998,7 +2998,7 @@ readers do not read off random characters that represent icons */
 .fa-phabricator:before {
   content: "\f3db"; }
 
-.fa-phoenix-framework:before {
+.fa-phoenix-framecoureur:before {
   content: "\f3dc"; }
 
 .fa-phoenix-squadron:before {
@@ -4609,7 +4609,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   font-display: block;
   src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("{{ /assets/webfonts/fa-solid-900.ttf | relative_url }}") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {

@@ -9,8 +9,8 @@ image: assets/img/blog/vtt.jpeg
 
 ### VTT Vétérans A
 17 participants
-- [WALTER BENOIT](https://teamspecializedlille.github.io/works/walterbenoit) : 9
+- [WALTER BENOIT](https://teamspecializedlille.github.io/coureurs/walterbenoit) : 9
 
 ### VTT Vétérans B
 18 participants
-- [MATTIOLI RONALD](https://teamspecializedlille.github.io/works/mattiolironald) : 2
+- [MATTIOLI RONALD](https://teamspecializedlille.github.io/coureurs/mattiolironald) : 2
